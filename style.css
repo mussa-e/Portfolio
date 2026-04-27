@@ -1,4 +1,16 @@
+@font-face {
+  font-family: 'Anta';
+  src: url('./fonts/Anta/Anta-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('./fonts/Josefin_Sans/JosefinSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 
 body{
@@ -6,4 +18,99 @@ body{
     margin: 0;
     padding: 0;
     background-color: #262E34;
+}
+
+.top{
+    display: flex;
+    height: 100vh;
+    justify-content: space-evenly;
+}
+
+.top-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.top-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.top-right-logo img{
+    width: 56;
+    height: 38;
+    left: 5px;
+    opacity: 1;
+
+}
+
+.top-right-under-logo-name{
+    color: #F8F5EC;
+    font-family: Anta;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    margin: 0;
+}
+
+.top-right-under-logo-property{
+    color: #89BCD9;
+    font-family: Josefin Sans;
+    font-weight: 300;
+    font-style: Light;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    margin: 0;
+}
+
+.top-right-middle{
+    color: #F8F5EC;
+}
+
+.top-right-middle-name{
+    font-family: Anta;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 88px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.top-right-middle-property{
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 0;
+}
+
+.top-links{
+    display: flex;
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.top-links-img-wrapper{
+    display: flex;
+    border-radius: 50px;
+}
+.top-links-img-wrapper:hover{
+    background: #89BCD9;
 }
