@@ -423,3 +423,100 @@ body{
     text-align: center;
     color: #FFFDFD;
 }
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1440px;
+    margin-top: 32px;
+}
+
+.projects h1{
+    font-family: Anta;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 60px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #89BCD9;
+    text-align: center;
+    margin: 90px 0;
+}
+
+.tabs{
+    display: flex;
+    font-family: Josefin Sans;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 30px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #89BCD9;
+    padding-left: 32px;
+    gap: 48px;
+}
+
+.tab-1, .tab-2, .tab-3, .tab-4{
+    padding: 32px;
+    min-width: 200px;
+}
+
+.tab-1:hover, .tab-2:hover, .tab-3:hover, .tab-4:hover{
+    color: #F8F5EC;
+    cursor: pointer;
+}
+
+.chosen{
+    color: #F8F5EC;
+    background-color: #2D3840;
+    border-radius: 50px 50px 0 0;
+}
+
+.projects-body{
+    background-color: #2D3840;
+    padding: 32px;
+    font-family: Josefin Sans;
+    display: flex;
+}
+
+.da-bubble-description{
+    color: #F8F5EC;
+}
+
+.da-bubble-dot{
+    display: flex;
+    gap: 16px;
+}
+
+.da-bubble-dot-p1{
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 28px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    display: flex;
+    align-items: center;
+}
+
+.da-bubble-dot-p2{
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    display: flex;
+    align-items: center;
+}
+
+.da-bubble-dot-p3{
+    padding-left: 44px;
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0%;
+}
