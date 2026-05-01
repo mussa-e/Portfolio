@@ -161,7 +161,7 @@
         <h1>My Projects</h1>
 
         <div class="tabs">
-            <div class="tab-1" id="tab-1" onclick="chooseTab('tab-1')">1. DA Bubble</div>
+            <div class="tab-1 chosen" id="tab-1" onclick="chooseTab('tab-1')">1. DA Bubble</div>
             <div class="tab-2" id="tab-2" onclick="chooseTab('tab-2')">2. El Pollo Loco</div>
             <div class="tab-3" id="tab-3" onclick="chooseTab('tab-3')">3. Join</div>
             <div class="tab-4" id="tab-4" onclick="chooseTab('tab-4')">4. Ongoing Project</div>
@@ -169,7 +169,7 @@
 
         <div class="projects-body">
 
-            <div class="da-bubble">
+            <div id="da-bubble" class="da-bubble">
                 <div class="da-bubble-description">
                     <div>
                         <div class="da-bubble-dot">
@@ -191,9 +191,10 @@
                             
                         </div>
                         <p class="da-bubble-dot-p3">
-                            How do you keep your code clean and maintainable? Have you broken the<br>
-                            project down into reusable modules or components? Focus on documentation,<br> 
-                            aming files, variables, classes and testing.
+                            I maintained clean and scalable code by structuring the project into reusable<br> 
+                            components and modules. Clear naming conventions, consistent file organization,<br> 
+                            and thorough documentation ensured readability, while regular testing helped<br> 
+                            maintain reliability and long-term maintainability.
                         </p>
                     </div>
 
@@ -204,26 +205,262 @@
                             
                         </div>
                         <p class="da-bubble-dot-p3">
-                            How many people were in the team and what was your role? Describe your<br>
-                            tasks in 1-2 sentences, for example: login form, dashboard or chat functionality.<br>
-                            What technologies did you use?<br>
-                            It is nice to mention good teamwork and cooperation.
+                            Our team consisted of several developers, and I contributed primarily to the chat<br>  
+                            functionality and user interface. I worked with modern web technologies such as<br>  
+                            JavaScript and React, collaborating closely with teammates to ensure smooth<br>  
+                            integration and effective teamwork.
+                            
+                        </p>
+                    </div>
+
+                    
+                </div>
+
+                <div class="da-bubble-link-section">
+                    <div class="technologies">Technologies</div>
+
+                    <div class="technologies-icons">
+                        <img src="img/angular-small.svg">
+                        <img src="img/ts-small.svg">
+                        <img src="img/unknown.svg">
+                    </div>
+
+                    <div class="technologies-screenshot">
+                        <img src="img/da-bubble.png">
+                    </div>
+
+                    <div class="link-buttons">
+                        <a class="test-btn">Live Test</a>
+                        <a class="github-btn">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--  -->
+
+            <div id="el-pollo-loco" class="da-bubble d-none">
+                <div class="da-bubble-description">
+                    <div>
+                        <div class="da-bubble-dot">
+                            <img src="img/dot.svg">
+                            <p class="da-bubble-dot-p1">About the project</p>
+                            <p class="da-bubble-dot-p2">Duration: 5 weeks</p>
+                        </div>
+                        <p class="da-bubble-dot-p3">
+                            A simple Jump-and-Run game based on an object-oriented aproach.<br>
+                            Help Pepe to collect Coins and salsa-bottles to fight against the enemies<br>
+                        </p>
+                    </div>
+
+                    <div>
+                        <div class="da-bubble-dot">
+                            <img src="img/dot.svg">
+                            <p class="da-bubble-dot-p1">How I have organised my work process</p>
+                            
+                        </div>
+                        <p class="da-bubble-dot-p3">
+                            I structured the project into reusable modules and classes, ensuring clear<br> 
+                            separation of concerns. Clean code practices included consistent naming conventions,<br>
+                             modular file organization, inline documentation, and regular testing to maintain<br> 
+                             readability, scalability, and long-term maintainability.
+                        </p>
+                    </div>
+
+                    <div>
+                        <div class="da-bubble-dot">
+                            <img src="img/dot.svg">
+                            <p class="da-bubble-dot-p1">What I learned</p>
+                            
+                        </div>
+                        <p class="da-bubble-dot-p3">
+                            This project allowed me to deepen my understanding of object-oriented<br>  
+                            programming in JavaScript, especially working with classes and inheritance.<br>
+                            As a solo project, it strengthened my ability to independently structure code,<br> 
+                            solve problems, and continuously improve my development workflow.
+                            
+                            
+                            
+                        </p>
+                    </div>
+
+                    
+                </div>
+
+                <div class="da-bubble-link-section">
+                    <div class="technologies">Technologies</div>
+
+                    <div class="technologies-icons">
+                        <img src="img/html-small.svg">
+                        <img src="img/js-small.svg">
+                        <img src="img/css-small.svg">
+                    </div>
+
+                    <div class="technologies-screenshot">
+                        <img src="img/startscreen_epl.png">
+                    </div>
+
+                    <div class="link-buttons">
+                        <a class="test-btn">Live Test</a>
+                        <a href="https://github.com/mussa-e/El-Pollo-Loco" class="github-btn" target="_blank" rel="noopener noreferrer">
+                            GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--  -->
+
+            <div id="join" class="da-bubble d-none">
+                <div class="da-bubble-description">
+                    <div>
+                        <div class="da-bubble-dot">
+                            <img src="img/dot.svg">
+                            <p class="da-bubble-dot-p1">About the project</p>
+                            <p class="da-bubble-dot-p2">Duration: 2 months</p>
+                        </div>
+                        <p class="da-bubble-dot-p3">
+                            Task manager inspired by the Kanban System. Create and organize tasks<br>
+                            using drag and drop functions, assign users and categories.<br>
+                        </p>
+                    </div>
+
+                    <div>
+                        <div class="da-bubble-dot">
+                            <img src="img/dot.svg">
+                            <p class="da-bubble-dot-p1">How I have organised my work process</p>
+                            
+                        </div>
+                        <p class="da-bubble-dot-p3">
+                            I maintained clean and scalable code by structuring the project into reusable<br> 
+                            components and modules. Clear naming conventions, consistent documentation, and<br> 
+                            regular testing ensured maintainability, readability, and efficient collaboration<br>
+                            throughout the development process.
+                        </p>
+                    </div>
+
+                    <div>
+                        <div class="da-bubble-dot">
+                            <img src="img/dot.svg">
+                            <p class="da-bubble-dot-p1">My group work experience</p>
+                            
+                        </div>
+                        <p class="da-bubble-dot-p3">
+                            Our team consisted of four members, where I was responsible for my own feature<br> 
+                            development while also supporting others with questions and challenges. I actively<br>
+                            contributed to a collaborative, well-coordinated workflow, fostering strong teamwork<br>
+                            and effective communication.
+                        </p>
+                    </div>
+
+                    
+                </div>
+
+                <div class="da-bubble-link-section">
+                    <div class="technologies">Technologies</div>
+
+                    <div class="technologies-icons">
+                        <img src="img/html-small.svg">
+                        <img src="img/js-small.svg">
+                        <img src="img/css-small.svg">
+                    </div>
+
+                    <div class="technologies-screenshot">
+                        <img src="img/screenshot-join.png">
+                    </div>
+
+                    <div class="link-buttons">
+                        <a class="test-btn">Live Test</a>
+                        <a class="github-btn">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--  -->
+
+            <div id="ongoing-project" class="da-bubble d-none">
+                <div class="da-bubble-description">
+                    <div>
+                        <div class="da-bubble-dot">
+                            <img src="img/dot.svg">
+                            <p class="da-bubble-dot-p1">About the project</p>
+                            
+                        </div>
+                        <p class="da-bubble-dot-p3">
+                            What are you currently working on and what features are you implementing?<br>
+                            What is the key to success in your projects? You can mention good planning,<br>
+                            codequalitiy and execution.<br>
+                            <br>
+                            Show a desire to learn new technologies and continually improve your skills.
                         </p>
                     </div>
 
                     
 
                     
+
+                    
                 </div>
 
-                <div class="da-bubble-link">
+                <div class="da-bubble-link-section">
+                    <div class="technologies">Technologies</div>
 
+                    <div class="technologies-icons">
+                        <img src="img/html-small.svg">
+                        <img src="img/js-small.svg">
+                        <img src="img/css-small.svg">
+                    </div>
+
+                    <div class="technologies-screenshot">
+                        <img src="img/screenshot-comming-soon.png">
+                    </div>
+
+                    <div class="link-buttons">
+                        <a class="test-btn">Live Test</a>
+                        <a class="github-btn">GitHub</a>
+                    </div>
                 </div>
             </div>
+
+
 
         </div>
 
     </section>
     
+
+    <section class="quote-section">
+
+        <h2>Need a teamplayer? Here`s what my colleagues say about me</h2>
+
+        <div class="quotes-wrapper">
+
+            <div class="quotes">
+                <p class="quotes-p1">Name Surname</p>
+                <p class="quotes-p2">Project <span>projectname</span></p>
+                <p class="quotes-p3">...quote...</p>
+                <a class="quotes-link">Linked In Profile</a>
+            </div>
+
+            <div class="quotes">
+                <p class="quotes-p1">Name Surname</p>
+                <p class="quotes-p2">Project <span>projectname</span></p>
+                <p class="quotes-p3">...quote...</p>
+                <a class="quotes-link">Linked In Profile</a>
+            </div>
+
+            <div class="quotes">
+                <p class="quotes-p1">Name Surname</p>
+                <p class="quotes-p2">Project <span>projectname</span></p>
+                <p class="quotes-p3">...quote...</p>
+                <a class="quotes-link">Linked In Profile</a>
+            </div>
+            
+        </div>
+
+    </section>
+
+
+
+
+
 </body>
 </html>

@@ -20,6 +20,10 @@ body{
     background-color: #262E34;
 }
 
+.d-none{
+    display: none !important;
+}
+
 .top{
     display: flex;
     height: 100vh;
@@ -155,15 +159,13 @@ body{
 }
 
 .bar{
-    width: 1440px;
+    max-width: 1440px;
     height: 104px;
     top: 746px;
     gap: 196px;
     opacity: 1;
     padding-top: 16px;
-    padding-right: 109px;
     padding-bottom: 16px;
-    padding-left: 109px;
     background-color: #89BCD9;
     display: flex;
     justify-content: space-between;
@@ -174,6 +176,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    margin-left: 90px;
 }
 .bar-logo-wrapper:hover{
     cursor: pointer;
@@ -241,6 +244,7 @@ body{
 .bar-language{
     display: flex;
     align-items: center;
+    margin-right: 90px;
 }
 .bar-language:hover{
     cursor: pointer;
@@ -370,8 +374,8 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background: url("img/ellipse.svg") no-repeat; */
-    width: 380px;
+    width: 400px;
+    height: 400px;
     transition: transform 0.3s ease;
 
     position: relative;
@@ -382,7 +386,6 @@ body{
     inset: 0;
     background: url("img/ellipse.svg") no-repeat;
     background-size: contain;
-
     transition: transform 0.5s ease;
 }
 
@@ -455,6 +458,7 @@ body{
     color: #89BCD9;
     padding-left: 32px;
     gap: 48px;
+    justify-content: center;
 }
 
 .tab-1, .tab-2, .tab-3, .tab-4{
@@ -478,6 +482,13 @@ body{
     padding: 32px;
     font-family: Josefin Sans;
     display: flex;
+    justify-content: center;
+}
+
+.da-bubble{
+    display: flex;
+    gap: 32px;
+    height: 540px;
 }
 
 .da-bubble-description{
@@ -519,4 +530,190 @@ body{
     font-size: 18px;
     line-height: 120%;
     letter-spacing: 0%;
+    margin-top: 0;
+}
+
+.da-bubble-link-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.technologies{
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #F8F5EC;
+}
+
+.technologies-icons{
+    gap: 24px;
+    display: flex;
+}
+
+.technologies-screenshot img{
+    width: 450px;
+    height: 300px;
+    border-radius: 30px;
+}
+
+.link-buttons{
+    display: flex;
+    gap: 32px;
+}
+
+.test-btn{
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    background-color: #89BCD9;
+    border-radius: 30px;
+    padding: 16px;
+    min-width: 130px;
+    color: #262E34;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.github-btn{
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    background-color: #2D3840;
+    border-radius: 30px;
+    padding: 16px;
+    min-width: 130px;
+    color: #89BCD9;
+    border: 2px solid #89BCD9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.test-btn:hover{
+    background-color: #F8F5EC;
+    cursor: default;
+}
+
+.github-btn:hover{
+    background-color: #343e46;
+    cursor: default;
+}
+
+.quote-section{
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+}
+
+.quote-section h2{
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #89BCD9;
+    margin: 80px;
+}
+
+.quotes-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.quotes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: url("img/ellipse.svg") no-repeat; */
+    width: 400px;
+    height: 400px;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+.quotes::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("img/ellipse.svg") no-repeat;
+    background-size: contain;
+    transition: transform 0.5s ease;
+}
+
+.quotes:hover::before {
+    transform: rotate(40deg);
+    filter: brightness(1.5);
+}
+
+
+
+
+
+.quotes-p1{
+    font-family: Josefin Sans;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 26px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #F8F5EC;
+}
+
+.quotes-p2{
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #F8F5EC;
+}
+
+.quotes-p2 span{
+    color: #89BCD9;
+}
+
+.quotes-p3{
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #F8F5EC;
+}
+
+.quotes-link{
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0%;
+    color: #89BCD9;
+    text-align: center;
 }
