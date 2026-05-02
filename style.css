@@ -717,3 +717,280 @@ body{
     color: #89BCD9;
     text-align: center;
 }
+
+.contact-me{
+    margin-top: 100px;
+    max-width: 1440px;
+}
+
+.contact-me-up-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-me-up-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-me-up-left h1{
+    font-family: Anta;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 54px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #89BCD9;
+    text-align: center;
+}
+
+.contact-me-prosa-wrapper{
+    display: flex;
+    gap: 48px;
+}
+
+.contact-me-prosa{
+
+}
+
+.contact-me-prosa p{
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: justify;
+    color: #F8F5EC;
+}
+
+.contact-me-contact{
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #F8F5EC;
+    margin-top: 16px;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.contact-me-mail{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.contact-me-phone{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.arrow-up-wrapper{
+    position: relative;
+    left: 160px;
+}
+
+.arrow-up-wrapper img{
+    border-radius: 50px;
+}
+.arrow-up-wrapper img:hover{
+    cursor: pointer;
+    background-color: #343e46;
+}
+
+.formular{
+    display: flex;
+    margin: 100px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.formular-data{
+    display: flex;
+    width: 950px;
+    justify-content: space-between;
+}
+
+.formular-name-wrapper{
+
+}
+
+.formular-name{
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #89BCD9;
+    padding: 0 0 8px 24px;
+}
+
+.formular-type-name{
+    border-radius: 30px;
+    border: 1px solid #89BCD9;
+    width: 450px;
+    height: 60px;
+}
+
+.formular-mail-wrapper{
+
+}
+
+.formular-mail{
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #89BCD9;
+    padding: 0 0 8px 24px;
+}
+
+.formular-type-mail{
+    border-radius: 30px;
+    border: 1px solid #89BCD9;
+    width: 450px;
+    height: 60px;
+}
+
+.formular-msg-wrapper{
+    width: 950px;
+}
+
+.formular-msg{
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #89BCD9;
+    padding: 0 0 8px 24px;
+}
+
+.formular-type-msg{
+    border-radius: 30px;
+    border: 1px solid #89BCD9;
+    height: 150px;
+}
+
+.formular-agree{
+    display: flex;
+    width: 950px;
+    gap: 8px;
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #F8F5EC;
+}
+
+.privacy{
+    color: #89BCD9;
+}
+.privacy:hover{
+    cursor: pointer;
+}
+
+.formular-send-wrapper{
+    width: 950px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.formular-send{
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #89BCD9;
+    border-radius: 30px;
+    border: 1px solid #89BCD9;
+    height: 50px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formular-send:hover{
+    background-color: #343e46;
+    cursor: default;
+}
+
+footer{
+    display: flex;
+    max-width: 1440px;
+    height: 214px;
+    justify-content: space-between;
+    background-color: #89BCD9;
+    align-items: center;
+}
+
+.legal-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-left: 90px;
+    gap: 16px;
+}
+
+.legal{
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #262E34;
+}
+
+.legal a{
+    text-decoration: none;
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #262E34;
+}
+.legal a:hover{
+    cursor: pointer;
+    color: #F8F5EC;
+}
+
+
+.legal-copy{
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #262E34;
+}
+
+.footer-logo-wrapper{
+    margin-left: unset;
+}
+
+.footer-icons{
+    margin-right: 90px;
+    gap: 16px;
+    display: flex;
+}
+
+.footer-icons img{
+
+}
