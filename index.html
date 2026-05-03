@@ -12,7 +12,7 @@
 
 </head>
 <body>
-    <section class="top">
+    <section class="top" id="top">
         
         <div class="top-left">
             <img class="bg-shape" src="img/bg-shape.svg">
@@ -40,9 +40,9 @@
                     <p class="top-right-middle-property">Frontend Developer</p>
                 </div>
 
-                <div class="arrow-down">
+                <a class="arrow-down" href="#why-me-section">
                     <img src="img/arrow-down.svg">
-                </div>
+                </a>
             
         </div>
 
@@ -64,7 +64,7 @@
 
     <section class="bar">
 
-        <div class="bar-logo-wrapper">
+        <a class="bar-logo-wrapper" href="#top">
             <div class="bar-logo">
                 <img src="img/logo-icon-dark.svg">
             </div>
@@ -72,13 +72,13 @@
                 <p class="bar-under-logo-name">M.Faragi</p>
                 <p class="bar-under-logo-property">developer</p>
             </div>
-        </div>
+        </a>
 
         <div class="bar-middle">
-            <p>Why me</p>
-            <p>Skills</p>
-            <p>Projects</p>
-            <p>Contact</p>
+            <a href="#why-me-section" id="bar-why-me" onclick="chooseBar('bar-why-me')">Why me</a>
+            <a href="#skills-section" id="bar-skills" onclick="chooseBar('bar-skills')">Skills</a>
+            <a href="#projects" id="bar-projects" onclick="chooseBar('bar-projects')">Projects</a>
+            <a href="#contact-me" id="bar-contact-me" onclick="chooseBar('bar-contact-me')">Contact</a>
         </div>
 
         <div class="bar-language">
@@ -87,7 +87,7 @@
         
     </section>
 
-    <section class="why-me-section">
+    <section class="why-me-section" id="why-me-section">
 
         <h1>Why me</h1>
 
@@ -108,15 +108,15 @@
                     </p>
                 </div>
 
-                <div class="why-me-description-talk">
+                <a class="why-me-description-talk" href="#contact-me">
                     <p>Let`s talk</p>
-                </div>
+                </a>
             </div>
         </div>
 
     </section>
 
-    <section class="skills-section">
+    <section class="skills-section" id="skills-section">
         <h1>Skills</h1>
 
         <div class="skills-body">
@@ -157,7 +157,7 @@
         </div>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
         <h1>My Projects</h1>
 
         <div class="tabs">
@@ -427,7 +427,7 @@
     </section>
     
 
-    <section class="quote-section">
+    <section class="quote-section" id="quote-section">
 
         <h2>Need a teamplayer? Here`s what my colleagues say about me</h2>
 
@@ -459,7 +459,7 @@
     </section>
 
 
-    <section class="contact-me">
+    <section class="contact-me" id="contact-me">
 
         <div class="contact-me-up-wrapper">
             <div class="contact-me-up-left">
@@ -480,9 +480,9 @@
                 </div>
             </div>
 
-            <div class="arrow-up-wrapper">
+            <a class="arrow-up-wrapper" href="#top">
                 <img src="img/arrow-up.svg">
-            </div>
+            </a>
 
         </div>
 
@@ -508,7 +508,7 @@
             <div class="formular-agree">
                 <img src="img/check-box.svg">
                 <p>I've read the
-                    <a class="privacy">privacy policy</a> and agree to the processing of my data as outlined.
+                    <a class="privacy" href="privacy-policy.html">privacy policy</a> and agree to the processing of my data as outlined.
                 </p>
             </div>
 

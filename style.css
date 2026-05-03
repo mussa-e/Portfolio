@@ -12,6 +12,9 @@
   font-style: normal;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     font-family: Arial, sans-serif;
@@ -22,6 +25,14 @@ body{
 
 .d-none{
     display: none !important;
+}
+
+.bar-chosen{
+    color: #F8F5EC !important;
+    background-image: url("img/ellipse-24.svg");
+    background-size: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .top{
@@ -169,6 +180,11 @@ body{
     background-color: #89BCD9;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .bar-logo-wrapper{
@@ -177,6 +193,7 @@ body{
     align-items: center;
     justify-content: flex-end;
     margin-left: 90px;
+    text-decoration: none;
 }
 .bar-logo-wrapper:hover{
     cursor: pointer;
@@ -231,12 +248,16 @@ body{
     width: 700px;
 }
 
-.bar-middle p{
+.bar-middle a{
     color: #262E34;
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 60px;
+    min-width: 100px;
 }
-.bar-middle p:hover{
+.bar-middle a:hover{
     cursor: pointer;
     color: white;
 }
@@ -319,7 +340,7 @@ body{
 .why-me-description-talk {
     display: flex;
     justify-content: end;
-    
+    text-decoration: none;
 }
 
 .why-me-description-talk p{
@@ -897,6 +918,7 @@ body{
 
 .privacy{
     color: #89BCD9;
+    text-decoration: none;
 }
 .privacy:hover{
     cursor: pointer;
@@ -983,6 +1005,9 @@ footer{
 
 .footer-logo-wrapper{
     margin-left: unset;
+}
+.footer-logo-wrapper:hover{
+    cursor: default;
 }
 
 .footer-icons{

@@ -1,5 +1,5 @@
 
-let TabIds = [
+let tabIds = [
     "tab-1",
     "tab-2",
     "tab-3",
@@ -7,7 +7,7 @@ let TabIds = [
 ];
 
 
-let TabBodies = [
+let tabBodies = [
     "da-bubble",
     "el-pollo-loco",
     "join",
@@ -15,9 +15,17 @@ let TabBodies = [
 ];
 
 
+let barChoice = [
+    "bar-why-me",
+    "bar-skills",
+    "bar-projects",
+    "bar-contact-me",
+];
+
+
 function chooseTab(id){
 
-    TabIds.forEach(element => {
+    tabIds.forEach(element => {
         document.getElementById(element).classList.remove("chosen");
     });
 
@@ -30,7 +38,7 @@ function chooseTab(id){
 
 function handleTab(id){
 
-    TabBodies.forEach(element => {
+    tabBodies.forEach(element => {
         document.getElementById(element).classList.add("d-none");
     });
 
@@ -49,4 +57,15 @@ function handleTab(id){
     if(id == "tab-4"){
         document.getElementById("ongoing-project").classList.remove("d-none");
     }
+}
+
+
+function chooseBar(id){
+
+    barChoice.forEach(element => {
+        document.getElementById(element).classList.remove("bar-chosen");
+    });
+
+    let chosenBar = document.getElementById(id);
+    chosenBar.classList.add("bar-chosen");
 }

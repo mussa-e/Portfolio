@@ -9,6 +9,7 @@
     background-color: #89BCD9;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header-logo-wrapper{
@@ -90,52 +91,73 @@
     cursor: pointer;
 }
 
+.blue{
+    color: #89BCD9;
+}
 
-        h1 {
-            color: #8ecae6;
-            font-size: 48px;
-            margin-bottom: 30px;
-        }
+h1 {
+    color: #89BCD9;
+    font-size: 48px;
+    margin-bottom: 30px;
+    margin: 100px 0;
+}        
 
-        h2 {
-            color: #8ecae6;
-            font-size: 20px;
-            margin-top: 30px;
-        }
+h2{
+    font-family: Josefin Sans;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #89BCD9;
+    margin: 0;
+}       
 
-        p {
-            margin: 10px 0;
-        }
+.privacy-content p{
+    font-family: Josefin Sans;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 19px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #F8F5EC;
+    margin-top: 0;
+}
 
-        ul {
-            margin: 10px 0 20px 20px;
-        }
+ul {
+    margin: 10px 0 20px 20px;
+    font-family: Josefin Sans;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 19px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #F8F5EC;
+}
 
-        a {
-            color: #8ecae6;
-            text-decoration: none;
-        }
+a {
+    color: #89BCD9;
+    text-decoration: none;
+}
 
-        .legal-body {
-            max-width: 1440px;
-            color: #F8F5EC;
-            display: flex;
-            justify-content: center;
-            font-family: Josefin Sans;
-            font-weight: 700;
-            font-style: Bold;
-            font-size: 19px;
-            line-height: 120%;
-            letter-spacing: 0%;
+.privacy-body {
+    max-width: 1440px;
+    color: #F8F5EC;
+    display: flex;
+    justify-content: center;
+    font-family: Josefin Sans;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 19px;
+    line-height: 120%;
+    letter-spacing: 0%;
+}
 
-        }
+.privacy-content{
+    width: 900px;
+    margin-bottom: 80px;
+}
 
-        .legal-content{
-            width: 900px;
-            margin-top: 80px;
-            margin-bottom: 80px;
-        }
-
-        .date {
-            margin-top: 30px;
-        }
+.date {
+    margin-top: 30px;
+}
