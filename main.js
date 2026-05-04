@@ -22,6 +22,11 @@ let barChoice = [
     "bar-contact-me",
 ];
 
+let languages = [
+    "lang-de",
+    "lang-en",
+];
+
 
 function chooseTab(id){
 
@@ -68,4 +73,28 @@ function chooseBar(id){
 
     let chosenBar = document.getElementById(id);
     chosenBar.classList.add("bar-chosen");
+}
+
+
+function chooseLanguage(id){
+
+    let deParent = document.getElementById("lang-de-parent");
+    let enParent = document.getElementById("lang-en-parent");
+    let de = document.getElementById("lang-de");
+    let en = document.getElementById("lang-en");
+
+    deParent.classList.remove("chosen-parent");
+    enParent.classList.remove("chosen-parent");
+    de.classList.remove("chosen-de");
+    en.classList.remove("chosen-en");
+
+    if(id == "lang-de"){
+        de.classList.add("chosen-de");
+        deParent.classList.add("chosen-parent");
+    } else 
+
+    if(id == "lang-en"){
+        en.classList.add("chosen-en");
+        enParent.classList.add("chosen-parent");
+    }
 }

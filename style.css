@@ -266,10 +266,58 @@ body{
     display: flex;
     align-items: center;
     margin-right: 90px;
+    gap: 4px;
 }
 .bar-language:hover{
     cursor: pointer;
 }
+
+.lang {
+     filter: brightness(0) saturate(100%) invert(15%) sepia(10%) saturate(500%) hue-rotate(170deg);
+}
+
+.lang.de:hover {
+  filter: brightness(8);
+}
+
+.lang.en:hover {
+  filter: brightness(1.2);
+}
+
+.chosen-de{
+    filter: brightness(8);
+    
+}
+
+.chosen-en{
+    filter: brightness(1.2);
+}
+
+.chosen-parent{
+    background-image: url("img/ellipse-24.svg");
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.lang-de-parent{
+    justify-content: center;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+}
+
+.lang-en-parent{
+    justify-content: center;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+}
+
+
+
 
 .why-me-section{
     display: flex;
@@ -832,15 +880,25 @@ body{
     gap: 24px;
 }
 
+.formular input{
+    background-color: #262E34;
+}
+.formular input:hover{
+    cursor: pointer;
+}
+.formular input:focus{
+    background-color: #2D3840;
+    border: 1px solid #89BCD9;
+    outline: none;
+}
+
 .formular-data{
     display: flex;
     width: 950px;
     justify-content: space-between;
 }
 
-.formular-name-wrapper{
 
-}
 
 .formular-name{
     font-family: Josefin Sans;
@@ -860,9 +918,7 @@ body{
     height: 60px;
 }
 
-.formular-mail-wrapper{
 
-}
 
 .formular-mail{
     font-family: Josefin Sans;
@@ -901,6 +957,7 @@ body{
     border-radius: 30px;
     border: 1px solid #89BCD9;
     height: 150px;
+    width: 100%;
 }
 
 .formular-agree{

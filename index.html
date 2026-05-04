@@ -82,7 +82,13 @@
         </div>
 
         <div class="bar-language">
-            <img src="img/change-language.svg">
+            <div class="lang-de-parent" id="lang-de-parent">
+                <img onclick="chooseLanguage('lang-de')" id="lang-de" class="lang de" src="img/DE.svg">
+            </div>
+
+            <div class="lang-en-parent chosen-parent" id="lang-en-parent">
+                <img onclick="chooseLanguage('lang-en')" id="lang-en" class="lang en chosen-en" src="img/EN.svg">
+            </div>
         </div>
         
     </section>
@@ -486,23 +492,25 @@
 
         </div>
 
+        
+
         <div class="formular">
 
             <div class="formular-data">
                 <div class="formular-name-wrapper">
                     <div class="formular-name">Your name</div>
-                    <div class="formular-type-name"></div>
+                    <input type="text" class="formular-type-name">
                 </div>
                     
                 <div class="formular-mail-wrapper">
                     <div class="formular-mail">Your Email</div>
-                    <div class="formular-type-mail"></div>
+                    <input type="text" class="formular-type-mail">
                 </div>
             </div>
 
             <div class="formular-msg-wrapper">
                 <div class="formular-msg">Your Message</div>
-                <div class="formular-type-msg"></div>
+                <input type="text" class="formular-type-msg">
             </div>
 
             <div class="formular-agree">
