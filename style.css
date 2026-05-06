@@ -161,6 +161,16 @@ body{
     border-radius: 50px;
 }
 
+.top-links-img-wrapper img {
+    transition: filter 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.top-links-img-wrapper img:hover {
+    filter: brightness(2);
+    /* transform: scale(1.05); */
+}
+
 .arrow-down{
     border-radius: 50px;
 }
@@ -878,6 +888,7 @@ body{
     flex-direction: column;
     align-items: center;
     gap: 24px;
+    font-family: Josefin Sans;
 }
 
 .formular input{
@@ -898,6 +909,10 @@ body{
     justify-content: space-between;
 }
 
+.formular-name-wrapper, .formular-mail-wrapper{
+    display: flex;
+    flex-direction: column;
+}
 
 
 .formular-name{
@@ -916,6 +931,10 @@ body{
     border: 1px solid #89BCD9;
     width: 450px;
     height: 60px;
+    color: #F8F5EC;
+    font-size: 18px;
+    font-family: Josefin Sans;
+    padding: 4px 0 0 10px;
 }
 
 
@@ -936,6 +955,10 @@ body{
     border: 1px solid #89BCD9;
     width: 450px;
     height: 60px;
+    color: #F8F5EC;
+    font-size: 18px;
+    font-family: Josefin Sans;
+    padding: 4px 0 0 10px;
 }
 
 .formular-msg-wrapper{
@@ -958,6 +981,14 @@ body{
     border: 1px solid #89BCD9;
     height: 150px;
     width: 100%;
+    color: #F8F5EC;
+    font-size: 18px;
+    font-family: Josefin Sans;
+    resize: none;
+    background-color: #262E34;
+    padding: 4px 10px;
+    box-sizing: border-box;
+    cursor: pointer;
 }
 
 .formular-agree{
@@ -971,6 +1002,14 @@ body{
     line-height: 120%;
     letter-spacing: 0%;
     color: #F8F5EC;
+    align-items: center;
+}
+
+.formular-agree img{
+    width: 24px;
+}
+.formular-agree img:hover{
+    cursor: pointer;
 }
 
 .privacy{
@@ -1002,6 +1041,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #262E34;
 }
 .formular-send:hover{
     background-color: #343e46;
@@ -1069,10 +1109,14 @@ footer{
 
 .footer-icons{
     margin-right: 90px;
-    gap: 16px;
+    gap: 8px;
     display: flex;
 }
 
 .footer-icons img{
-
+    transition: filter 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+.footer-icons img:hover {
+    filter: brightness(10);
 }

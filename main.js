@@ -27,6 +27,8 @@ let languages = [
     "lang-en",
 ];
 
+let agreedTerms = false;
+
 
 function chooseTab(id){
 
@@ -98,3 +100,18 @@ function chooseLanguage(id){
         enParent.classList.add("chosen-parent");
     }
 }
+
+
+function toggleAgree() {
+
+    let checkBox = document.getElementById("agree-img");
+
+    if (checkBox.src.includes("check-box.svg")) {
+        checkBox.src = "img/haekchen4.png";
+        agreedTerms = true;
+    } else {
+        checkBox.src = "img/check-box.svg";
+        agreedTerms = false;
+    }
+}
+

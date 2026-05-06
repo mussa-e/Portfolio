@@ -47,17 +47,17 @@
         </div>
 
             <div class="top-links">
-                        <div class="top-links-img-wrapper">
+                        <a href="#contact-me" class="top-links-img-wrapper">
                             <img src="img/email-button.svg">
-                        </div>
+                        </a>
 
-                        <div class="top-links-img-wrapper">
+                        <a href="https://github.com/mussa-e" target="_blank" class="top-links-img-wrapper">
                             <img src="img/github-button.svg">
-                        </div>
+                        </a>
 
-                        <div class="top-links-img-wrapper">
+                        <a class="top-links-img-wrapper">
                             <img src="img/linkedin-button.svg">
-                        </div>
+                        </a>
             </div>
 
     </section>
@@ -494,37 +494,37 @@
 
         
 
-        <div class="formular">
+        <form class="formular">
 
             <div class="formular-data">
                 <div class="formular-name-wrapper">
-                    <div class="formular-name">Your name</div>
-                    <input type="text" class="formular-type-name">
+                    <label for="name" class="formular-name">Your name</label>
+                    <input type="text" id="name" name="name" class="formular-type-name" maxlength="30" required>
                 </div>
                     
                 <div class="formular-mail-wrapper">
-                    <div class="formular-mail">Your Email</div>
-                    <input type="text" class="formular-type-mail">
+                    <label for="email" class="formular-mail">Your Email</label>
+                    <input type="email" id="email" name="email" class="formular-type-mail" maxlength="30" required>
                 </div>
             </div>
 
             <div class="formular-msg-wrapper">
-                <div class="formular-msg">Your Message</div>
-                <input type="text" class="formular-type-msg">
+                <label for="message" class="formular-msg">Your Message</label>
+                <textarea class="formular-type-msg" rows="5"  maxlength="510" required></textarea>
             </div>
 
             <div class="formular-agree">
-                <img src="img/check-box.svg">
+                <img id="agree-img" src="img/check-box.svg" onclick="toggleAgree()">
                 <p>I've read the
                     <a class="privacy" href="privacy-policy.html">privacy policy</a> and agree to the processing of my data as outlined.
                 </p>
             </div>
 
             <div class="formular-send-wrapper">
-                <div class="formular-send">Send</div>
+                <button type="submit" class="formular-send">Send</div>
             </div>
             
-        </div>
+        </form>
 
     </section>
 
@@ -547,9 +547,9 @@
         </div>
 
         <div class="footer-icons">
-            <img src="img/github-footer.svg">
-            <img src="img/email-footer.svg">
-            <img src="img/linkedin-footer.svg">
+            <a href="https://github.com/mussa-e" target="_blank"><img src="img/github-footer.svg"></a>
+            <a href="#contact-me"><img src="img/email-footer.svg"></a>
+            <a href=""><img src="img/linkedin-footer.svg"></a>
         </div>
 
     </footer>
