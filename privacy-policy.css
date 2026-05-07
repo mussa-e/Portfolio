@@ -95,11 +95,17 @@
     color: #89BCD9;
 }
 
+.arrow-back{
+    height: 40px;
+    display: flex;
+    margin-top: 40px;
+}
+
 h1 {
     color: #89BCD9;
     font-size: 48px;
     margin-bottom: 30px;
-    margin: 100px 0;
+    margin: 70px 0;
 }        
 
 h2{

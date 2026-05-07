@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="img/Logo icon.svg">
     <link rel="stylesheet" href="privacy-policy.css">
+
+    <script src="main.js"></script>
     
     
 </head>
@@ -27,21 +29,30 @@
         </div>
         </a>
 
-        <div class="header-middle">
-            <p>Why me</p>
-            <p>Skills</p>
-            <p>Projects</p>
-            <p>Contact</p>
+        <div class="bar-middle">
+            <a href="index.html#why-me-section" id="bar-why-me" onclick="chooseBar('bar-why-me')">Why me</a>
+            <a href="index.html#skills-section" id="bar-skills" onclick="chooseBar('bar-skills')">Skills</a>
+            <a href="index.html#projects" id="bar-projects" onclick="chooseBar('bar-projects')">Projects</a>
+            <a href="index.html#contact-me" id="bar-contact-me" onclick="chooseBar('bar-contact-me')">Contact</a>
         </div>
 
-        <div class="header-language">
-            <img src="img/change-language.svg">
+        <div class="bar-language">
+            <div class="lang-de-parent" id="lang-de-parent">
+                <img onclick="chooseLanguage('lang-de')" id="lang-de" class="lang de" src="img/DE.svg">
+            </div>
+
+            <div class="lang-en-parent chosen-parent" id="lang-en-parent">
+                <img onclick="chooseLanguage('lang-en')" id="lang-en" class="lang en chosen-en" src="img/EN.svg">
+            </div>
         </div>
         
     </section>
     
     <div class="privacy-body">
         <div class="privacy-content">
+
+            <a class="arrow-back" href="index.html"><img src="img/arrow_back.svg"></a>
+
             <h1>Privacy Policy</h1>
 
             <h2>1. Data Controller</h2>
@@ -119,9 +130,9 @@
         </div>
 
         <div class="footer-icons">
-            <img src="img/github-footer.svg">
-            <img src="img/email-footer.svg">
-            <img src="img/linkedin-footer.svg">
+            <a href="https://github.com/mussa-e" target="_blank"><img src="img/github-footer.svg"></a>
+            <a href="index.html#contact-me"><img src="img/email-footer.svg"></a>
+            <a><img src="img/linkedin-footer.svg"></a>
         </div>
 
     </footer>
