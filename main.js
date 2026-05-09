@@ -93,11 +93,13 @@ function chooseLanguage(id){
     if(id == "lang-de"){
         de.classList.add("chosen-de");
         deParent.classList.add("chosen-parent");
+        setLanguage("de");
     } else 
 
     if(id == "lang-en"){
         en.classList.add("chosen-en");
         enParent.classList.add("chosen-parent");
+        setLanguage("en");
     }
 }
 

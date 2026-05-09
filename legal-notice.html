@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" href="img/Logo icon.svg">
 
     <script src="main.js"></script>
+    <script src="translate.js"></script>
     
 </head>
 <body>
@@ -22,16 +23,16 @@
             </div>
             <div class="header-under-logo">
                 <p class="header-under-logo-name">M.Faragi</p>
-                <p class="header-under-logo-property">developer</p>
+                <p data-i18n="logo-role" class="header-under-logo-property">developer</p>
             </div>
         </div>
         </a>
 
         <div class="bar-middle">
-            <a href="index.html#why-me-section" id="bar-why-me" onclick="chooseBar('bar-why-me')">Why me</a>
-            <a href="index.html#skills-section" id="bar-skills" onclick="chooseBar('bar-skills')">Skills</a>
-            <a href="index.html#projects" id="bar-projects" onclick="chooseBar('bar-projects')">Projects</a>
-            <a href="index.html#contact-me" id="bar-contact-me" onclick="chooseBar('bar-contact-me')">Contact</a>
+            <a data-i18n="bar-why-me" href="index.html#why-me-section" id="bar-why-me" onclick="chooseBar('bar-why-me')">Why me</a>
+            <a data-i18n="bar-skills" href="index.html#skills-section" id="bar-skills" onclick="chooseBar('bar-skills')">Skills</a>
+            <a data-i18n="bar-projects" href="index.html#projects" id="bar-projects" onclick="chooseBar('bar-projects')">Projects</a>
+            <a data-i18n="bar-contacts" href="index.html#contact-me" id="bar-contact-me" onclick="chooseBar('bar-contact-me')">Contact</a>
         </div>
 
         <div class="bar-language">
@@ -47,7 +48,7 @@
     </section>
     
     <div class="legal-body">
-        <div class="legal-content">
+        <div data-i18n="legalContent" class="legal-content">
 
             <a class="arrow-back" href="index.html"><img src="img/arrow_back.svg"></a>
 
@@ -125,7 +126,7 @@
     <footer>
 
         <div class="legal-wrapper">
-            <div class="legal"><a href="">Legal notice</a></div>
+            <div class="legal"><a data-i18n="legal" href="">Legal notice</a></div>
             <div class="legal-copy">&copy; Mussa Faragi 2026</div>
         </div>
 
@@ -135,7 +136,7 @@
             </div>
             <div class="bar-under-logo">
                 <p class="bar-under-logo-name">M.Faragi</p>
-                <p class="bar-under-logo-property">developer</p>
+                <p data-i18n="top-role" class="bar-under-logo-property">developer</p>
             </div>
         </div>
 

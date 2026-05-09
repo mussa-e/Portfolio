@@ -9,6 +9,7 @@
     <title>Portfolio</title>
 
     <script src="main.js"></script>
+    <script src="translate.js"></script>
 
 </head>
 <body>
@@ -30,14 +31,14 @@
                     </div>
                     <div class="top-right-under-logo">
                         <p class="top-right-under-logo-name">M.Faragi</p>
-                        <p class="top-right-under-logo-property">developer</p>
+                        <p data-i18n="logo-role" class="top-right-under-logo-property">developer</p>
                     </div>
                 </div>
 
 
                 <div class="top-right-middle">
                     <p class="top-right-middle-name">Mussa Faragi</p>
-                    <p class="top-right-middle-property">Frontend Developer</p>
+                    <p data-i18n="top-role" class="top-right-middle-property">Frontend Developer</p>
                 </div>
 
                 <a class="arrow-down" href="#why-me-section">
@@ -70,15 +71,15 @@
             </div>
             <div class="bar-under-logo">
                 <p class="bar-under-logo-name">M.Faragi</p>
-                <p class="bar-under-logo-property">developer</p>
+                <p data-i18n="logo-role" class="bar-under-logo-property">developer</p>
             </div>
         </a>
 
         <div class="bar-middle">
-            <a href="#why-me-section" id="bar-why-me" onclick="chooseBar('bar-why-me')">Why me</a>
-            <a href="#skills-section" id="bar-skills" onclick="chooseBar('bar-skills')">Skills</a>
-            <a href="#projects" id="bar-projects" onclick="chooseBar('bar-projects')">Projects</a>
-            <a href="#contact-me" id="bar-contact-me" onclick="chooseBar('bar-contact-me')">Contact</a>
+            <a data-i18n="bar-why-me" href="#why-me-section" id="bar-why-me" onclick="chooseBar('bar-why-me')">Why me</a>
+            <a data-i18n="bar-skills" href="#skills-section" id="bar-skills" onclick="chooseBar('bar-skills')">Skills</a>
+            <a data-i18n="bar-projects" href="#projects" id="bar-projects" onclick="chooseBar('bar-projects')">Projects</a>
+            <a data-i18n="bar-contacts" href="#contact-me" id="bar-contact-me" onclick="chooseBar('bar-contact-me')">Contact</a>
         </div>
 
         <div class="bar-language">
@@ -95,27 +96,28 @@
 
     <section class="why-me-section" id="why-me-section">
 
-        <h1>Why me</h1>
+        <h1 data-i18n="bar-why-me">Why me</h1>
 
         <div class="why-me-body">
             <div class="location">
                 <img src="img/location.svg">
-                <p class="location-p1">I am</p>
-                <p class="location-p2">located in Cologne..|</p>
+                <p data-i18n="why-me-location-p1" class="location-p1">I am</p>
+                <p data-i18n="why-me-location-p2" class="location-p2">located in Cologne..|</p>
             </div>
 
             <div class="why-me-description">
                 <div class="why-me-description-text">
-                    <p>Why are you passionate about coding?<br>
-                        You can include some key traits like: analytical<br>
-                        thinking, creativity, persistence and<br>  
-                        collaboration. A problem-solving mindset is<br>
-                        always nice to have.
+                    <p data-i18n="why-me-desc">I'm passionate about coding because it<br>
+                        combines analytical thinking, creativity,<br>
+                        and problem-solving. I enjoy building<br>
+                        solutions, learning through challenges,<br>
+                        staying persistent, and collaborating with<br>
+                        others to create meaningful and efficient projects.
                     </p>
                 </div>
 
                 <a class="why-me-description-talk" href="#contact-me">
-                    <p>Let`s talk</p>
+                    <p data-i18n="why-me-talk">Let`s talk</p>
                 </a>
             </div>
         </div>
@@ -123,7 +125,7 @@
     </section>
 
     <section class="skills-section" id="skills-section">
-        <h1>Skills</h1>
+        <h1 data-i18n="bar-skills">Skills</h1>
 
         <div class="skills-body">
             <div class="skills-body-left">
@@ -140,7 +142,7 @@
             </div>
 
             <div class="skills-body-right">
-                <p class="skills-body-right-p1">
+                <p data-i18n="skills-learning-1" class="skills-body-right-p1">
                     I am currently learning
                 </p>
 
@@ -151,11 +153,11 @@
                         <img src="img/vuejs.svg">
                     </div>
                     
-                    <p class="skills-body-right-p2">
-                        Show that you are motivated to<br>
-                        continually improve your skills,<br>
-                        implement innovative solutions and<br>
-                        stay abreast of new technologies.
+                    <p data-i18n="skills-learning-2" class="skills-body-right-p2">
+                        I'm motivated to learn emerging<br>
+                        technologies, refine my abilities,<br> 
+                        and develop innovative, future-oriented<br>
+                        solutions.
                     </p>
                 </div>
 
@@ -164,13 +166,13 @@
     </section>
 
     <section class="projects" id="projects">
-        <h1>My Projects</h1>
+        <h1 data-i18n="projects-h1">My Projects</h1>
 
         <div class="tabs">
             <div class="tab-1 chosen" id="tab-1" onclick="chooseTab('tab-1')">1. DA Bubble</div>
             <div class="tab-2" id="tab-2" onclick="chooseTab('tab-2')">2. El Pollo Loco</div>
             <div class="tab-3" id="tab-3" onclick="chooseTab('tab-3')">3. Join</div>
-            <div class="tab-4" id="tab-4" onclick="chooseTab('tab-4')">4. Ongoing Project</div>
+            <div data-i18n="projects-ongoing" class="tab-4" id="tab-4" onclick="chooseTab('tab-4')">4. Ongoing Project</div>
         </div>
 
         <div class="projects-body">
@@ -180,10 +182,10 @@
                     <div>
                         <div class="da-bubble-dot">
                             <img src="img/dot.svg">
-                            <p class="da-bubble-dot-p1">About the project</p>
-                            <p class="da-bubble-dot-p2">Duration: 3 weeks</p>
+                            <p data-i18n="about" class="da-bubble-dot-p1">About the project</p>
+                            <p data-i18n="da-duration" class="da-bubble-dot-p2">Duration: 3 weeks</p>
                         </div>
-                        <p class="da-bubble-dot-p3">
+                        <p data-i18n="da-text" class="da-bubble-dot-p3">
                             This App is a Slack Clone App.<br>
                             It revolutionizes team communication and collaboration with its intuitive<br>
                             interface, real-time messaging, and robust channel organization.
@@ -193,10 +195,10 @@
                     <div>
                         <div class="da-bubble-dot">
                             <img src="img/dot.svg">
-                            <p class="da-bubble-dot-p1">How I have organised my work process</p>
+                            <p data-i18n="how" class="da-bubble-dot-p1">How I have organised my work process</p>
                             
                         </div>
-                        <p class="da-bubble-dot-p3">
+                        <p data-i18n="da-how-text" class="da-bubble-dot-p3">
                             I maintained clean and scalable code by structuring the project into reusable<br> 
                             components and modules. Clear naming conventions, consistent file organization,<br> 
                             and thorough documentation ensured readability, while regular testing helped<br> 
@@ -207,10 +209,10 @@
                     <div>
                         <div class="da-bubble-dot">
                             <img src="img/dot.svg">
-                            <p class="da-bubble-dot-p1">My group work experience</p>
+                            <p data-i18n="group" class="da-bubble-dot-p1">My group work experience</p>
                             
                         </div>
-                        <p class="da-bubble-dot-p3">
+                        <p data-i18n="da-group-text" class="da-bubble-dot-p3">
                             Our team consisted of several developers, and I contributed primarily to the chat<br>  
                             functionality and user interface. I worked with modern web technologies such as<br>  
                             JavaScript and React, collaborating closely with teammates to ensure smooth<br>  
@@ -223,7 +225,7 @@
                 </div>
 
                 <div class="da-bubble-link-section">
-                    <div class="technologies">Technologies</div>
+                    <div data-i18n="techs" class="technologies">Technologies</div>
 
                     <div class="technologies-icons">
                         <img src="img/angular-small.svg">
@@ -249,10 +251,10 @@
                     <div>
                         <div class="da-bubble-dot">
                             <img src="img/dot.svg">
-                            <p class="da-bubble-dot-p1">About the project</p>
-                            <p class="da-bubble-dot-p2">Duration: 5 weeks</p>
+                            <p data-i18n="about" class="da-bubble-dot-p1">About the project</p>
+                            <p data-i18n="epl-duration" class="da-bubble-dot-p2">Duration: 5 weeks</p>
                         </div>
-                        <p class="da-bubble-dot-p3">
+                        <p data-i18n="epl-p3" class="da-bubble-dot-p3">
                             A simple Jump-and-Run game based on an object-oriented aproach.<br>
                             Help Pepe to collect Coins and salsa-bottles to fight against the enemies<br>
                         </p>
@@ -261,24 +263,24 @@
                     <div>
                         <div class="da-bubble-dot">
                             <img src="img/dot.svg">
-                            <p class="da-bubble-dot-p1">How I have organised my work process</p>
+                            <p data-i18n="how" class="da-bubble-dot-p1">How I have organised my work process</p>
                             
                         </div>
-                        <p class="da-bubble-dot-p3">
+                        <p data-i18n="epl-how-text" class="da-bubble-dot-p3">
                             I structured the project into reusable modules and classes, ensuring clear<br> 
                             separation of concerns. Clean code practices included consistent naming conventions,<br>
-                             modular file organization, inline documentation, and regular testing to maintain<br> 
-                             readability, scalability, and long-term maintainability.
+                            modular file organization, inline documentation, and regular testing to maintain<br> 
+                            readability, scalability, and long-term maintainability.
                         </p>
                     </div>
 
                     <div>
                         <div class="da-bubble-dot">
                             <img src="img/dot.svg">
-                            <p class="da-bubble-dot-p1">What I learned</p>
+                            <p data-i18n="learn" class="da-bubble-dot-p1">What I learned</p>
                             
                         </div>
-                        <p class="da-bubble-dot-p3">
+                        <p data-i18n="epl-learn-text" class="da-bubble-dot-p3">
                             This project allowed me to deepen my understanding of object-oriented<br>  
                             programming in JavaScript, especially working with classes and inheritance.<br>
                             As a solo project, it strengthened my ability to independently structure code,<br> 
@@ -293,7 +295,7 @@
                 </div>
 
                 <div class="da-bubble-link-section">
-                    <div class="technologies">Technologies</div>
+                    <div data-i18n="techs" class="technologies">Technologies</div>
 
                     <div class="technologies-icons">
                         <img src="img/html-small.svg">
@@ -320,10 +322,10 @@
                     <div>
                         <div class="da-bubble-dot">
                             <img src="img/dot.svg">
-                            <p class="da-bubble-dot-p1">About the project</p>
-                            <p class="da-bubble-dot-p2">Duration: 2 months</p>
+                            <p data-i18n="about" class="da-bubble-dot-p1">About the project</p>
+                            <p data-i18n="join-duration" class="da-bubble-dot-p2">Duration: 2 months</p>
                         </div>
-                        <p class="da-bubble-dot-p3">
+                        <p data-i18n="join-p3" class="da-bubble-dot-p3">
                             Task manager inspired by the Kanban System. Create and organize tasks<br>
                             using drag and drop functions, assign users and categories.<br>
                         </p>
@@ -332,10 +334,10 @@
                     <div>
                         <div class="da-bubble-dot">
                             <img src="img/dot.svg">
-                            <p class="da-bubble-dot-p1">How I have organised my work process</p>
+                            <p data-i18n="how" class="da-bubble-dot-p1">How I have organised my work process</p>
                             
                         </div>
-                        <p class="da-bubble-dot-p3">
+                        <p data-i18n="join-how-text" class="da-bubble-dot-p3">
                             I maintained clean and scalable code by structuring the project into reusable<br> 
                             components and modules. Clear naming conventions, consistent documentation, and<br> 
                             regular testing ensured maintainability, readability, and efficient collaboration<br>
@@ -346,10 +348,10 @@
                     <div>
                         <div class="da-bubble-dot">
                             <img src="img/dot.svg">
-                            <p class="da-bubble-dot-p1">My group work experience</p>
+                            <p data-i18n="group" class="da-bubble-dot-p1">My group work experience</p>
                             
                         </div>
-                        <p class="da-bubble-dot-p3">
+                        <p data-i18n="join-group-text" class="da-bubble-dot-p3">
                             Our team consisted of four members, where I was responsible for my own feature<br> 
                             development while also supporting others with questions and challenges. I actively<br>
                             contributed to a collaborative, well-coordinated workflow, fostering strong teamwork<br>
@@ -361,7 +363,7 @@
                 </div>
 
                 <div class="da-bubble-link-section">
-                    <div class="technologies">Technologies</div>
+                    <div data-i18n="techs" class="technologies">Technologies</div>
 
                     <div class="technologies-icons">
                         <img src="img/html-small.svg">
@@ -387,10 +389,10 @@
                     <div>
                         <div class="da-bubble-dot">
                             <img src="img/dot.svg">
-                            <p class="da-bubble-dot-p1">About the project</p>
+                            <p data-i18n="about" class="da-bubble-dot-p1">About the project</p>
                             
                         </div>
-                        <p class="da-bubble-dot-p3">
+                        <p data-i18n="ongoing-p3" class="da-bubble-dot-p3">
                             What are you currently working on and what features are you implementing?<br>
                             What is the key to success in your projects? You can mention good planning,<br>
                             codequalitiy and execution.<br>
@@ -407,7 +409,7 @@
                 </div>
 
                 <div class="da-bubble-link-section">
-                    <div class="technologies">Technologies</div>
+                    <div data-i18n="techs" class="technologies">Technologies</div>
 
                     <div class="technologies-icons">
                         <img src="img/html-small.svg">
@@ -435,29 +437,29 @@
 
     <section class="quote-section" id="quote-section">
 
-        <h2>Need a teamplayer? Here`s what my colleagues say about me</h2>
+        <h2 data-i18n="quote-h2">Need a teamplayer? Here`s what my colleagues say about me</h2>
 
         <div class="quotes-wrapper">
 
             <div class="quotes">
                 <p class="quotes-p1">Name Surname</p>
-                <p class="quotes-p2">Project <span>DA Bubble</span></p>
-                <p class="quotes-p3">...quote...</p>
-                <a class="quotes-link">Linked In Profile</a>
+                <p data-i18n="quote-project" class="quotes-p2">Project <span>DA Bubble</span></p>
+                <p data-i18n="quote-quote" class="quotes-p3">...quote...</p>
+                <a data-i18n="quote-profile" class="quotes-link">Linked In Profile</a>
             </div>
 
             <div class="quotes">
                 <p class="quotes-p1">Name Surname</p>
-                <p class="quotes-p2">Project <span>Join</span></p>
-                <p class="quotes-p3">...quote...</p>
-                <a class="quotes-link">Linked In Profile</a>
+                <p data-i18n="quote-project" class="quotes-p2">Project <span>Join</span></p>
+                <p data-i18n="quote-quote" class="quotes-p3">...quote...</p>
+                <a data-i18n="quote-profile" class="quotes-link">Linked In Profile</a>
             </div>
 
             <div class="quotes">
                 <p class="quotes-p1">Name Surname</p>
-                <p class="quotes-p2">Project <span>El Pollo Loco</span></p>
-                <p class="quotes-p3">...quote...</p>
-                <a class="quotes-link">Linked In Profile</a>
+                <p data-i18n="quote-project" class="quotes-p2">Project <span>El Pollo Loco</span></p>
+                <p data-i18n="quote-quote" class="quotes-p3">...quote...</p>
+                <a data-i18n="quote-profile" class="quotes-link">Linked In Profile</a>
             </div>
             
         </div>
@@ -469,10 +471,10 @@
 
         <div class="contact-me-up-wrapper">
             <div class="contact-me-up-left">
-                <h1>Contact me</h1>
+                <h1 data-i18n="contact-h1">Contact me</h1>
                 <div class="contact-me-prosa-wrapper">
                     <div class="contact-me-prosa">
-                        <p>Feel free to get in touch regarding job opportunities,<br>
+                        <p data-i18n="contact-text">Feel free to get in touch regarding job opportunities,<br>
                             freelance projects, or collaborations in software development.<br>
                             I'm particularly interested in building scalable, user-focused<br> 
                             applications and contributing clean, efficient code. I'm confident<br>
@@ -498,30 +500,30 @@
 
             <div class="formular-data">
                 <div class="formular-name-wrapper">
-                    <label for="name" class="formular-name">Your name</label>
+                    <label data-i18n="form-name" for="name" class="formular-name">Your name</label>
                     <input type="text" id="name" name="name" class="formular-type-name" maxlength="30" required>
                 </div>
                     
                 <div class="formular-mail-wrapper">
-                    <label for="email" class="formular-mail">Your Email</label>
+                    <label data-i18n="form-mail" for="email" class="formular-mail">Your Email</label>
                     <input type="email" id="email" name="email" class="formular-type-mail" maxlength="30" required>
                 </div>
             </div>
 
             <div class="formular-msg-wrapper">
-                <label for="message" class="formular-msg">Your Message</label>
+                <label data-i18n="form-message" for="message" class="formular-msg">Your Message</label>
                 <textarea class="formular-type-msg" rows="5"  maxlength="510" required></textarea>
             </div>
 
             <div class="formular-agree">
                 <img id="agree-img" src="img/check-box.svg" onclick="toggleAgree()">
-                <p>I've read the
-                    <a class="privacy" href="privacy-policy.html">privacy policy</a> and agree to the processing of my data as outlined.
+                <p><span data-i18n="form-have">I've read the</span> 
+                    <a data-i18n="form-policy" class="privacy" href="privacy-policy.html">privacy policy</a> <span data-i18n="form-read">and agree to the processing of my data as outlined.</span> 
                 </p>
             </div>
 
             <div class="formular-send-wrapper">
-                <button type="submit" class="formular-send">Send</div>
+                <button data-i18n="form-send" type="submit" class="formular-send">Send</div>
             </div>
             
         </form>
@@ -532,7 +534,7 @@
     <footer>
 
         <div class="legal-wrapper">
-            <div class="legal"><a href="legal-notice.html">Legal notice</a></div>
+            <div class="legal"><a data-i18n="legal" href="legal-notice.html">Legal notice</a></div>
             <div class="legal-copy">&copy; Mussa Faragi 2026</div>
         </div>
 
@@ -542,7 +544,7 @@
             </div>
             <div class="bar-under-logo">
                 <p class="bar-under-logo-name">M.Faragi</p>
-                <p class="bar-under-logo-property">developer</p>
+                <p data-i18n="logo-role" class="bar-under-logo-property">developer</p>
             </div>
         </div>
 
