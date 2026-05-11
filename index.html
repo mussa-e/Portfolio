@@ -8,8 +8,9 @@
     <link rel="icon" type="image/png" href="img/Logo icon.svg">
     <title>Portfolio</title>
 
-    <script src="main.js"></script>
-    <script src="translate.js"></script>
+    <script defer src="main.js"></script>
+    <script defer src="translate.js"></script>
+    <script defer src="contact.js"></script>
 
 </head>
 <body>
@@ -308,7 +309,7 @@
                     </div>
 
                     <div class="link-buttons">
-                        <a class="test-btn">Live Test</a>
+                        <a href="https://el-pollo-loco.mussa-faragi.de" class="test-btn">Live Test</a>
                         <a href="https://github.com/mussa-e/El-Pollo-Loco" class="github-btn" target="_blank" rel="noopener noreferrer">
                             GitHub</a>
                     </div>
@@ -512,7 +513,7 @@
 
             <div class="formular-msg-wrapper">
                 <label data-i18n="form-message" for="message" class="formular-msg">Your Message</label>
-                <textarea class="formular-type-msg" rows="5"  maxlength="510" required></textarea>
+                <textarea id="message" name="message" class="formular-type-msg" rows="5"  maxlength="510" required></textarea>
             </div>
 
             <div class="formular-agree">
@@ -523,7 +524,7 @@
             </div>
 
             <div class="formular-send-wrapper">
-                <button data-i18n="form-send" type="submit" class="formular-send">Send</div>
+                <button data-i18n="form-send" type="submit" class="formular-send">Send</button>
             </div>
             
         </form>

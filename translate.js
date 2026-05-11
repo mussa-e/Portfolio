@@ -110,7 +110,7 @@ const translations = {
         "quote-h2": "Need a teamplayer? Here`s what my colleagues say about me",
         "quote-project": "Project",
         "quote-quote": "...quote...",
-        "quote-profile":"Inked In Profile",
+        "quote-profile":"Linked In Profile",
         "contact-h1": "Contact me",
         "contact-text": `Feel free to get in touch regarding job opportunities,
                         freelance projects, or collaborations in software development.
@@ -331,7 +331,7 @@ const translations = {
         "quote-h2": "Suchen Sie einen Teamplayer? Das sagen meine Kollegen über mich.",
         "quote-project": "Projekt",
         "quote-quote": "...Zitat...",
-        "quote-profile":"Inked In Profil",
+        "quote-profile":"Linked In Profil",
         "contact-h1": "Kontaktiere mich",
         "contact-text": `Kontaktieren Sie mich gerne bezüglich beruflicher Möglichkeiten,
                         Freelance-Projekte oder Kooperationen in der Softwareentwicklung.
