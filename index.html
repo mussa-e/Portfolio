@@ -502,29 +502,36 @@
             <div class="formular-data">
                 <div class="formular-name-wrapper">
                     <label data-i18n="form-name" for="name" class="formular-name">Your name</label>
-                    <input type="text" id="name" name="name" class="formular-type-name" maxlength="30" required>
+                    <input type="text" id="name" name="name" class="formular-type-name" maxlength="30">
+                    <p class="valerror d-none" id="val-name">Please type your name</p>
                 </div>
                     
                 <div class="formular-mail-wrapper">
                     <label data-i18n="form-mail" for="email" class="formular-mail">Your Email</label>
-                    <input type="email" id="email" name="email" class="formular-type-mail" maxlength="30" required>
+                    <input type="email" id="email" name="email" class="formular-type-mail" maxlength="30">
+                    <p class="valerror d-none" id="val-mail">Please type correct email</p>
                 </div>
             </div>
 
             <div class="formular-msg-wrapper">
                 <label data-i18n="form-message" for="message" class="formular-msg">Your Message</label>
-                <textarea id="message" name="message" class="formular-type-msg" rows="5"  maxlength="510" required></textarea>
+                <textarea id="message" name="message" class="formular-type-msg" rows="5"  maxlength="510"></textarea>
+                <p class="valerror d-none" id="val-message">Please type your message</p>
             </div>
 
             <div class="formular-agree">
-                <img id="agree-img" src="img/check-box.svg" onclick="toggleAgree()">
-                <p><span data-i18n="form-have">I've read the</span> 
-                    <a data-i18n="form-policy" class="privacy" href="privacy-policy.html">privacy policy</a> <span data-i18n="form-read">and agree to the processing of my data as outlined.</span> 
-                </p>
+                <div class="terms-wrapper">
+                    <img id="agree-img" src="img/check-box.svg" onclick="toggleAgree()">
+                    <p><span data-i18n="form-have">I've read the</span> 
+                        <a data-i18n="form-policy" class="privacy" href="privacy-policy.html">privacy policy</a> <span data-i18n="form-read">and agree to the processing of my data as outlined.</span> 
+                    </p>
+                </div>
+                <p class="valerror d-none" id="val-terms" style="margin-top: -16px;">Please agree terms</p>
             </div>
+            
 
             <div class="formular-send-wrapper">
-                <button data-i18n="form-send" type="submit" class="formular-send">Send</button>
+                <button id="send-btn" data-i18n="form-send" type="submit" class="not-active">Send</button>
             </div>
             
         </form>
@@ -557,6 +564,9 @@
 
     </footer>
 
+    <div id="feedback" class="feedback hidden">
+        
+    </div>
 
 </body>
 </html>

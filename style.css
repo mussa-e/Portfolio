@@ -912,6 +912,7 @@ body{
 .formular-name-wrapper, .formular-mail-wrapper{
     display: flex;
     flex-direction: column;
+    height: 120px;
 }
 
 
@@ -963,6 +964,7 @@ body{
 
 .formular-msg-wrapper{
     width: 950px;
+    height: 200px;
 }
 
 .formular-msg{
@@ -1002,15 +1004,33 @@ body{
     line-height: 120%;
     letter-spacing: 0%;
     color: #F8F5EC;
-    align-items: center;
+    flex-direction: column;
+    height: 80px;
 }
 
 .formular-agree img{
     width: 24px;
+    height: 24px;
 }
 .formular-agree img:hover{
     cursor: pointer;
 }
+
+.terms-wrapper{
+    gap: 8px;
+    display: flex;
+    align-items: center;
+}
+
+
+.valerror{
+    color: #ff0000;
+    margin: 4px 0 0 16px;
+}
+
+
+
+
 
 .privacy{
     color: #89BCD9;
@@ -1024,6 +1044,24 @@ body{
     width: 950px;
     display: flex;
     justify-content: flex-end;
+}
+
+.not-active{
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #555555;
+    border-radius: 30px;
+    border: 1px solid #555555;
+    height: 50px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #262E34;
 }
 
 .formular-send{
@@ -1047,6 +1085,45 @@ body{
     background-color: #343e46;
     cursor: default;
 }
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #2D3840 inset;
+  -webkit-text-fill-color: white;
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+.feedback {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, -200%);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    opacity: 0;
+    z-index: 9999;
+}
+
+.feedback.show-success {
+    transform: translate(-50%, 0);
+    opacity: 1;
+    background: #4caf50;
+}
+
+.feedback.show-failed {
+    transform: translate(-50%, 0);
+    opacity: 1;
+    background: #b31c1a;
+}
+
+.feedback.hidden {
+    transform: translate(-50%, -200%);
+    opacity: 0;
+}
+
+
+
 
 footer{
     display: flex;
@@ -1120,3 +1197,4 @@ footer{
 .footer-icons img:hover {
     filter: brightness(20);
 }
+
