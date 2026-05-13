@@ -109,7 +109,7 @@ form.addEventListener("submit", async (e) => {
         const result = await response.json();
 
         if (result.success) {
-            alert("Nachricht erfolgreich gesendet!");
+            // alert("Nachricht erfolgreich gesendet!");
             messageSendFeedback("succeeded");
             form.reset();
             agreedTerms = false;
@@ -118,7 +118,7 @@ form.addEventListener("submit", async (e) => {
         }
 
     } catch (error) {
-        alert("Serverfehler");
+        // alert("Serverfehler");
         messageSendFeedback("failed");
         console.error(error);
     }
