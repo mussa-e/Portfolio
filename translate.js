@@ -6,21 +6,28 @@ function setLanguage(lang) {
 
     elements.forEach(element => {
 
-        const key = element.getAttribute("data-i18n");
+    const key = element.getAttribute("data-i18n");
 
-        if (translations[lang][key]) {
+    if (translations[lang][key]) {
 
-            if (
-                key === "legalContent" ||
-                key === "privacyContent"
-            ) {
-                element.innerHTML = translations[lang][key];
-            } else {
-                element.innerText = translations[lang][key];
-            }
+        if (
+            key === "legalContent" ||
+            key === "privacyContent"
+        ) {
+            element.innerHTML = translations[lang][key];
+
+        } else if (key === "quote-project") {
+            element.childNodes[0].nodeValue =
+                translations[lang][key] + " ";
+
+        } else {
+
+            element.innerText = translations[lang][key];
         }
-    });
+    }
+});
 }
+
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -109,7 +116,11 @@ const translations = {
                             Show a desire to learn new technologies and continually improve your skills.`,
         "quote-h2": "Need a teamplayer? Here`s what my colleagues say about me",
         "quote-project": "Project",
-        "quote-quote": "...quote...",
+        "quote-1": `Mussa impressed in the group project
+                    through technical skills, reliability, 
+                    and strong teamwork.`,
+        "quote-2": "...quote...",
+        "quote-3": "...quote...",
         "quote-profile":"Linked In Profile",
         "contact-h1": "Contact me",
         "contact-text": `Feel free to get in touch regarding job opportunities,
@@ -330,7 +341,11 @@ const translations = {
                             Show a desire to learn new technologies and continually improve your skills.`,
         "quote-h2": "Suchen Sie einen Teamplayer? Das sagen meine Kollegen über mich.",
         "quote-project": "Projekt",
-        "quote-quote": "...Zitat...",
+        "quote-1": `Mussa überzeugte im Gruppenprojekt durch
+                    technische Fähigkeiten, Zuverlässigkeit 
+                    und eine starke Zusammenarbeit im Team.`,
+        "quote-2": "...Zitat...",
+        "quote-3": "...Zitat...",
         "quote-profile":"Linked In Profil",
         "contact-h1": "Kontaktiere mich",
         "contact-text": `Kontaktieren Sie mich gerne bezüglich beruflicher Möglichkeiten,
