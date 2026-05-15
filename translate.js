@@ -72,19 +72,17 @@ const translations = {
         "projects-ongoing": "Ongoing Project",
         "about": "About the project",
         "da-duration": "Duration: 3 weeks",
-        "da-text": `This App is a Slack Clone App.
-                    It revolutionizes team communication and collaboration with its intuitive
-                    interface, real-time messaging, and robust channel organization.`,
+        "da-text": `"Pokedex" is a Pokémon Trainer registry featuring data from the PokeAPI, 
+                    which clearly displays Pokémon, types, abilities, and trainer information.`,
         "how": "How I have organised my work process",
         "da-how-text": `I maintained clean and scalable code by structuring the project into reusable
                             components and modules. Clear naming conventions, consistent file organization, 
                             and thorough documentation ensured readability, while regular testing helped
                             maintain reliability and long-term maintainability.`,
         "group": "My group work experience",
-        "da-group-text": `Our team consisted of several developers, and I contributed primarily to the chat  
-                            functionality and user interface. I worked with modern web technologies such as  
-                            JavaScript and React, collaborating closely with teammates to ensure smooth 
-                            integration and effective teamwork.`,
+        "da-group-text": `During the development of "Pokedex," I learned how to efficiently integrate 
+                            APIs, display dynamic data, structure user interfaces, and implement 
+                            asynchronous data processing with clean state management.`,
         "techs": "Technologies",
         "epl-duration": "Duration: 5 weeks",
         "epl-p3": `A simple Jump-and-Run game based on an object-oriented aproach.
@@ -116,11 +114,12 @@ const translations = {
                             Show a desire to learn new technologies and continually improve your skills.`,
         "quote-h2": "Need a teamplayer? Here`s what my colleagues say about me",
         "quote-project": "Project",
-        "quote-1": `Mussa impressed in the group project
+        "quote-1": `"Mussa impressed in the group project
                     through technical skills, reliability, 
-                    and strong teamwork.`,
-        "quote-2": "...quote...",
-        "quote-3": "...quote...",
+                    and strong teamwork."`,
+        "quote-2": `"Mussa is a reliable team player with excellent development skills."`,
+        "quote-3": `"Impeccable code quality, quick to grasp new concepts, and a tremendous asset to 
+                    the team on a personal level."`,
         "quote-profile":"Linked In Profile",
         "contact-h1": "Contact me",
         "contact-text": `Feel free to get in touch regarding job opportunities,
@@ -294,9 +293,8 @@ const translations = {
         "projects-ongoing": "Laufendes Projekt",
         "about": "Über das Projekt",
         "da-duration": "Dauer: 3 Wochen",
-        "da-text": `Diese App ist ein Slack-Klon.
-                    Sie revolutioniert die Teamkommunikation und -zusammenarbeit durch ihre intuitive
-                    Benutzeroberfläche, Echtzeit-Nachrichtenübermittlung und robuste Organisation der Kanäle.`,
+        "da-text": `"Pokedex" ist ein Pokémon-Trainerregister mit Daten aus der PokeAPI, 
+                    das Pokémon, Typen, Fähigkeiten und Trainerinformationen übersichtlich darstellt.`,
         "how": "Wie ich meinen Arbeitsprozess organisiert habe",
         "da-how-text": `Ich sorgte für sauberen und skalierbaren Code, indem ich das Projekt in wiederverwendbare
                         Komponenten und Module strukturierte. Klare Namenskonventionen, eine konsistente
@@ -304,10 +302,9 @@ const translations = {
                         während regelmäßige Tests dazu beitrugen, die Zuverlässigkeit und langfristige Wartbarkeit 
                         sicherzustellen.`,
         "group": "Erfahrung in der Gruppenarbeit",
-        "da-group-text": `Unser Team bestand aus mehreren Entwicklern, und ich trug hauptsächlich zur Chat-Funktionalität 
-                            und zur Benutzeroberfläche bei. Ich arbeitete mit modernen Webtechnologien wie JavaScript 
-                            und React und kooperierte eng mit meinen Teamkollegen, um eine reibungslose Integration 
-                            und effektive Zusammenarbeit sicherzustellen.`,
+        "da-group-text": `Bei der Entwicklung von „Pokedex“ habe ich gelernt, APIs effizient einzubinden, 
+                            dynamische Daten darzustellen, Benutzeroberflächen zu strukturieren und 
+                            asynchrone Datenverarbeitung mit sauberem State-Management umzusetzen.`,
         "techs": "Technologien",
         "epl-duration": "Dauer: 5 Wochen",
         "epl-p3": `Ein einfaches Jump ’n’ Run, das auf einem objektorientierten Ansatz basiert.
@@ -341,11 +338,11 @@ const translations = {
                             Show a desire to learn new technologies and continually improve your skills.`,
         "quote-h2": "Suchen Sie einen Teamplayer? Das sagen meine Kollegen über mich.",
         "quote-project": "Projekt",
-        "quote-1": `Mussa überzeugte im Gruppenprojekt durch
+        "quote-1": `"Mussa überzeugte im Gruppenprojekt durch
                     technische Fähigkeiten, Zuverlässigkeit 
-                    und eine starke Zusammenarbeit im Team.`,
-        "quote-2": "...Zitat...",
-        "quote-3": "...Zitat...",
+                    und eine starke Zusammenarbeit im Team."`,
+        "quote-2": `"Mussa ist ein zuverlässiger Teamplayer mit exzellenten Entwicklungsfähigkeiten."`,
+        "quote-3": `"Klare Codequalität, schnelle Auffassungsgabe und menschlich eine große Bereicherung fürs Team."`,
         "quote-profile":"Linked In Profil",
         "contact-h1": "Kontaktiere mich",
         "contact-text": `Kontaktieren Sie mich gerne bezüglich beruflicher Möglichkeiten,
