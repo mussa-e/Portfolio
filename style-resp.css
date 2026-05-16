@@ -1,0 +1,55 @@
+@media (max-width: 700px) {
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .footer-logo-wrapper{
+        order: 1;
+    }
+
+    .footer-icons{
+        order: 2;
+        margin-right: unset;
+    }
+
+    .legal-wrapper{
+        order: 3;
+        flex-direction: row;
+        margin-left: unset;
+    }
+
+    .footer-github{
+        content: url("img/github-footer-mobile.svg")
+    }
+    .footer-email{
+        content: url("img/email-footer-mobile.svg")
+    }
+    .footer-linked-in{
+        content: url("img/linkedin-footer-mobile.svg");
+    }
+
+    .footer-icons img:hover {
+        filter: unset;
+    }
+}
+
+@media (max-width: 360px){
+    .legal{
+        font-size: 16px;
+    }
+    .legal-copy{
+        font-size: 16px;
+    }
+    .legal-wrapper{
+        gap: 8px;
+    }
+}
+
+@media (max-width: 360px){
+    h1{
+        font-size: 40px;
+    }
+}

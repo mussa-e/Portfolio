@@ -6,6 +6,7 @@
     
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="img/Logo icon.svg">
+    <link rel="stylesheet" href="style-resp.css">
     <title>Portfolio</title>
 
     <script defer src="main.js"></script>
@@ -14,560 +15,573 @@
 
 </head>
 <body>
-    <section class="top" id="top">
-        
-        <div class="top-left">
-            <img class="bg-shape" src="img/bg-shape.svg">
-
-            <div class="potrait">
-                <img src="img/potrait-grundriss.png">
-            </div>
-        </div>
-
-        
-
-        <div class="top-right">
-
-                <div class="top-right-logo-wrapper">
-                    <div class="top-right-logo">
-                        <img src="img/logo-icon.svg">
-                    </div>
-                    <div class="top-right-under-logo">
-                        <p class="top-right-under-logo-name">M.Faragi</p>
-                        <p data-i18n="logo-role" class="top-right-under-logo-property">developer</p>
-                    </div>
-                </div>
-
-
-                <div class="top-right-middle">
-                    <p class="top-right-middle-name">Mussa Faragi</p>
-                    <p data-i18n="top-role" class="top-right-middle-property">Frontend Developer</p>
-                </div>
-
-                <a class="arrow-down" href="#why-me-section">
-                    <img src="img/arrow-down.svg">
-                </a>
+    <div class="w-100">
+        <section class="top" id="top">
             
-        </div>
+            <div class="top-left">
+                <img class="bg-shape" src="img/bg-shape.svg">
 
-        <div class="top-links">
-                    <a href="#contact-me" class="top-links-img-wrapper">
-                        <img src="img/email-button.svg">
-                    </a>
-
-                    <a href="https://github.com/mussa-e" target="_blank" class="top-links-img-wrapper">
-                        <img src="img/github-button.svg">
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/mussa-faragi" target="_blank" class="top-links-img-wrapper">
-                        <img src="img/linkedin-button.svg">
-                    </a>
-        </div>
-
-    </section>
-
-    <section class="bar">
-
-        <a class="bar-logo-wrapper" href="#top">
-            <div class="bar-logo">
-                <img src="img/logo-icon-dark.svg">
-            </div>
-            <div class="bar-under-logo">
-                <p class="bar-under-logo-name">M.Faragi</p>
-                <p data-i18n="logo-role" class="bar-under-logo-property">developer</p>
-            </div>
-        </a>
-
-        <div class="bar-middle">
-            <a data-i18n="bar-why-me" href="#why-me-section" id="bar-why-me" onclick="chooseBar('bar-why-me')">Why me</a>
-            <a data-i18n="bar-skills" href="#skills-section" id="bar-skills" onclick="chooseBar('bar-skills')">Skills</a>
-            <a data-i18n="bar-projects" href="#projects" id="bar-projects" onclick="chooseBar('bar-projects')">Projects</a>
-            <a data-i18n="bar-contacts" href="#contact-me" id="bar-contact-me" onclick="chooseBar('bar-contact-me')">Contact</a>
-        </div>
-
-        <div class="bar-language">
-            <div class="lang-de-parent" id="lang-de-parent">
-                <img onclick="chooseLanguage('lang-de')" id="lang-de" class="lang de" src="img/DE.svg">
-            </div>
-
-            <div class="lang-en-parent chosen-parent" id="lang-en-parent">
-                <img onclick="chooseLanguage('lang-en')" id="lang-en" class="lang en chosen-en" src="img/EN.svg">
-            </div>
-        </div>
-        
-    </section>
-
-    <section class="why-me-section" id="why-me-section">
-
-        <h1 data-i18n="bar-why-me">Why me</h1>
-
-        <div class="why-me-body">
-            <div class="location">
-                <img src="img/location.svg">
-                <p data-i18n="why-me-location-p1" class="location-p1">I am</p>
-                <p data-i18n="why-me-location-p2" class="location-p2">located in Cologne..|</p>
-            </div>
-
-            <div class="why-me-description">
-                <div class="why-me-description-text">
-                    <p data-i18n="why-me-desc">I'm passionate about coding because it<br>
-                        combines analytical thinking, creativity,<br>
-                        and problem-solving. I enjoy building<br>
-                        solutions, learning through challenges,<br>
-                        staying persistent, and collaborating with<br>
-                        others to create meaningful and efficient projects.
-                    </p>
-                </div>
-
-                <a class="why-me-description-talk" href="#contact-me">
-                    <p data-i18n="why-me-talk">Let`s talk</p>
-                </a>
-            </div>
-        </div>
-
-    </section>
-
-    <section class="skills-section" id="skills-section">
-        <h1 data-i18n="bar-skills">Skills</h1>
-
-        <div class="skills-body">
-            <div class="skills-body-left">
-                <img src="img/angular.svg">
-                <img src="img/ts.svg">
-                <img src="img/js.svg">
-                <img src="img/html.svg">
-                <img src="img/css.svg">
-                <img src="img/restapi.svg">
-                <img src="img/supabase.svg">
-                <img src="img/git.svg">
-                <img src="img/md.svg">
-                <img src="img/scrum.svg">
-            </div>
-
-            <div class="skills-body-right">
-                <p data-i18n="skills-learning-1" class="skills-body-right-p1">
-                    I am currently learning
-                </p>
-
-                <div class="skills-body-right-description">
-
-                    <div class="skills-img-wrapper">
-                        <img src="img/react.svg">
-                        <img src="img/vuejs.svg">
-                    </div>
-                    
-                    <p data-i18n="skills-learning-2" class="skills-body-right-p2">
-                        I'm motivated to learn emerging<br>
-                        technologies, refine my abilities,<br> 
-                        and develop innovative, future-oriented<br>
-                        solutions.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="projects" id="projects">
-        <h1 data-i18n="projects-h1">My Projects</h1>
-
-        <div class="tabs">
-            <div class="tab-1 chosen" id="tab-1" onclick="chooseTab('tab-1')">1. Pokedex</div>
-            <div class="tab-2" id="tab-2" onclick="chooseTab('tab-2')">2. El Pollo Loco</div>
-            <div class="tab-3" id="tab-3" onclick="chooseTab('tab-3')">3. Join</div>
-            <div data-i18n="projects-ongoing" class="tab-4" id="tab-4" onclick="chooseTab('tab-4')">4. Ongoing Project</div>
-        </div>
-
-        <div class="projects-body">
-
-            <div id="da-bubble" class="da-bubble">
-                <div class="da-bubble-description">
-                    <div>
-                        <div class="da-bubble-dot">
-                            <img src="img/dot.svg">
-                            <p data-i18n="about" class="da-bubble-dot-p1">About the project</p>
-                            <p data-i18n="da-duration" class="da-bubble-dot-p2">Duration: 3 weeks</p>
-                        </div>
-                        <p data-i18n="da-text" class="da-bubble-dot-p3">
-                            "Pokedex" is a Pokémon Trainer registry featuring data from the PokeAPI, 
-                                which clearly displays Pokémon, types, abilities, and trainer information.
-                        </p>
-                    </div>
-
-                    <div>
-                        <div class="da-bubble-dot">
-                            <img src="img/dot.svg">
-                            <p data-i18n="how" class="da-bubble-dot-p1">How I have organised my work process</p>
-                            
-                        </div>
-                        <p data-i18n="da-how-text" class="da-bubble-dot-p3">
-                            I maintained clean and scalable code by structuring the project into reusable<br> 
-                            components and modules. Clear naming conventions, consistent file organization,<br> 
-                            and thorough documentation ensured readability, while regular testing helped<br> 
-                            maintain reliability and long-term maintainability.
-                        </p>
-                    </div>
-
-                    <div>
-                        <div class="da-bubble-dot">
-                            <img src="img/dot.svg">
-                            <p data-i18n="learn" class="da-bubble-dot-p1">What I learned</p>
-                            
-                        </div>
-                        <p data-i18n="da-group-text" class="da-bubble-dot-p3">
-                            During the development of "Pokedex," I learned how to efficiently
-                            integrate APIs, display dynamic data, structure user interfaces, 
-                            and implement asynchronous data processing with clean state management.
-                            
-                        </p>
-                    </div>
-
-                    
-                </div>
-
-                <div class="da-bubble-link-section">
-                    <div data-i18n="techs" class="technologies">Technologies</div>
-
-                    <div class="technologies-icons">
-                        <img src="img/js.svg">
-                        <img src="img/restapi.svg">
-                        <img src="img/git.svg">
-                    </div>
-
-                    <div class="technologies-screenshot">
-                        <img src="img/pokedex2.png">
-                    </div>
-
-                    <div class="link-buttons">
-                        <a href="https://pokedex.mussa-faragi.de/" target="_blank" class="test-btn">Live Test</a>
-                        <a href="https://github.com/mussa-e/Pokedex" target="_blank" class="github-btn">GitHub</a>
-                    </div>
+                <div class="potrait">
+                    <img src="img/potrait-grundriss.png">
                 </div>
             </div>
 
-            <!--  -->
-
-            <div id="el-pollo-loco" class="da-bubble d-none">
-                <div class="da-bubble-description">
-                    <div>
-                        <div class="da-bubble-dot">
-                            <img src="img/dot.svg">
-                            <p data-i18n="about" class="da-bubble-dot-p1">About the project</p>
-                            <p data-i18n="epl-duration" class="da-bubble-dot-p2">Duration: 5 weeks</p>
-                        </div>
-                        <p data-i18n="epl-p3" class="da-bubble-dot-p3">
-                            A simple Jump-and-Run game based on an object-oriented aproach.<br>
-                            Help Pepe to collect Coins and salsa-bottles to fight against the enemies<br>
-                        </p>
-                    </div>
-
-                    <div>
-                        <div class="da-bubble-dot">
-                            <img src="img/dot.svg">
-                            <p data-i18n="how" class="da-bubble-dot-p1">How I have organised my work process</p>
-                            
-                        </div>
-                        <p data-i18n="epl-how-text" class="da-bubble-dot-p3">
-                            I structured the project into reusable modules and classes, ensuring clear<br> 
-                            separation of concerns. Clean code practices included consistent naming conventions,<br>
-                            modular file organization, inline documentation, and regular testing to maintain<br> 
-                            readability, scalability, and long-term maintainability.
-                        </p>
-                    </div>
-
-                    <div>
-                        <div class="da-bubble-dot">
-                            <img src="img/dot.svg">
-                            <p data-i18n="learn" class="da-bubble-dot-p1">What I learned</p>
-                            
-                        </div>
-                        <p data-i18n="epl-learn-text" class="da-bubble-dot-p3">
-                            This project allowed me to deepen my understanding of object-oriented<br>  
-                            programming in JavaScript, especially working with classes and inheritance.<br>
-                            As a solo project, it strengthened my ability to independently structure code,<br> 
-                            solve problems, and continuously improve my development workflow.
-                            
-                            
-                            
-                        </p>
-                    </div>
-
-                    
-                </div>
-
-                <div class="da-bubble-link-section">
-                    <div data-i18n="techs" class="technologies">Technologies</div>
-
-                    <div class="technologies-icons">
-                        <img src="img/html-small.svg">
-                        <img src="img/js-small.svg">
-                        <img src="img/css-small.svg">
-                    </div>
-
-                    <div class="technologies-screenshot">
-                        <img src="img/startscreen_epl.png">
-                    </div>
-
-                    <div class="link-buttons">
-                        <a href="https://el-pollo-loco.mussa-faragi.de/" target="_blank" class="test-btn">Live Test</a>
-                        <a href="https://github.com/mussa-e/El-Pollo-Loco" target="_blank" class="github-btn" rel="noopener noreferrer">
-                            GitHub</a>
-                    </div>
-                </div>
-            </div>
-
-            <!--  -->
-
-            <div id="join" class="da-bubble d-none">
-                <div class="da-bubble-description">
-                    <div>
-                        <div class="da-bubble-dot">
-                            <img src="img/dot.svg">
-                            <p data-i18n="about" class="da-bubble-dot-p1">About the project</p>
-                            <p data-i18n="join-duration" class="da-bubble-dot-p2">Duration: 2 months</p>
-                        </div>
-                        <p data-i18n="join-p3" class="da-bubble-dot-p3">
-                            Task manager inspired by the Kanban System. Create and organize tasks<br>
-                            using drag and drop functions, assign users and categories.<br>
-                        </p>
-                    </div>
-
-                    <div>
-                        <div class="da-bubble-dot">
-                            <img src="img/dot.svg">
-                            <p data-i18n="how" class="da-bubble-dot-p1">How I have organised my work process</p>
-                            
-                        </div>
-                        <p data-i18n="join-how-text" class="da-bubble-dot-p3">
-                            I maintained clean and scalable code by structuring the project into reusable<br> 
-                            components and modules. Clear naming conventions, consistent documentation, and<br> 
-                            regular testing ensured maintainability, readability, and efficient collaboration<br>
-                            throughout the development process.
-                        </p>
-                    </div>
-
-                    <div>
-                        <div class="da-bubble-dot">
-                            <img src="img/dot.svg">
-                            <p data-i18n="group" class="da-bubble-dot-p1">My group work experience</p>
-                            
-                        </div>
-                        <p data-i18n="join-group-text" class="da-bubble-dot-p3">
-                            Our team consisted of four members, where I was responsible for my own feature<br> 
-                            development while also supporting others with questions and challenges. I actively<br>
-                            contributed to a collaborative, well-coordinated workflow, fostering strong teamwork<br>
-                            and effective communication.
-                        </p>
-                    </div>
-
-                    
-                </div>
-
-                <div class="da-bubble-link-section">
-                    <div data-i18n="techs" class="technologies">Technologies</div>
-
-                    <div class="technologies-icons">
-                        <img src="img/html-small.svg">
-                        <img src="img/js-small.svg">
-                        <img src="img/css-small.svg">
-                    </div>
-
-                    <div class="technologies-screenshot">
-                        <img src="img/screenshot-join.png">
-                    </div>
-
-                    <div class="link-buttons">
-                        <a class="test-btn" href="https://join.mussa-faragi.de/login-signup/" target="_blank">Live Test</a>
-                        <a class="github-btn" href="https://github.com/mussa-e/join" target="_blank">GitHub</a>
-                    </div>
-                </div>
-            </div>
-
-            <!--  -->
-
-            <div id="ongoing-project" class="da-bubble d-none">
-                <div class="da-bubble-description">
-                    <div>
-                        <div class="da-bubble-dot">
-                            <img src="img/dot.svg">
-                            <p data-i18n="about" class="da-bubble-dot-p1">About the project</p>
-                            
-                        </div>
-                        <p data-i18n="ongoing-p3" class="da-bubble-dot-p3">
-                            What are you currently working on and what features are you implementing?<br>
-                            What is the key to success in your projects? You can mention good planning,<br>
-                            codequalitiy and execution.<br>
-                            <br>
-                            Show a desire to learn new technologies and continually improve your skills.
-                        </p>
-                    </div>
-
-                    
-
-                    
-
-                    
-                </div>
-
-                <div class="da-bubble-link-section">
-                    <div data-i18n="techs" class="technologies">Technologies</div>
-
-                    <div class="technologies-icons">
-                        <img src="img/html-small.svg">
-                        <img src="img/js-small.svg">
-                        <img src="img/css-small.svg">
-                    </div>
-
-                    <div class="technologies-screenshot">
-                        <img src="img/screenshot-comming-soon.png">
-                    </div>
-
-                    <div class="link-buttons">
-                        <a class="test-btn">Live Test</a>
-                        <a class="github-btn">GitHub</a>
-                    </div>
-                </div>
-            </div>
-
-
-
-        </div>
-
-    </section>
-    
-
-    <section class="quote-section" id="quote-section">
-
-        <h2 data-i18n="quote-h2">Need a teamplayer? Here`s what my colleagues say about me</h2>
-
-        <div class="quotes-wrapper">
-
-            <div class="quotes">
-                <p class="quotes-p1">Arnesto</p>
-                <p data-i18n="quote-project" class="quotes-p2">Project <span>Join</span></p>
-                <p data-i18n="quote-1" class="quotes-p3">"Mussa impressed in the group project
-                                                            through technical skills, reliability, 
-                                                            and strong teamwork."</p>
-                <a data-i18n="quote-profile" class="quotes-link">Linked In Profile</a>
-            </div>
-
-            <div class="quotes">
-                <p class="quotes-p1">Fred</p>
-                <p data-i18n="quote-project" class="quotes-p2">Project <span>Join</span></p>
-                <p data-i18n="quote-2" class="quotes-p3">"Mussa is a reliable team player with 
-                                                            excellent development skills."</p>
-                <a data-i18n="quote-profile" class="quotes-link">Linked In Profile</a>
-            </div>
-
-            <div class="quotes">
-                <p class="quotes-p1">Rico</p>
-                <p data-i18n="quote-project" class="quotes-p2">Project <span>Kochwelt</span></p>
-                <p data-i18n="quote-3" class="quotes-p3">"Impeccable code quality, quick to grasp 
-                                                            new concepts, and a tremendous asset to 
-                                                            the team on a personal level."</p>
-                <a data-i18n="quote-profile" class="quotes-link">Linked In Profile</a>
-            </div>
             
-        </div>
 
-    </section>
+            <div class="top-right">
 
-
-    <section class="contact-me" id="contact-me">
-
-        <div class="contact-me-up-wrapper">
-            <div class="contact-me-up-left">
-                <h1 data-i18n="contact-h1">Contact me</h1>
-                <div class="contact-me-prosa-wrapper">
-                    <div class="contact-me-prosa">
-                        <p data-i18n="contact-text">Feel free to get in touch regarding job opportunities,<br>
-                            freelance projects, or collaborations in software development.<br>
-                            I'm particularly interested in building scalable, user-focused<br> 
-                            applications and contributing clean, efficient code. I'm confident<br>
-                            I can add real value to your team and help bring ideas to life.
-                        </p>
+                    <div class="top-right-logo-wrapper">
+                        <div class="top-right-logo">
+                            <img src="img/logo-icon.svg">
+                        </div>
+                        <div class="top-right-under-logo">
+                            <p class="top-right-under-logo-name">M.Faragi</p>
+                            <p data-i18n="logo-role" class="top-right-under-logo-property">developer</p>
+                        </div>
                     </div>
-                    <div class="contact-me-contact">
-                        <div class="contact-me-mail"><img src="img/contact-email_.svg"> <span>E-mail: mussa.faragi@gmx.de</span></div>
-                        <div class="contact-me-phone"><img src="img/contact-phone_.svg"> <span>Tel: 0177 874 156 9</span></div>
+
+
+                    <div class="top-right-middle">
+                        <p class="top-right-middle-name">Mussa Faragi</p>
+                        <p data-i18n="top-role" class="top-right-middle-property">Frontend Developer</p>
                     </div>
-                </div>
+
+                    <a class="arrow-down" href="#why-me-section">
+                        <img src="img/arrow-down.svg">
+                    </a>
+                
             </div>
 
-            <a class="arrow-up-wrapper" href="#top">
-                <img src="img/arrow-up.svg">
+            <div class="top-links">
+                        <a href="#contact-me" class="top-links-img-wrapper">
+                            <img src="img/email-button.svg">
+                        </a>
+
+                        <a href="https://github.com/mussa-e" target="_blank" class="top-links-img-wrapper">
+                            <img src="img/github-button.svg">
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/mussa-faragi" target="_blank" class="top-links-img-wrapper">
+                            <img src="img/linkedin-button.svg">
+                        </a>
+            </div>
+
+        </section>
+    </div>
+
+    <div class="w-100" style="background-color: #89BCD9;">
+        <section class="bar">
+
+            <a class="bar-logo-wrapper" href="#top">
+                <div class="bar-logo">
+                    <img src="img/logo-icon-dark.svg">
+                </div>
+                <div class="bar-under-logo">
+                    <p class="bar-under-logo-name">M.Faragi</p>
+                    <p data-i18n="logo-role" class="bar-under-logo-property">developer</p>
+                </div>
             </a>
 
-        </div>
+            <div class="bar-middle">
+                <a data-i18n="bar-why-me" href="#why-me-section" id="bar-why-me" onclick="chooseBar('bar-why-me')">Why me</a>
+                <a data-i18n="bar-skills" href="#skills-section" id="bar-skills" onclick="chooseBar('bar-skills')">Skills</a>
+                <a data-i18n="bar-projects" href="#projects" id="bar-projects" onclick="chooseBar('bar-projects')">Projects</a>
+                <a data-i18n="bar-contacts" href="#contact-me" id="bar-contact-me" onclick="chooseBar('bar-contact-me')">Contact</a>
+            </div>
 
-        
-
-        <form class="formular">
-
-            <div class="formular-data">
-                <div class="formular-name-wrapper">
-                    <label data-i18n="form-name" for="name" class="formular-name">Your name</label>
-                    <input type="text" id="name" name="name" class="formular-type-name" maxlength="30">
-                    <p class="valerror d-none" id="val-name">Please type your name</p>
+            <div class="bar-language">
+                <div class="lang-de-parent" id="lang-de-parent">
+                    <img onclick="chooseLanguage('lang-de')" id="lang-de" class="lang de" src="img/DE.svg">
                 </div>
-                    
-                <div class="formular-mail-wrapper">
-                    <label data-i18n="form-mail" for="email" class="formular-mail">Your Email</label>
-                    <input type="email" id="email" name="email" class="formular-type-mail" maxlength="30">
-                    <p class="valerror d-none" id="val-mail">Please type correct email</p>
+
+                <div class="lang-en-parent chosen-parent" id="lang-en-parent">
+                    <img onclick="chooseLanguage('lang-en')" id="lang-en" class="lang en chosen-en" src="img/EN.svg">
+                </div>
+            </div>
+            
+        </section>
+    </div>
+
+    <div class="w-100">
+        <section class="why-me-section" id="why-me-section">
+
+            <h1 data-i18n="bar-why-me">Why me</h1>
+
+            <div class="why-me-body">
+                <div class="location">
+                    <img src="img/location.svg">
+                    <p data-i18n="why-me-location-p1" class="location-p1">I am</p>
+                    <p data-i18n="why-me-location-p2" class="location-p2">located in Cologne..|</p>
+                </div>
+
+                <div class="why-me-description">
+                    <div class="why-me-description-text">
+                        <p data-i18n="why-me-desc">I'm passionate about coding because it<br>
+                            combines analytical thinking, creativity,<br>
+                            and problem-solving. I enjoy building<br>
+                            solutions, learning through challenges,<br>
+                            staying persistent, and collaborating with<br>
+                            others to create meaningful and efficient projects.
+                        </p>
+                    </div>
+
+                    <a class="why-me-description-talk" href="#contact-me">
+                        <p data-i18n="why-me-talk">Let`s talk</p>
+                    </a>
                 </div>
             </div>
 
-            <div class="formular-msg-wrapper">
-                <label data-i18n="form-message" for="message" class="formular-msg">Your Message</label>
-                <textarea id="message" name="message" class="formular-type-msg" rows="5"  maxlength="510"></textarea>
-                <p class="valerror d-none" id="val-message">Please type your message</p>
-            </div>
+        </section>
+    </div>
 
-            <div class="formular-agree">
-                <div class="terms-wrapper">
-                    <img id="agree-img" src="img/check-box.svg" onclick="toggleAgree()">
-                    <p><span data-i18n="form-have">I've read the</span> 
-                        <a data-i18n="form-policy" class="privacy" href="privacy-policy.html">privacy policy</a> <span data-i18n="form-read">and agree to the processing of my data as outlined.</span> 
+    <div class="w-100">
+        <section class="skills-section" id="skills-section">
+            <h1 data-i18n="bar-skills">Skills</h1>
+
+            <div class="skills-body">
+                <div class="skills-body-left">
+                    <img src="img/angular.svg">
+                    <img src="img/ts.svg">
+                    <img src="img/js.svg">
+                    <img src="img/html.svg">
+                    <img src="img/css.svg">
+                    <img src="img/restapi.svg">
+                    <img src="img/supabase.svg">
+                    <img src="img/git.svg">
+                    <img src="img/md.svg">
+                    <img src="img/scrum.svg">
+                </div>
+
+                <div class="skills-body-right">
+                    <p data-i18n="skills-learning-1" class="skills-body-right-p1">
+                        I am currently learning
                     </p>
+
+                    <div class="skills-body-right-description">
+
+                        <div class="skills-img-wrapper">
+                            <img src="img/react.svg">
+                            <img src="img/vuejs.svg">
+                        </div>
+                        
+                        <p data-i18n="skills-learning-2" class="skills-body-right-p2">
+                            I'm motivated to learn emerging<br>
+                            technologies, refine my abilities,<br> 
+                            and develop innovative, future-oriented<br>
+                            solutions.
+                        </p>
+                    </div>
+
                 </div>
-                <p class="valerror d-none" id="val-terms" style="margin-top: -16px;">Please agree terms</p>
             </div>
+        </section>
+    </div>
+
+    <div class="w-100">
+        <section class="projects" id="projects">
+            <h1 data-i18n="projects-h1">My Projects</h1>
+
+            <div class="tabs">
+                <div class="tab-1 chosen" id="tab-1" onclick="chooseTab('tab-1')">1. Pokedex</div>
+                <div class="tab-2" id="tab-2" onclick="chooseTab('tab-2')">2. El Pollo Loco</div>
+                <div class="tab-3" id="tab-3" onclick="chooseTab('tab-3')">3. Join</div>
+                <div data-i18n="projects-ongoing" class="tab-4" id="tab-4" onclick="chooseTab('tab-4')">4. Ongoing Project</div>
+            </div>
+
+            <div class="projects-body">
+
+                <div id="da-bubble" class="da-bubble">
+                    <div class="da-bubble-description">
+                        <div>
+                            <div class="da-bubble-dot">
+                                <img src="img/dot.svg">
+                                <p data-i18n="about" class="da-bubble-dot-p1">About the project</p>
+                                <p data-i18n="da-duration" class="da-bubble-dot-p2">Duration: 3 weeks</p>
+                            </div>
+                            <p data-i18n="da-text" class="da-bubble-dot-p3">
+                                "Pokedex" is a Pokémon Trainer registry featuring data from the PokeAPI, 
+                                    which clearly displays Pokémon, types, abilities, and trainer information.
+                            </p>
+                        </div>
+
+                        <div>
+                            <div class="da-bubble-dot">
+                                <img src="img/dot.svg">
+                                <p data-i18n="how" class="da-bubble-dot-p1">How I have organised my work process</p>
+                                
+                            </div>
+                            <p data-i18n="da-how-text" class="da-bubble-dot-p3">
+                                I maintained clean and scalable code by structuring the project into reusable<br> 
+                                components and modules. Clear naming conventions, consistent file organization,<br> 
+                                and thorough documentation ensured readability, while regular testing helped<br> 
+                                maintain reliability and long-term maintainability.
+                            </p>
+                        </div>
+
+                        <div>
+                            <div class="da-bubble-dot">
+                                <img src="img/dot.svg">
+                                <p data-i18n="learn" class="da-bubble-dot-p1">What I learned</p>
+                                
+                            </div>
+                            <p data-i18n="da-group-text" class="da-bubble-dot-p3">
+                                During the development of "Pokedex," I learned how to efficiently
+                                integrate APIs, display dynamic data, structure user interfaces, 
+                                and implement asynchronous data processing with clean state management.
+                                
+                            </p>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="da-bubble-link-section">
+                        <div data-i18n="techs" class="technologies">Technologies</div>
+
+                        <div class="technologies-icons">
+                            <img src="img/js.svg">
+                            <img src="img/restapi.svg">
+                            <img src="img/git.svg">
+                        </div>
+
+                        <div class="technologies-screenshot">
+                            <img src="img/pokedex2.png">
+                        </div>
+
+                        <div class="link-buttons">
+                            <a href="https://pokedex.mussa-faragi.de/" target="_blank" class="test-btn">Live Test</a>
+                            <a href="https://github.com/mussa-e/Pokedex" target="_blank" class="github-btn">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  -->
+
+                <div id="el-pollo-loco" class="da-bubble d-none">
+                    <div class="da-bubble-description">
+                        <div>
+                            <div class="da-bubble-dot">
+                                <img src="img/dot.svg">
+                                <p data-i18n="about" class="da-bubble-dot-p1">About the project</p>
+                                <p data-i18n="epl-duration" class="da-bubble-dot-p2">Duration: 5 weeks</p>
+                            </div>
+                            <p data-i18n="epl-p3" class="da-bubble-dot-p3">
+                                A simple Jump-and-Run game based on an object-oriented aproach.<br>
+                                Help Pepe to collect Coins and salsa-bottles to fight against the enemies<br>
+                            </p>
+                        </div>
+
+                        <div>
+                            <div class="da-bubble-dot">
+                                <img src="img/dot.svg">
+                                <p data-i18n="how" class="da-bubble-dot-p1">How I have organised my work process</p>
+                                
+                            </div>
+                            <p data-i18n="epl-how-text" class="da-bubble-dot-p3">
+                                I structured the project into reusable modules and classes, ensuring clear<br> 
+                                separation of concerns. Clean code practices included consistent naming conventions,<br>
+                                modular file organization, inline documentation, and regular testing to maintain<br> 
+                                readability, scalability, and long-term maintainability.
+                            </p>
+                        </div>
+
+                        <div>
+                            <div class="da-bubble-dot">
+                                <img src="img/dot.svg">
+                                <p data-i18n="learn" class="da-bubble-dot-p1">What I learned</p>
+                                
+                            </div>
+                            <p data-i18n="epl-learn-text" class="da-bubble-dot-p3">
+                                This project allowed me to deepen my understanding of object-oriented<br>  
+                                programming in JavaScript, especially working with classes and inheritance.<br>
+                                As a solo project, it strengthened my ability to independently structure code,<br> 
+                                solve problems, and continuously improve my development workflow.
+                                
+                                
+                                
+                            </p>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="da-bubble-link-section">
+                        <div data-i18n="techs" class="technologies">Technologies</div>
+
+                        <div class="technologies-icons">
+                            <img src="img/html-small.svg">
+                            <img src="img/js-small.svg">
+                            <img src="img/css-small.svg">
+                        </div>
+
+                        <div class="technologies-screenshot">
+                            <img src="img/startscreen_epl.png">
+                        </div>
+
+                        <div class="link-buttons">
+                            <a href="https://el-pollo-loco.mussa-faragi.de/" target="_blank" class="test-btn">Live Test</a>
+                            <a href="https://github.com/mussa-e/El-Pollo-Loco" target="_blank" class="github-btn" rel="noopener noreferrer">
+                                GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  -->
+
+                <div id="join" class="da-bubble d-none">
+                    <div class="da-bubble-description">
+                        <div>
+                            <div class="da-bubble-dot">
+                                <img src="img/dot.svg">
+                                <p data-i18n="about" class="da-bubble-dot-p1">About the project</p>
+                                <p data-i18n="join-duration" class="da-bubble-dot-p2">Duration: 2 months</p>
+                            </div>
+                            <p data-i18n="join-p3" class="da-bubble-dot-p3">
+                                Task manager inspired by the Kanban System. Create and organize tasks<br>
+                                using drag and drop functions, assign users and categories.<br>
+                            </p>
+                        </div>
+
+                        <div>
+                            <div class="da-bubble-dot">
+                                <img src="img/dot.svg">
+                                <p data-i18n="how" class="da-bubble-dot-p1">How I have organised my work process</p>
+                                
+                            </div>
+                            <p data-i18n="join-how-text" class="da-bubble-dot-p3">
+                                I maintained clean and scalable code by structuring the project into reusable<br> 
+                                components and modules. Clear naming conventions, consistent documentation, and<br> 
+                                regular testing ensured maintainability, readability, and efficient collaboration<br>
+                                throughout the development process.
+                            </p>
+                        </div>
+
+                        <div>
+                            <div class="da-bubble-dot">
+                                <img src="img/dot.svg">
+                                <p data-i18n="group" class="da-bubble-dot-p1">My group work experience</p>
+                                
+                            </div>
+                            <p data-i18n="join-group-text" class="da-bubble-dot-p3">
+                                Our team consisted of four members, where I was responsible for my own feature<br> 
+                                development while also supporting others with questions and challenges. I actively<br>
+                                contributed to a collaborative, well-coordinated workflow, fostering strong teamwork<br>
+                                and effective communication.
+                            </p>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="da-bubble-link-section">
+                        <div data-i18n="techs" class="technologies">Technologies</div>
+
+                        <div class="technologies-icons">
+                            <img src="img/html-small.svg">
+                            <img src="img/js-small.svg">
+                            <img src="img/css-small.svg">
+                        </div>
+
+                        <div class="technologies-screenshot">
+                            <img src="img/screenshot-join.png">
+                        </div>
+
+                        <div class="link-buttons">
+                            <a class="test-btn" href="https://join.mussa-faragi.de/login-signup/" target="_blank">Live Test</a>
+                            <a class="github-btn" href="https://github.com/mussa-e/join" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  -->
+
+                <div id="ongoing-project" class="da-bubble d-none">
+                    <div class="da-bubble-description">
+                        <div>
+                            <div class="da-bubble-dot">
+                                <img src="img/dot.svg">
+                                <p data-i18n="about" class="da-bubble-dot-p1">About the project</p>
+                                
+                            </div>
+                            <p data-i18n="ongoing-p3" class="da-bubble-dot-p3">
+                                What are you currently working on and what features are you implementing?<br>
+                                What is the key to success in your projects? You can mention good planning,<br>
+                                codequalitiy and execution.<br>
+                                <br>
+                                Show a desire to learn new technologies and continually improve your skills.
+                            </p>
+                        </div>
+
+                        
+
+                        
+
+                        
+                    </div>
+
+                    <div class="da-bubble-link-section">
+                        <div data-i18n="techs" class="technologies">Technologies</div>
+
+                        <div class="technologies-icons">
+                            <img src="img/html-small.svg">
+                            <img src="img/js-small.svg">
+                            <img src="img/css-small.svg">
+                        </div>
+
+                        <div class="technologies-screenshot">
+                            <img src="img/screenshot-comming-soon.png">
+                        </div>
+
+                        <div class="link-buttons">
+                            <a class="test-btn">Live Test</a>
+                            <a class="github-btn">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </section>
+    </div>
+    
+    <div class="w-100">
+        <section class="quote-section" id="quote-section">
+
+            <h2 data-i18n="quote-h2">Need a teamplayer? Here`s what my colleagues say about me</h2>
+
+            <div class="quotes-wrapper">
+
+                <div class="quotes">
+                    <p class="quotes-p1">Arnesto</p>
+                    <p data-i18n="quote-project" class="quotes-p2">Project <span>Join</span></p>
+                    <p data-i18n="quote-1" class="quotes-p3">"Mussa impressed in the group project
+                                                                through technical skills, reliability, 
+                                                                and strong teamwork."</p>
+                    <a data-i18n="quote-profile" class="quotes-link">Linked In Profile</a>
+                </div>
+
+                <div class="quotes">
+                    <p class="quotes-p1">Fred</p>
+                    <p data-i18n="quote-project" class="quotes-p2">Project <span>Join</span></p>
+                    <p data-i18n="quote-2" class="quotes-p3">"Mussa is a reliable team player with 
+                                                                excellent development skills."</p>
+                    <a data-i18n="quote-profile" class="quotes-link">Linked In Profile</a>
+                </div>
+
+                <div class="quotes">
+                    <p class="quotes-p1">Rico</p>
+                    <p data-i18n="quote-project" class="quotes-p2">Project <span>Kochwelt</span></p>
+                    <p data-i18n="quote-3" class="quotes-p3">"Impeccable code quality, quick to grasp 
+                                                                new concepts, and a tremendous asset to 
+                                                                the team on a personal level."</p>
+                    <a data-i18n="quote-profile" class="quotes-link">Linked In Profile</a>
+                </div>
+                
+            </div>
+
+        </section>
+    </div>
+
+    <div class="w-100">
+        <section class="contact-me" id="contact-me">
+
+            <div class="contact-me-up-wrapper">
+                <div class="contact-me-up-left">
+                    <h1 data-i18n="contact-h1">Contact me</h1>
+                    <div class="contact-me-prosa-wrapper">
+                        <div class="contact-me-prosa">
+                            <p data-i18n="contact-text">Feel free to get in touch regarding job opportunities,<br>
+                                freelance projects, or collaborations in software development.<br>
+                                I'm particularly interested in building scalable, user-focused<br> 
+                                applications and contributing clean, efficient code. I'm confident<br>
+                                I can add real value to your team and help bring ideas to life.
+                            </p>
+                        </div>
+                        <div class="contact-me-contact">
+                            <div class="contact-me-mail"><img src="img/contact-email_.svg"> <span>E-mail: mussa.faragi@gmx.de</span></div>
+                            <div class="contact-me-phone"><img src="img/contact-phone_.svg"> <span>Tel: 0177 874 156 9</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="arrow-up-wrapper" href="#top">
+                    <img src="img/arrow-up.svg">
+                </a>
+
+            </div>
+
             
 
-            <div class="formular-send-wrapper">
-                <button id="send-btn" data-i18n="form-send" type="submit" class="not-active">Send</button>
+            <form class="formular">
+
+                <div class="formular-data">
+                    <div class="formular-name-wrapper">
+                        <label data-i18n="form-name" for="name" class="formular-name">Your name</label>
+                        <input type="text" id="name" name="name" class="formular-type-name" maxlength="30">
+                        <p class="valerror d-none" id="val-name">Please type your name</p>
+                    </div>
+                        
+                    <div class="formular-mail-wrapper">
+                        <label data-i18n="form-mail" for="email" class="formular-mail">Your Email</label>
+                        <input type="email" id="email" name="email" class="formular-type-mail" maxlength="30">
+                        <p class="valerror d-none" id="val-mail">Please type correct email</p>
+                    </div>
+                </div>
+
+                <div class="formular-msg-wrapper">
+                    <label data-i18n="form-message" for="message" class="formular-msg">Your Message</label>
+                    <textarea id="message" name="message" class="formular-type-msg" rows="5"  maxlength="510"></textarea>
+                    <p class="valerror d-none" id="val-message">Please type your message</p>
+                </div>
+
+                <div class="formular-agree">
+                    <div class="terms-wrapper">
+                        <img id="agree-img" src="img/check-box.svg" onclick="toggleAgree()">
+                        <p><span data-i18n="form-have">I've read the</span> 
+                            <a data-i18n="form-policy" class="privacy" href="privacy-policy.html">privacy policy</a> <span data-i18n="form-read">and agree to the processing of my data as outlined.</span> 
+                        </p>
+                    </div>
+                    <p class="valerror d-none" id="val-terms" style="margin-top: -16px;">Please agree terms</p>
+                </div>
+                
+
+                <div class="formular-send-wrapper">
+                    <button id="send-btn" data-i18n="form-send" type="submit" class="not-active">Send</button>
+                </div>
+                
+            </form>
+
+        </section>
+    </div>
+
+    <div class="w-100" style="background-color: #89BCD9;">
+        <footer>
+
+            <div class="legal-wrapper">
+                <div class="legal"><a data-i18n="legal" href="legal-notice.html">Legal notice</a></div>
+                <div class="legal-copy">&copy; Mussa Faragi 2026</div>
             </div>
-            
-        </form>
 
-    </section>
-
-
-    <footer>
-
-        <div class="legal-wrapper">
-            <div class="legal"><a data-i18n="legal" href="legal-notice.html">Legal notice</a></div>
-            <div class="legal-copy">&copy; Mussa Faragi 2026</div>
-        </div>
-
-        <div class="bar-logo-wrapper footer-logo-wrapper">
-            <div class="bar-logo">
-                <img src="img/logo-icon-dark.svg">
+            <div class="bar-logo-wrapper footer-logo-wrapper">
+                <div class="bar-logo">
+                    <img src="img/logo-icon-dark.svg">
+                </div>
+                <div class="bar-under-logo">
+                    <p class="bar-under-logo-name">M.Faragi</p>
+                    <p data-i18n="logo-role" class="bar-under-logo-property">developer</p>
+                </div>
             </div>
-            <div class="bar-under-logo">
-                <p class="bar-under-logo-name">M.Faragi</p>
-                <p data-i18n="logo-role" class="bar-under-logo-property">developer</p>
+
+            <div class="footer-icons">
+                <a href="https://github.com/mussa-e" target="_blank"><img class="footer-github" src="img/github-footer.svg"></a>
+                <a href="#contact-me"><img class="footer-email" src="img/email-footer.svg"></a>
+                <a href="https://www.linkedin.com/in/mussa-faragi" target="_blank"><img class="footer-linked-in" src="img/linkedin-footer.svg"></a>
             </div>
-        </div>
 
-        <div class="footer-icons">
-            <a href="https://github.com/mussa-e" target="_blank"><img src="img/github-footer.svg"></a>
-            <a href="#contact-me"><img src="img/email-footer.svg"></a>
-            <a href="https://www.linkedin.com/in/mussa-faragi" target="_blank"><img src="img/linkedin-footer.svg"></a>
-        </div>
-
-    </footer>
+        </footer>
+    </div>
 
     <div id="feedback" class="feedback hidden">
         
