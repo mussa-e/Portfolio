@@ -101,6 +101,31 @@ function chooseLanguage(id){
     }
 }
 
+function chooseLanguageMobile(id){
+
+    let deParentMobile = document.getElementById("lang-de-parent-mobile");
+    let enParentMobile = document.getElementById("lang-en-parent-mobile");
+    let deMobile = document.getElementById("lang-de-mobile");
+    let enMobile = document.getElementById("lang-en-mobile");
+
+    deParentMobile.classList.remove("chosen-parent");
+    enParentMobile.classList.remove("chosen-parent");
+    deMobile.classList.remove("chosen-de");
+    enMobile.classList.remove("chosen-en");
+
+    if(id == "lang-de-mobile"){
+        deMobile.classList.add("chosen-de");
+        deParentMobile.classList.add("chosen-parent");
+        setLanguage("de-mobile");
+    } else 
+
+    if(id == "lang-en-mobile"){
+        enMobile.classList.add("chosen-en");
+        enParentMobile.classList.add("chosen-parent");
+        setLanguage("en-mobile");
+    }
+}
+
 
 
 
