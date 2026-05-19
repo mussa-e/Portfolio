@@ -42,22 +42,24 @@
                 <img class="bg-shape" src="img/bg-shape.svg">
 
                 <div class="potrait">
-                    <img src="img/potrait-grundriss.png" id="potrait">
+                    <img class="potrait-img" src="img/bewerbungsfoto1_zuschnitt.png" id="potrait">
 
-                    <div class="bar-mobile d-none" id="bar-mobile">
-                        <a data-i18n="bar-why-me" href="#why-me-section" id="bar-why-me-mobile" onclick="chooseBar('bar-why-me-mobile')">Why me</a>
-                        <a data-i18n="bar-skills" href="#skills-section" id="bar-skills-mobile" onclick="chooseBar('bar-skills-mobile')">Skills</a>
-                        <a data-i18n="bar-projects" href="#projects" id="bar-projects-mobile" onclick="chooseBar('bar-projects-mobile')">Projects</a>
-                        <a data-i18n="bar-contacts" href="#contact-me" id="bar-contact-me-mobile" onclick="chooseBar('bar-contact-me-mobile')">Contact</a>
-                    </div>
-
-                    <div class="bar-language-mobile d-none" id="bar-language-mobile">
-                        <div class="lang-de-parent-mobile" id="lang-de-parent-mobile">
-                            <img onclick="chooseLanguageMobile('lang-de-mobile')" id="lang-de-mobile" class="lang-mobile de-mobile" src="img/DE.svg">
+                    <div class="bar-mobile-wrapper">
+                        <div class="bar-mobile mobile-menu" id="bar-mobile">
+                            <a data-i18n="bar-why-me" href="#why-me-section" id="bar-why-me-mobile" onclick="chooseBar('bar-why-me-mobile')">Why me</a>
+                            <a data-i18n="bar-skills" href="#skills-section" id="bar-skills-mobile" onclick="chooseBar('bar-skills-mobile')">Skills</a>
+                            <a data-i18n="bar-projects" href="#projects" id="bar-projects-mobile" onclick="chooseBar('bar-projects-mobile')">Projects</a>
+                            <a data-i18n="bar-contacts" href="#contact-me" id="bar-contact-me-mobile" onclick="chooseBar('bar-contact-me-mobile')">Contact</a>
                         </div>
 
-                        <div class="lang-en-parent-mobile chosen-parent" id="lang-en-parent-mobile">
-                            <img onclick="chooseLanguageMobile('lang-en-mobile')" id="lang-en-mobile" class="lang-mobile en-mobile chosen-en" src="img/EN.svg">
+                        <div class="bar-language-mobile mobile-menu" id="bar-language-mobile">
+                            <div class="lang-de-parent-mobile" id="lang-de-parent-mobile">
+                                <img onclick="chooseLanguageMobile('lang-de-mobile')" id="lang-de-mobile" class="lang-mobile de-mobile" src="img/DE.svg">
+                            </div>
+
+                            <div class="lang-en-parent-mobile chosen-parent-mobile" id="lang-en-parent-mobile">
+                                <img onclick="chooseLanguageMobile('lang-en-mobile')" id="lang-en-mobile" class="lang-mobile en-mobile chosen-en" src="img/EN.svg">
+                            </div>
                         </div>
                     </div>
 
@@ -66,7 +68,7 @@
 
             
 
-            <div class="top-right">
+            <div class="top-right" id="top-right">
 
                     <div class="top-right-logo-wrapper">
                         <div class="top-right-logo">

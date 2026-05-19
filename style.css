@@ -75,11 +75,11 @@ body{
     filter: brightness(0) saturate(100%) invert(76%) sepia(17%) saturate(522%) hue-rotate(160deg) opacity(72%);
 }
 
-.potrait img {
-    width: 400px;
+.potrait-img {
+    width: 340px;
     position: relative;
-    top: -615px;
-    left: 30px;
+    top: -673px;
+    left: 40px;
 }
 
 .top-right{
@@ -195,21 +195,26 @@ body{
     cursor: pointer;
 }
 
+.top-right-top-position{
+    top: -550px !important;
+}
+
+.bar-mobile-wrapper{
+    position: relative;
+    top: -615px;
+}
 .bar-mobile{
     display: flex;
     width: 400px;
-    position: relative;
     top: -615px;
-    left: 30px;
     flex-direction: column;
     height: 350px;
     justify-content: space-evenly;
     align-items: center;
 
-    
     font-family: Josefin Sans;
     font-weight: 500;
-    font-size: 26px;
+    font-size: 28px;
     line-height: 120%;
     letter-spacing: 0%;
     text-align: center;
@@ -217,23 +222,70 @@ body{
 
 .bar-mobile a{
     text-decoration: none;
-    color: #F8F5EC;
+    color: #262E34;
+    height: 60px;
+    min-width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .bar-language-mobile{
     align-items: center;
     display: flex;
     justify-content: center;
-    gap: 16px;
 }
 
 .lang-mobile{
-    width: 40px !important;
-    height: 40px;
+    width: 30px !important;
+    left: unset !important;
+    position: relative;
+    top: 0 !important;
 }
 
+.lang-de-parent-mobile{
+    top: -673px;
+    display: flex;
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+}
 
+.lang-en-parent-mobile{
+    top: -673px;
+    display: flex;
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+}
 
+.chosen-parent-mobile{
+    background-image: url("img/ellipse-24.svg");
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.mobile-menu {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    pointer-events: none;
+    transition: 
+        opacity 0.9s ease,
+        transform 0.9s ease,
+        visibility 0.4s;
+    filter: blur(5px);
+}
+
+.mobile-menu.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: all;
+    filter: blur(0);
+    
+}
 
 
 
@@ -341,7 +393,7 @@ body{
     cursor: pointer;
 }
 
-.lang {
+.lang, .lang-mobile {
      filter: brightness(0) saturate(100%) invert(15%) sepia(10%) saturate(500%) hue-rotate(170deg);
 }
 

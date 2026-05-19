@@ -20,6 +20,10 @@ let barChoice = [
     "bar-skills",
     "bar-projects",
     "bar-contact-me",
+    "bar-why-me-mobile",
+    "bar-skills-mobile",
+    "bar-projects-mobile",
+    "bar-contact-me-mobile",
 ];
 
 let languages = [
@@ -108,21 +112,21 @@ function chooseLanguageMobile(id){
     let deMobile = document.getElementById("lang-de-mobile");
     let enMobile = document.getElementById("lang-en-mobile");
 
-    deParentMobile.classList.remove("chosen-parent");
-    enParentMobile.classList.remove("chosen-parent");
+    deParentMobile.classList.remove("chosen-parent-mobile");
+    enParentMobile.classList.remove("chosen-parent-mobile");
     deMobile.classList.remove("chosen-de");
     enMobile.classList.remove("chosen-en");
 
     if(id == "lang-de-mobile"){
         deMobile.classList.add("chosen-de");
-        deParentMobile.classList.add("chosen-parent");
-        setLanguage("de-mobile");
+        deParentMobile.classList.add("chosen-parent-mobile");
+        setLanguage("de");
     } else 
 
     if(id == "lang-en-mobile"){
         enMobile.classList.add("chosen-en");
-        enParentMobile.classList.add("chosen-parent");
-        setLanguage("en-mobile");
+        enParentMobile.classList.add("chosen-parent-mobile");
+        setLanguage("en");
     }
 }
 

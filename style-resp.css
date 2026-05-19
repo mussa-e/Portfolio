@@ -1,4 +1,27 @@
+@media (max-width: 950px){
+    .top-right{
+        margin-left: 70px;
+    }
+    .top-right-middle-name{
+        font-size: 76px;
+    }
+    .top-right-middle-property{
+        font-size: 28px;
+    }
+}
+
+
+
+
+
 @media (max-width: 800px){
+    .top-right{
+        margin-left: unset;
+        width: unset;
+        position: relative;
+        top: -1070px;
+    }
+
     .w-100-bar{
         display: none;
     }
@@ -25,7 +48,7 @@
 
     .menu-index{
         cursor: pointer;
-        margin-right: 80px;
+        margin-right: 50px;
     }
 
     .top{
@@ -34,13 +57,9 @@
     .top-left{
         width: unset;
     }
-    .top-right{
-        width: unset;
-        position: relative;
-        top: -500px;
-    }
+    
     .w-100-top{
-        margin-bottom: 180px;
+        margin-bottom: 230px;
     }
 
     .bg-shape:hover {
@@ -91,6 +110,85 @@
         filter: unset;
     }
 }
+
+
+@media (max-width: 600px){
+    .bg-shape{
+        width: 700px;
+    }
+    .potrait-img{
+        height: 400px;
+        width: 300px;
+        top: -630px;
+        left: 55px;
+    }
+    .top-right{
+        top: -1030px;
+    }
+}
+
+@media (max-width: 530px){
+    .bg-shape{
+        width: 550px;
+    }
+    .potrait-img{
+        height: 280px;
+        width: 200px;
+        top: -570px;
+        left: 100px;
+    }
+    .top-right{
+        top: -840px;
+    }
+
+    .top-right-middle-name{
+        font-size: 60px;
+    }
+    .top-right-middle-property{
+        font-size: 24px;
+    }
+    .bar-mobile-wrapper {
+        top: -560px;
+    }
+    .bar-mobile{
+        height: unset;
+    }
+}
+
+@media (max-width: 420px){
+    .bg-shape{
+        width: 415px;
+    }
+    .potrait-img{
+        height: 230px;
+        width: 175px;
+        top: -530px;
+        left: 115px;
+    }
+    
+
+    .top-right-middle-name{
+        font-size: 46px;
+    }
+    .top-right-middle-property{
+        font-size: 22px;
+    }
+
+    .bar-mobile{
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    .lang-en-parent-mobile{
+        width: 50px;
+    }
+    .lang-de-parent-mobile{
+        width: 50px;
+    }
+    .lang-mobile{
+        width: 20px !important;
+    }
+}
+
 
 @media (max-width: 360px){
     .legal{
