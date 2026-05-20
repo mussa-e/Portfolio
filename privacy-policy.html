@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="img/logo-icon.svg">
     <link rel="stylesheet" href="privacy-policy.css">
+    <link rel="stylesheet" href="privacy-policy-resp.css">
 
     <script src="main.js"></script>
     <script src="translate.js"></script>
+    <script src="privacy-policy.js"></script>
     
     
 </head>
@@ -20,15 +22,15 @@
         <section class="header">
 
             <a href="index.html">
-            <div class="header-logo-wrapper">
-                <div class="header-logo">
-                    <img src="img/logo-icon-dark.svg">
+                <div class="header-logo-wrapper">
+                    <div class="header-logo">
+                        <img src="img/logo-icon-dark.svg">
+                    </div>
+                    <div class="header-under-logo">
+                        <p class="header-under-logo-name">M.Faragi</p>
+                        <p data-i18n="logo-role" class="header-under-logo-property">developer</p>
+                    </div>
                 </div>
-                <div class="header-under-logo">
-                    <p class="header-under-logo-name">M.Faragi</p>
-                    <p data-i18n="logo-role" class="header-under-logo-property">developer</p>
-                </div>
-            </div>
             </a>
 
             <div class="bar-middle bar-middle-privacy">
@@ -48,8 +50,27 @@
                 </div>
             </div>
 
-            <div class="menu-privacy">
+            <div class="menu-privacy" onclick="openMenuPrivacy()">
                 <img src="img/menu.svg">
+            </div>
+
+            <div class="privacy-menu-wrapper" id="privacy-menu-wrapper">
+                <div class="bar-middle bar-middle-privacy-resp">
+                    <a data-i18n="bar-why-me" href="index.html#why-me-section" id="bar-why-me" onclick="chooseBar('bar-why-me')">Why me</a>
+                    <a data-i18n="bar-skills" href="index.html#skills-section" id="bar-skills" onclick="chooseBar('bar-skills')">Skills</a>
+                    <a data-i18n="bar-projects" href="index.html#projects" id="bar-projects" onclick="chooseBar('bar-projects')">Projects</a>
+                    <a data-i18n="bar-contacts" href="index.html#contact-me" id="bar-contact-me" onclick="chooseBar('bar-contact-me')">Contact</a>
+                </div>
+
+                <div class="bar-language bar-language-privacy-resp">
+                    <div class="lang-de-parent" id="lang-de-parent-privacy">
+                        <img onclick="chooseLanguagePrivacy('lang-de-privacy')" id="lang-de-privacy" class="lang de" src="img/DE.svg">
+                    </div>
+
+                    <div class="lang-en-parent chosen-parent" id="lang-en-parent-privacy">
+                        <img onclick="chooseLanguagePrivacy('lang-en-privacy')" id="lang-en-privacy" class="lang en chosen-en" src="img/EN.svg">
+                    </div>
+                </div>
             </div>
             
         </section>

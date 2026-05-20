@@ -34,6 +34,10 @@
         margin-left: 40px;
     }
 
+    .footer-logo-wrapper{
+        margin-left: unset;
+    }
+
     .top-right-logo-wrapper{
         display: none;
     }
@@ -44,6 +48,10 @@
 
     .bar-under-logo-property {
         color: #89BCD9;
+    }
+
+    .bar-under-logo-property-footer{
+        color: #262E34;
     }
 
     .menu-index{

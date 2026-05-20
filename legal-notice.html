@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="legal-notice.css">
     <link rel="icon" type="image/png" href="img/Logo icon.svg">
+    <link rel="stylesheet" href="legal-notice-resp.css">
 
     <script src="main.js"></script>
     <script src="translate.js"></script>
+    <script src="legal-notice.js"></script>
     
 </head>
 <body>
@@ -46,8 +48,28 @@
                 </div>
             </div>
 
-            <div class="menu-legal">
+            <div class="menu-legal" onclick="openMenuLegal()">
                 <img src="img/menu.svg">
+            </div>
+
+
+            <div class="legal-menu-wrapper" id="legal-menu-wrapper">
+                <div class="bar-middle bar-middle-legal-resp">
+                    <a data-i18n="bar-why-me" href="index.html#why-me-section" id="bar-why-me" onclick="chooseBar('bar-why-me')">Why me</a>
+                    <a data-i18n="bar-skills" href="index.html#skills-section" id="bar-skills" onclick="chooseBar('bar-skills')">Skills</a>
+                    <a data-i18n="bar-projects" href="index.html#projects" id="bar-projects" onclick="chooseBar('bar-projects')">Projects</a>
+                    <a data-i18n="bar-contacts" href="index.html#contact-me" id="bar-contact-me" onclick="chooseBar('bar-contact-me')">Contact</a>
+                </div>
+
+                <div class="bar-language bar-language-legal-resp">
+                    <div class="lang-de-parent" id="lang-de-parent-legal">
+                        <img onclick="chooseLanguageLegal('lang-de-legal')" id="lang-de-legal" class="lang de" src="img/DE.svg">
+                    </div>
+
+                    <div class="lang-en-parent chosen-parent" id="lang-en-parent-legal">
+                        <img onclick="chooseLanguageLegal('lang-en-legal')" id="lang-en-legal" class="lang en chosen-en" src="img/EN.svg">
+                    </div>
+                </div>
             </div>
             
         </section>

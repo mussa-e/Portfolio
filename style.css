@@ -367,6 +367,7 @@ body{
     text-align: center;
     justify-content: space-between;
     width: 700px;
+    gap: 16px;
 }
 
 .bar-middle a{
