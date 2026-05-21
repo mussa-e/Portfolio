@@ -149,14 +149,14 @@ const translations = {
                             <p><strong class="blue">Exploring the Board</strong><br>
                             Email: mussa.faragi@gmx.de</p>
 
-                            <h2>Acceptance of terms</h2>
+                            <h2>1. Acceptance of terms</h2>
                             <p>
                                 By accessing and using <span class="blue">Portfolio</span> (Product), you acknowledge and agree to the following terms and conditions,
                                 and any policies, guidelines, or amendments thereto that may be presented to you from time to time.
                                 We, the listed students, may update or change the terms and conditions from time to time without notice.
                             </p>
 
-                            <h2>Scope and ownership of the product</h2>
+                            <h2>2. Scope and ownership of the product</h2>
                             <p>
                                 <span class="blue">Portfolio</span> has been developed as part of a student group project in a web development bootcamp at the
                                 <span class="blue">Developer Akademie GmbH.</span> It has an educational purpose and is not intended for extensive personal
@@ -168,20 +168,20 @@ const translations = {
                                 modification, distribution, or replication of the design is strictly prohibited.
                             </p>
 
-                            <h2>Proprietary rights</h2>
+                            <h2>3. Proprietary rights</h2>
                             <p>
                                 Aside from the design owned by <span class="blue">Developer Akademie GmbH.</span>, we, the listed students, retain all proprietary
                                 rights in <span class="blue">Portfolio</span>, including any associated copyrighted material, trademarks, and other proprietary information.
                             </p>
 
-                            <h2>Use of the product</h2>
+                            <h2>4. Use of the product</h2>
                             <p>
                                 <span class="blue">Portfolio</span> is intended to be used for lawful purposes only, in accordance with all applicable laws and regulations.
                                 Any use of <span class="blue">Portfolio</span> for illegal activities, or to harass, harm, threaten, or intimidate another person,
                                 is strictly prohibited. You are solely responsible for your interactions with other users of <span class="blue">Portfolio</span>.
                             </p>
 
-                            <h2>Disclaimer of warranties and limitation of liability</h2>
+                            <h2>5. Disclaimer of warranties and limitation of liability</h2>
                             <p>
                                 <span class="blue">Portfolio</span> is provided "as is" without warranty of any kind, whether express or implied, including but not limited
                                 to the implied warranties of merchantability, fitness for a particular purpose, or non-infringement.
@@ -191,7 +191,7 @@ const translations = {
                                 arising out of or in connection with the use or performance of <span class="blue">Portfolio</span>.
                             </p>
 
-                            <h2>Indemnity</h2>
+                            <h2>6. Indemnity</h2>
                             <p>
                                 You agree to indemnify, defend and hold harmless us, the listed students, the <span class="blue">Developer Akademie</span>,
                                 and our affiliates, partners, officers, directors, agents, and employees, from and against any claim,
@@ -372,14 +372,14 @@ const translations = {
                             <p><strong class="blue">Exploring the Board</strong><br>
                             E-Mail: mussa.faragi@gmx.de</p>
 
-                            <h2>Akzeptanz der Bedingungen</h2>
+                            <h2>1. Akzeptanz der Bedingungen</h2>
                             <p>
                                 Durch den Zugriff auf und die Nutzung von <span class="blue">Portfolio</span> (Produkt) erkennen Sie die folgenden
                                 Bedingungen und Richtlinien sowie mögliche zukünftige Änderungen oder Ergänzungen an und stimmen diesen zu.
                                 Wir, die aufgeführten Studenten, behalten uns das Recht vor, die Bedingungen jederzeit ohne vorherige Ankündigung zu ändern.
                             </p>
 
-                            <h2>Umfang und Eigentum des Produkts</h2>
+                            <h2>2. Umfang und Eigentum des Produkts</h2>
                             <p>
                                 <span class="blue">Portfolio</span> wurde im Rahmen eines Gruppenprojekts während eines Webentwicklungs-Bootcamps der
                                 <span class="blue">Developer Akademie GmbH</span> entwickelt. Das Projekt dient ausschließlich Bildungszwecken und ist nicht
@@ -392,14 +392,14 @@ const translations = {
                                 Jegliche unbefugte Nutzung, Vervielfältigung, Änderung, Verbreitung oder Nachbildung des Designs ist streng untersagt.
                             </p>
 
-                            <h2>Eigentumsrechte</h2>
+                            <h2>3. Eigentumsrechte</h2>
                             <p>
                                 Abgesehen vom Design, das Eigentum der <span class="blue">Developer Akademie GmbH</span> ist, behalten wir,
                                 die aufgeführten Studenten, sämtliche Eigentumsrechte an <span class="blue">Portfolio</span>, einschließlich aller
                                 urheberrechtlich geschützten Inhalte, Marken und sonstigen geschützten Informationen.
                             </p>
 
-                            <h2>Nutzung des Produkts</h2>
+                            <h2>4. Nutzung des Produkts</h2>
                             <p>
                                 <span class="blue">Portfolio</span> darf ausschließlich für rechtmäßige Zwecke und im Einklang mit allen geltenden Gesetzen
                                 und Vorschriften verwendet werden. Jegliche Nutzung von <span class="blue">Portfolio</span> für illegale Aktivitäten oder zur
@@ -407,7 +407,7 @@ const translations = {
                                 Sie sind allein verantwortlich für Ihre Interaktionen mit anderen Nutzern von <span class="blue">Portfolio</span>.
                             </p>
 
-                            <h2>Haftungsausschluss und Haftungsbeschränkung</h2>
+                            <h2>5. Haftungsausschluss und Haftungsbeschränkung</h2>
                             <p>
                                 <span class="blue">Portfolio</span> wird ohne jegliche ausdrückliche oder stillschweigende Gewährleistung bereitgestellt,
                                 einschließlich, aber nicht beschränkt auf die Gewährleistung der Marktgängigkeit, Eignung für einen bestimmten Zweck
@@ -418,7 +418,7 @@ const translations = {
                                 die sich aus der Nutzung oder Leistung von <span class="blue">Portfolio</span> ergeben.
                             </p>
 
-                            <h2>Freistellung</h2>
+                            <h2>6. Freistellung</h2>
                             <p>
                                 Sie erklären sich damit einverstanden, uns, die aufgeführten Studenten, die
                                 <span class="blue">Developer Akademie</span> sowie unsere Partner, Mitarbeiter, Direktoren und Vertreter
