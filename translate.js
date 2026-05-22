@@ -84,7 +84,7 @@ const translations = {
         "da-group-text": `During the development of "Pokedex," I learned how to efficiently integrate 
                             APIs, display dynamic data, structure user interfaces, and implement 
                             asynchronous data processing with clean state management.`,
-        "techs": "Technologies",
+        "techs": "Technologies:",
         "epl-duration": "Duration: 5 weeks",
         "epl-p3": `A simple Jump-and-Run game based on an object-oriented aproach.
                     Help Pepe to collect Coins and salsa-bottles to fight against the enemies`,
@@ -307,7 +307,7 @@ const translations = {
         "da-group-text": `Bei der Entwicklung von „Pokedex“ habe ich gelernt, APIs effizient einzubinden, 
                             dynamische Daten darzustellen, Benutzeroberflächen zu strukturieren und 
                             asynchrone Datenverarbeitung mit sauberem State-Management umzusetzen.`,
-        "techs": "Technologien",
+        "techs": "Technologien:",
         "epl-duration": "Dauer: 5 Wochen",
         "epl-p3": `Ein einfaches Jump ’n’ Run, das auf einem objektorientierten Ansatz basiert.
                     Hilf Pepe dabei, Münzen und Salsa-Flaschen zu sammeln, um gegen die Feinde zu kämpfen.`,

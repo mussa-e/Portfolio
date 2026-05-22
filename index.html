@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="img/Logo icon.svg">
     <link rel="stylesheet" href="style-resp.css">
+    <link rel="stylesheet" href="projects-resp.css">
     <title>Portfolio</title>
 
     <script defer src="main.js"></script>
     <script defer src="translate.js"></script>
     <script defer src="contact.js"></script>
     <script defer src="menu.js"></script>
+    <script defer src="projects-resp.js"></script>
 
 </head>
 <body>
@@ -218,6 +220,11 @@
 
                 </div>
             </div>
+
+            <a class="lets-talk-resp" id="lets-talk-resp" href="#contact-me">
+                <p data-i18n="why-me-talk">Let`s talk</p>
+            </a>
+
         </section>
     </div>
 
@@ -229,12 +236,19 @@
                 <div class="tab-1 chosen" id="tab-1" onclick="chooseTab('tab-1')">1. Pokedex</div>
                 <div class="tab-2" id="tab-2" onclick="chooseTab('tab-2')">2. El Pollo Loco</div>
                 <div class="tab-3" id="tab-3" onclick="chooseTab('tab-3')">3. Join</div>
-                <div data-i18n="projects-ongoing" class="tab-4" id="tab-4" onclick="chooseTab('tab-4')">4. Ongoing Project</div>
+                <div class="tab-4" id="tab-4" data-i18n="projects-ongoing" onclick="chooseTab('tab-4')">4. Ongoing Project</div>
             </div>
 
             <div class="projects-body">
 
                 <div id="da-bubble" class="da-bubble">
+
+                    <div class="projects-header-resp">
+                        <h1>Pokedex</h1>
+                        <p><span data-i18n="techs">Technologies:</span> JavaScript, REST-Api, Git</p>
+                        <p data-i18n="da-duration">Duration: 3 weeks</p>
+                    </div>
+
                     <div class="da-bubble-description">
                         <div>
                             <div class="da-bubble-dot">
@@ -302,6 +316,13 @@
                 <!--  -->
 
                 <div id="el-pollo-loco" class="da-bubble d-none">
+
+                    <div class="projects-header-resp">
+                        <h1>El Pollo Loco</h1>
+                        <p><span data-i18n="techs">Technologies:</span> JavaScript, HTML, CSS</p>
+                        <p data-i18n="epl-duration">Duration: 5 weeks</p>
+                    </div>
+
                     <div class="da-bubble-description">
                         <div>
                             <div class="da-bubble-dot">
@@ -373,6 +394,13 @@
                 <!--  -->
 
                 <div id="join" class="da-bubble d-none">
+
+                    <div class="projects-header-resp">
+                        <h1>Join</h1>
+                        <p><span data-i18n="techs">Technologies:</span> JavaScript, HTML, CSS</p>
+                        <p data-i18n="join-duration">Duration: 2 months</p>
+                    </div>
+
                     <div class="da-bubble-description">
                         <div>
                             <div class="da-bubble-dot">
