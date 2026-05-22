@@ -63,6 +63,7 @@ const translations = {
                         staying persistent, and collaborating with
                         others to create meaningful and efficient projects.`,
         "why-me-talk": "Let`s talk",
+        "skills-learning-1-resp": "What I am currently learning",
         "skills-learning-1": "I am currently learning",
         "skills-learning-2": `I'm motivated to learn emerging
                                 technologies, refine my abilities,
@@ -283,6 +284,7 @@ const translations = {
                         beharrlich zu bleiben und mit anderen zusammenzuarbeiten,
                         um sinnvolle und effiziente Projekte zu realisieren.`,
         "why-me-talk": "Lass uns sprechen",
+        "skills-learning-1-resp": "Was ich aktuell lerne",
         "skills-learning-1": "Aktuell lerne ich",
         "skills-learning-2": `Ich bin motiviert, neue
                                 Technologien zu erlernen,

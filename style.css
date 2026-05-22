@@ -560,6 +560,20 @@ body{
     gap: 16px; 
 }
 
+
+.skills-body-right-p1-resp-wrapper{
+    display: none;
+    justify-content: center;
+    color: #89BCD9;
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0%;
+
+}
+
 .skills-body-right{
     display: flex;
     flex-direction: column;

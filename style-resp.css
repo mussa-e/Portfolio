@@ -24,6 +24,37 @@
     .why-me-description-talk{
         display: none;
     }
+
+    .skills-body{
+        flex-direction: column;
+    }
+    .skills-body-left img:nth-child(9) {
+        grid-column: 2;
+    }
+
+    .skills-body-left img:nth-child(10) {
+        grid-column: 3;
+    }
+
+    .skills-body-right-p1-resp-wrapper{
+        display: flex;
+    }
+
+    .skills-body-right-p1{
+        display: none;
+    }
+
+    .skills-body-right{
+        left: 330px;
+        width: 120px;
+        height: 120px;
+    }
+
+    .skills-body-right-p2{
+        position: absolute;
+        top: 10px;
+        left: -380px;
+    }
 }
 
 
@@ -152,6 +183,23 @@
     }
 }
 
+@media(max-width: 550px){
+    .skills-body-right-p2{
+        font-size: 16px;
+        left: -162px;
+        top: -30px;
+        width: 150px;
+    }
+    .skills-body-right{
+        left: 155px;
+    }
+
+    .skills-body-left img{
+        width: 56px;
+        height: 70px;
+    }
+}
+
 @media (max-width: 530px){
     .bg-shape{
         width: 550px;
@@ -227,6 +275,19 @@
     .why-me-section h1{
         font-size: 50px;
     }
+
+    .skills-section h1{
+        font-size: 50px;
+    }
+
+    .skills-body-right-p1-resp-wrapper{
+        font-size: 16px;
+    }
+    .skills-body-right-p1-resp-wrapper{
+        font-size: 16px;
+    }
+
+    
     
 }
 
