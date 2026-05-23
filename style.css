@@ -797,6 +797,11 @@ body{
     display: flex;
     gap: 32px;
 }
+.link-buttons-resp{
+    display: none;
+    gap: 32px;
+    justify-content: center;
+}
 
 .test-btn{
     font-family: Josefin Sans;
@@ -844,6 +849,8 @@ body{
     background-color: #343e46;
     cursor: default;
 }
+
+
 
 .quote-section{
     display: flex;

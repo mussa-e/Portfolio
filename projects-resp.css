@@ -59,4 +59,39 @@
         padding-left: unset;
         margin-top: -16px;
     }
+    .da-bubble-description{
+        order: 1;
+    }
+    .link-buttons{
+        display: none;
+    }
+    .link-buttons-resp{
+        display: flex;
+        order: 2;
+    }
+}
+
+@media(max-width: 800px){
+    .projects-body{
+        width: unset;
+    }
+}
+
+@media(max-width: 680px){
+    .projects-body{
+        height: 1300px;
+    }
+}
+
+@media(max-width: 580px){
+    .projects-body{
+        height: 1400px;
+    }
+}
+
+
+@media(max-width: 420px){
+    .projects h1{
+        font-size: 50px;
+    }
 }
