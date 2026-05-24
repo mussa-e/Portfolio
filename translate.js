@@ -114,6 +114,8 @@ const translations = {
                             
                             Show a desire to learn new technologies and continually improve your skills.`,
         "quote-h2": "Need a teamplayer? Here`s what my colleagues say about me",
+        "quote-h2-resp": "Need a teamplayer?",
+        "quote-h2-resp-p": "Here`s what my colleagues say about me",
         "quote-project": "Project",
         "quote-1": `"Mussa impressed in the group project
                     through technical skills, reliability, 
@@ -339,6 +341,8 @@ const translations = {
 
                             Show a desire to learn new technologies and continually improve your skills.`,
         "quote-h2": "Suchen Sie einen Teamplayer? Das sagen meine Kollegen über mich.",
+        "quote-h2-resp": "Suchen Sie einen Teamplayer?",
+        "quote-h2-resp-p": "Das sagen meine Kollegen über mich",
         "quote-project": "Projekt",
         "quote-1": `"Mussa überzeugte im Gruppenprojekt durch
                     technische Fähigkeiten, Zuverlässigkeit 

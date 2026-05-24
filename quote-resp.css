@@ -1,0 +1,139 @@
+.quote-h2-resp{
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 32px;
+}
+
+.quote-h2-resp h2{
+    font-family: Anta;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #89BCD9;
+    margin-bottom: 0;
+}
+
+.quote-h2-resp p{
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #F8F5EC;
+}
+
+.scroll-stepper{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.stepper-1{
+    background-color: #2D3840;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+}
+.stepper-2{
+    background-color: #2D3840;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+}
+.stepper-3{
+    background-color: #2D3840;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+}
+
+.stepper-1.active, .stepper-2.active, .stepper-3.active{
+    background: #89BCD9;
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+@media(max-width: 1280px){
+    .quote-h2{
+        display: none;
+    }
+
+    .quote-h2-resp{
+        display: flex;
+    }
+
+    .quotes-wrapper{
+        margin-top: 56px;
+    }    
+
+    .quotes-wrapper{
+        width: 400px;
+        height: 450px;
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        flex-wrap: nowrap;
+        gap: 24px;
+
+        margin: 0 auto;
+
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+
+        scrollbar-width: none; 
+        -ms-overflow-style: none; 
+    }
+
+    .quotes{
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+        flex-shrink: 0;
+    }
+}
+
+
+.quotes-wrapper::-webkit-scrollbar{
+    display: none;
+}
+
+@media(max-width: 430px){
+    .quotes-p1{
+        font-size: 20px;
+    }
+    .quotes-p2{
+        font-size: 16px;
+    }
+    .quotes-p3{
+        font-size: 16px;
+        width: 180px;
+    }
+
+    .quotes{
+        width: 310px;
+        height: 310px;
+        justify-content: flex-start;
+    }
+
+    .quote-section{
+        padding: 0 8px;
+    }
+
+    .quotes:hover::before {
+        transform: none;
+        filter: none;
+    }
+    
+}
+
+
+

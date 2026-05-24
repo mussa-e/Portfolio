@@ -8,6 +8,8 @@
     <link rel="icon" type="image/png" href="img/Logo icon.svg">
     <link rel="stylesheet" href="style-resp.css">
     <link rel="stylesheet" href="projects-resp.css">
+    <link rel="stylesheet" href="quote-resp.css">
+
     <title>Portfolio</title>
 
     <script defer src="main.js"></script>
@@ -15,6 +17,7 @@
     <script defer src="contact.js"></script>
     <script defer src="menu.js"></script>
     <script defer src="projects-resp.js"></script>
+    <script defer src="quote-resp.js"></script>
 
 </head>
 <body>
@@ -538,10 +541,15 @@
         </section>
     </div>
     
-    <div class="w-100">
+    <div class="w-100 w-100-quote">
         <section class="quote-section" id="quote-section">
 
-            <h2 data-i18n="quote-h2">Need a teamplayer? Here`s what my colleagues say about me</h2>
+            <h2 data-i18n="quote-h2" class="quote-h2">Need a teamplayer? Here`s what my colleagues say about me</h2>
+
+            <div class="quote-h2-resp">
+                <h2 data-i18n="quote-h2-resp">Need a teamplayer?</h2>
+                <p data-i18n="quote-h2-resp-p">Here`s what my colleagues say about me</p>
+            </div>
 
             <div class="quotes-wrapper">
 
@@ -551,7 +559,7 @@
                     <p data-i18n="quote-1" class="quotes-p3">"Mussa impressed in the group project
                                                                 through technical skills, reliability, 
                                                                 and strong teamwork."</p>
-                    <a data-i18n="quote-profile" class="quotes-link">Linked In Profile</a>
+                    <!-- <a data-i18n="quote-profile" class="quotes-link">Linked In Profile</a> -->
                 </div>
 
                 <div class="quotes">
@@ -559,7 +567,7 @@
                     <p data-i18n="quote-project" class="quotes-p2">Project <span>Join</span></p>
                     <p data-i18n="quote-2" class="quotes-p3">"Mussa is a reliable team player with 
                                                                 excellent development skills."</p>
-                    <a data-i18n="quote-profile" class="quotes-link">Linked In Profile</a>
+                    <!-- <a data-i18n="quote-profile" class="quotes-link">Linked In Profile</a> -->
                 </div>
 
                 <div class="quotes">
@@ -568,9 +576,15 @@
                     <p data-i18n="quote-3" class="quotes-p3">"Impeccable code quality, quick to grasp 
                                                                 new concepts, and a tremendous asset to 
                                                                 the team on a personal level."</p>
-                    <a data-i18n="quote-profile" class="quotes-link">Linked In Profile</a>
+                    <!-- <a data-i18n="quote-profile" class="quotes-link">Linked In Profile</a> -->
                 </div>
-                
+
+            </div>
+
+            <div class="scroll-stepper">
+                <div class="stepper-1"></div>
+                <div class="stepper-2"></div>
+                <div class="stepper-3"></div>
             </div>
 
         </section>

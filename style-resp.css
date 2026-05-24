@@ -234,6 +234,10 @@
     .why-me-description-text p{
         padding: 0 16px;
     }
+
+    .w-100-top{
+        margin-bottom: unset;
+    }
 }
 
 @media (max-width: 420px){
