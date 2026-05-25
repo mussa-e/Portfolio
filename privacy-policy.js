@@ -1,5 +1,15 @@
+let menuOpenPrivacy;
+
 function openMenuPrivacy(){
+    menuOpenPrivacy = !menuOpenPrivacy;
+
     document.getElementById("privacy-menu-wrapper").classList.toggle("active");
+
+    if(menuOpenPrivacy){
+        document.getElementById("menu-privacy-img").src = "img/close.svg";
+    } else {
+        document.getElementById("menu-privacy-img").src = "img/menu-2.svg";
+    }
 }
 
 

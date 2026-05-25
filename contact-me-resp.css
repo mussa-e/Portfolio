@@ -1,0 +1,60 @@
+.work-together{
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #89BCD9;
+    display: none;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+
+@media(max-width: 1280px){
+    .contact-me-prosa-wrapper{
+        flex-direction: column;
+    }
+
+    .contact-me-prosa{
+        order: 2;
+    }
+
+    .work-together{
+        display: flex;
+    }
+
+    .formular{
+        margin-top: 50px;
+    }
+
+    .formular-data{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formular-msg-wrapper{
+        width: 462px;
+    }
+
+    .formular-agree{
+        width: 462px;
+    }
+
+    .terms-wrapper{
+        justify-content: center;
+    }
+
+    .formular-send-wrapper{
+        width: 462px;
+    }
+
+    .arrow-up-wrapper{
+        display: none;
+    }
+
+    .arrow-up-wrapper-resp{
+        display: flex;
+    }
+}

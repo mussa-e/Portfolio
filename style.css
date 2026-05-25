@@ -963,6 +963,7 @@ body{
 
 .contact-me{
     margin-top: 100px;
+    margin-bottom: 80px;
     max-width: 1440px;
 }
 
@@ -1040,6 +1041,18 @@ body{
     border-radius: 50px;
 }
 .arrow-up-wrapper img:hover{
+    cursor: pointer;
+    background-color: #343e46;
+}
+
+.arrow-up-wrapper-resp{
+    display: none;
+    justify-content: center;
+}
+.arrow-up-wrapper-resp img{
+    border-radius: 50px;
+}
+.arrow-up-wrapper-resp img:hover{
     cursor: pointer;
     background-color: #343e46;
 }

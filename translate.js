@@ -130,6 +130,7 @@ const translations = {
                         I'm particularly interested in building scalable, user-focused 
                         applications and contributing clean, efficient code. I'm confident
                         I can add real value to your team and help bring ideas to life.`,
+        "work-together": "Let us work together!",
         "form-name": "Your name",
         "form-mail": "Your Email",
         "form-message": "Your Message",
@@ -356,6 +357,7 @@ const translations = {
                         Besonders interessiert bin ich daran, skalierbare, nutzerzentrierte
                         Anwendungen zu entwickeln und sauberen, effizienten Code beizusteuern. Ich bin davon überzeugt,
                         dass ich Ihrem Team einen echten Mehrwert bieten und dabei helfen kann, Ideen zum Leben zu erwecken.`,
+        "work-together": "Lass uns gemeinsam arbeiten!",             
         "form-name": "Dein Name",
         "form-mail": "Deine Email",
         "form-message": "Deine Nachricht",

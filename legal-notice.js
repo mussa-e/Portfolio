@@ -1,5 +1,16 @@
+let menuOpenLegal;
+
 function openMenuLegal(){
+    
+    menuOpenLegal = !menuOpenLegal;
+
     document.getElementById("legal-menu-wrapper").classList.toggle("active");
+
+    if(menuOpenLegal){
+        document.getElementById("menu-legal-img").src = "img/close.svg";
+    } else {
+        document.getElementById("menu-legal-img").src = "img/menu-2.svg";
+    }
 }
 
 

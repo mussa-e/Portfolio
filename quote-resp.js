@@ -52,3 +52,21 @@ const observer = new IntersectionObserver((entries) => {
     });
 
 });
+
+
+function quoteChoice(choice) {
+
+    const map = {
+        one: 0,
+        two: 1,
+        three: 2
+    };
+
+    const quotes = document.querySelectorAll('.quotes');
+
+    quotes[map[choice]].scrollIntoView({
+        behavior: 'smooth',
+        inline: 'center',
+        block: 'nearest'
+    });
+}

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style-resp.css">
     <link rel="stylesheet" href="projects-resp.css">
     <link rel="stylesheet" href="quote-resp.css">
+    <link rel="stylesheet" href="contact-me-resp.css">
 
     <title>Portfolio</title>
 
@@ -35,7 +36,7 @@
             </a>
 
             <div class="menu-index" onclick="openMenu()">
-                <img src="img/menu.svg">
+                <img id="menu-index-img" src="img/menu-2.svg">
             </div>
         </section>
     </div>
@@ -582,9 +583,9 @@
             </div>
 
             <div class="scroll-stepper">
-                <div class="stepper-1"></div>
-                <div class="stepper-2"></div>
-                <div class="stepper-3"></div>
+                <div onclick="quoteChoice('one')" class="stepper-1"></div>
+                <div onclick="quoteChoice('two')" class="stepper-2"></div>
+                <div onclick="quoteChoice('three')" class="stepper-3"></div>
             </div>
 
         </section>
@@ -618,6 +619,7 @@
 
             </div>
 
+            <div data-i18n="work-together" class="work-together">Let us work together!</div>
             
 
             <form class="formular">
@@ -658,6 +660,10 @@
                 </div>
                 
             </form>
+
+            <a class="arrow-up-wrapper-resp" href="#top">
+                <img src="img/arrow-up.svg">
+            </a>
 
         </section>
     </div>

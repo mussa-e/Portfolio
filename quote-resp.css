@@ -35,24 +35,29 @@
     width: 16px;
     height: 16px;
     border-radius: 50px;
+    cursor: pointer;
 }
 .stepper-2{
     background-color: #2D3840;
     width: 16px;
     height: 16px;
     border-radius: 50px;
+    cursor: pointer;
 }
 .stepper-3{
     background-color: #2D3840;
     width: 16px;
     height: 16px;
     border-radius: 50px;
+    cursor: pointer;
 }
 
 .stepper-1.active, .stepper-2.active, .stepper-3.active{
     background: #89BCD9;
     transform: scale(1.1);
 }
+
+
 
 
 
