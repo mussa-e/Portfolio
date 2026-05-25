@@ -3,10 +3,14 @@
     height: 50px;
 }
 
+@media (max-width: 1140px){
+    .top-left{
+        padding-left: 80px;
+    }
+}
 
 
-
-@media (max-width: 950px){
+@media (max-width: 970px){
     .top-right{
         margin-left: 70px;
     }
@@ -74,7 +78,7 @@
 
 
 
-@media (max-width: 800px){
+@media (max-width: 865px){
     .top-right{
         margin-left: unset;
         width: unset;
@@ -124,6 +128,7 @@
     }
     .top-left{
         width: unset;
+        padding-left: unset;
     }
     
     .w-100-top{

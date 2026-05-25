@@ -58,3 +58,73 @@
         display: flex;
     }
 }
+
+@media(max-width: 580px){
+    .contact-me-prosa-wrapper{
+        padding: 0 24px;
+    }
+}
+
+
+@media(max-width: 500px){
+    .formular{
+        margin-right: unset;
+        margin-left: unset;
+        margin-bottom: unset;
+    }
+
+    .formular-data{
+        width: 90%;
+    }
+
+    .formular-name-wrapper{
+        width: 100%;
+    }
+
+    .formular-mail-wrapper{
+        width: 100%;
+    }
+
+    .formular-type-name{
+        width: unset;
+    }
+
+    .formular-type-mail{
+        width: unset;
+    }
+
+    .formular-msg-wrapper{
+        width: 90%;
+    }
+
+    .formular-send-wrapper{
+        width: 90%;
+    }
+
+    .formular-agree{
+        width: 90%;
+    }
+
+    .arrow-up-wrapper-resp{
+        margin-top: 100px;
+    }
+}
+
+
+@media(max-width: 380px){
+    .contact-me-up-left h1{
+        font-size: 50px;
+    }
+
+    .contact-me-prosa p{
+        font-size: 16px;
+    }
+
+    .contact-me-contact{
+        font-size: 16px;
+    }
+
+    .contact-me-prosa-wrapper{
+        padding: 0 16px;
+    }
+}

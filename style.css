@@ -1186,9 +1186,14 @@ body{
 .formular-agree img{
     width: 24px;
     height: 24px;
+    align-self: flex-start;
 }
 .formular-agree img:hover{
     cursor: pointer;
+}
+
+.terms-wrapper p{
+    margin-top: 0;
 }
 
 .terms-wrapper{
