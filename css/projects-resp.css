@@ -24,55 +24,61 @@
 }
 
 
-
-
-
-
-
-
 @media(max-width: 1280px){
     .projects-header-resp{
         display: flex;
         flex-direction: column;
     }
+
     .technologies{
         display: none;
     }
+
     .technologies-icons{
         display: none;
     }
+
     .projects-body{
-        height: 1400px;
+        height: 1250px;
         border-radius: 0 50px 50px 50px;
     }
+
     .da-bubble{
         flex-direction: column;
     }
+
     .tabs{
         gap: unset;
         padding-left: unset;
         justify-content: unset;
     }
+
     .tab-1, .tab-2, .tab-3, .tab-4{
         min-width: auto;
         padding: 16px;
     }
+
     .da-bubble-dot-p2{
         display: none;
     }
+
     .da-bubble-dot-p1{
         color: #89BCD9;
     }
+
     .da-bubble-dot-p3{
         padding-left: unset;
         margin-top: -16px;
     }
+
     .da-bubble-description{
         order: 1;
     }
+
     .link-buttons{
         display: none;
     }
+
     .link-buttons-resp{
         display: flex;
         order: 2;
@@ -82,25 +88,34 @@
 @media(max-width: 800px){
     .projects-body{
         width: unset;
+        height: 1350px;
     }
+
     .tabs{
         font-size: 24px;
     }
 }
 
+@media(max-width: 750px){
+    .projects-body{
+        height: 1400px;
+    }
+}
+
 
 @media(max-width: 680px){
-
     .tabs{
         font-size: 20px;
     }
 }
+
 
 @media(max-width: 612px){
     .projects-body{
         height: 1400px;
     }
 }
+
 
 @media(max-width: 580px){
 
@@ -121,6 +136,7 @@
     }
 }
 
+
 @media(max-width: 480px){
     .technologies-screenshot img{
         width: 330px;
@@ -130,13 +146,20 @@
     .projects-body{
         height: 1500px;
     }
-    
+
+    .link-buttons-resp{
+        margin-top: 80px;
+    }
 }
 
 
 @media(max-width: 420px){
     .projects h1{
         font-size: 50px;
+    }
+
+    .projects-body{
+        height: 1600px;
     }
 }
 
@@ -149,11 +172,16 @@
     .projects-header-resp p{
         font-size: 16px;
     }
+
     .da-bubble-dot-p3{
         font-size: 16px;
     }
+
     .da-bubble-dot-p1{
         font-size: 24px;
     }
 
+    .projects-body{
+        border-radius: 0 0 50px 50px;
+    }
 }

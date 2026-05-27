@@ -1,33 +1,47 @@
 function setLanguage(lang) {
+    localStorage.setItem('language', lang);
 
-    localStorage.setItem("language", lang);
+    const elements = document.querySelectorAll('[data-i18n]');
 
-    const elements = document.querySelectorAll("[data-i18n]");
-
-    elements.forEach(element => {
-
-    const key = element.getAttribute("data-i18n");
-
-    if (translations[lang][key]) {
-
-        if (
-            key === "legalContent" ||
-            key === "privacyContent"
-        ) {
-            element.innerHTML = translations[lang][key];
-
-        } else if (key === "quote-project") {
-            element.childNodes[0].nodeValue =
-                translations[lang][key] + " ";
-
-        } else {
-
-            element.innerText = translations[lang][key];
-        }
-    }
-});
+    elements.forEach((element) => {
+        translateElement(element, lang);
+    });
 }
 
+
+function translateElement(element, lang) {
+    const key = element.getAttribute('data-i18n');
+    const translation = translations[lang][key];
+
+    if (!translation) {
+        return;
+    }
+
+    applyTranslation(element, key, translation);
+}
+
+
+function applyTranslation(element, key, translation) {
+    if (isHtmlContent(key)) {
+        element.innerHTML = translation;
+        return;
+    }
+
+    if (key === 'quote-project') {
+        element.childNodes[0].nodeValue = `${translation} `;
+        return;
+    }
+
+    element.innerText = translation;
+}
+
+
+function isHtmlContent(key) {
+    return (
+        key === 'legalContent' ||
+        key === 'privacyContent'
+    );
+}
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -108,11 +122,11 @@ const translations = {
                             development while also supporting others with questions and challenges. I actively
                             contributed to a collaborative, well-coordinated workflow, fostering strong teamwork
                             and effective communication.`,
-        "ongoing-p3": `What are you currently working on and what features are you implementing?
-                            What is the key to success in your projects? You can mention good planning,
-                            codequalitiy and execution.
-                            
-                            Show a desire to learn new technologies and continually improve your skills.`,
+        "ongoing-p3": `DA Bubble is a Slack Clone App. 
+                        It revolutionizes team communication and collaboration with its intuitive interface, 
+                        real-time messaging, and robust channel organization.
+                        Imagine a platform similar to Discord, WhatsApp, 
+                        or Slack, but specifically for business use.`,
         "quote-h2": "Need a teamplayer? Here`s what my colleagues say about me",
         "quote-h2-resp": "Need a teamplayer?",
         "quote-h2-resp-p": "Here`s what my colleagues say about me",
@@ -335,12 +349,12 @@ const translations = {
                             verantwortlich, unterstützte jedoch gleichzeitig die anderen Teammitglieder bei Fragen und  
                             Herausforderungen. Ich trug aktiv zu einem kollaborativen und gut koordinierten Arbeitsablauf bei 
                             und förderte so eine starke Teamarbeit sowie eine effektive Kommunikation.`,
-        "ongoing-p3": `Übersetzung
-                            What are you currently working on and what features are you implementing?
-                            What is the key to success in your projects? You can mention good planning,
-                            codequalitiy and execution.
-
-                            Show a desire to learn new technologies and continually improve your skills.`,
+        "ongoing-p3": `DA Bubble ist eine Slack-Clone-App.
+                        Sie revolutioniert die Teamkommunikation und -zusammenarbeit durch 
+                        ihre intuitive Benutzeroberfläche, Echtzeit-Nachrichtenübermittlung und 
+                        robuste Kanalorganisation.
+                        Stell dir eine Plattform ähnlich zu Discord, WhatsApp oder Slack vor, 
+                        aber speziell für den geschäftlichen Gebrauch.`,
         "quote-h2": "Suchen Sie einen Teamplayer? Das sagen meine Kollegen über mich.",
         "quote-h2-resp": "Suchen Sie einen Teamplayer?",
         "quote-h2-resp-p": "Das sagen meine Kollegen über mich",

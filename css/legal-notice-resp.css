@@ -1,7 +1,7 @@
-.privacy-menu-wrapper{
+.legal-menu-wrapper{
     display: flex;
     flex-direction: column;
-    background-image: url(img/bg-shape.svg);
+    background-image: url(../img/bg-shape.svg);
     background-repeat: no-repeat;
 
     position: absolute;
@@ -27,33 +27,34 @@
 
     filter: blur(5px);
 }
-.privacy-menu-wrapper.active {
+
+.legal-menu-wrapper.active {
     opacity: 1;
     visibility: visible;
     transform: translateX(-50%) translateY(0);
     pointer-events: all;
     filter: blur(0);
-    
 }
 
-.menu-privacy img {
+.menu-legal img {
     width: 50px;
     height: 50px;
 }
 
 
-@media (min-width: 800px){
-    .privacy-menu-wrapper{
+@media (min-width: 950px){
+    .legal-menu-wrapper{
         display: none;
     }
 }
 
-@media (max-width: 800px){
+
+@media (max-width: 950px){
     .header-logo-wrapper{
         margin-left: 50px;
     }
 
-    .bar-middle-privacy-resp{
+    .bar-middle-legal-resp{
         display: flex;
         flex-direction: column;
         width: auto;
@@ -62,28 +63,33 @@
         align-items: center;
     }
 
-    .bar-language-privacy-resp{
+    .bar-language-legal-resp{
         display: flex;
         justify-content: center;
         margin-right: unset;
     }
 
-    .bar-middle-privacy{
+    .bar-middle-legal{
         display: none;
     }
-    .bar-language-privacy{
+
+    .bar-language-legal{
         display: none;
     }
-    .privacy-header{
+
+    .legal-header{
         background-color: #262E34 !important;
     }
+
     .header-logo img{
-        content: url("img/logo-icon.svg");
+        content: url("../img/logo-icon.svg");
     }
+
     .header-under-logo-property{
         color: #89BCD9;
     }
-    .menu-privacy{
+
+    .menu-legal{
         display: block;
     }
 }
@@ -113,13 +119,15 @@
     }
 
     .footer-github{
-        content: url("img/github-footer-mobile.svg")
+        content: url("../img/github-footer-mobile.svg")
     }
+
     .footer-email{
-        content: url("img/email-footer-mobile.svg")
+        content: url("../img/email-footer-mobile.svg")
     }
+
     .footer-linked-in{
-        content: url("img/linkedin-footer-mobile.svg");
+        content: url("../img/linkedin-footer-mobile.svg");
     }
 
     .footer-icons img:hover {
@@ -127,13 +135,14 @@
     }
 }
 
+
 @media (max-width: 530px){
-    .privacy-menu-wrapper{
+    .legal-menu-wrapper{
         width: 500px;
         height: 500px;
     }
 
-    .bar-middle-privacy-resp{
+    .bar-middle-legal-resp{
         font-size: 22px;
     }
 
@@ -145,36 +154,32 @@
         font-size: 20px;
     }
 
-    .privacy-content p{
+    ul{
+        font-size: 16px;
+    }
+
+    .legal-content p{
         font-size: 16px;
     }
 }
 
-@media (max-width: 420px){
-    h1{
-        font-size: 36px;
-    }
-}
 
 @media (max-width: 390px){
-    .privacy-menu-wrapper{
+    .legal-menu-wrapper{
         width: 420px;
     }
     
-    .bar-middle-privacy-resp{
+    .bar-middle-legal-resp{
         gap: unset;
         font-size: 20px;
         margin-top: -80px;
     }
 
-    #lang-de-privacy, #lang-en-privacy{
+    #lang-de-legal, #lang-en-legal{
         width: 20px;
     }
-
-    h1{
-        font-size: 32px;
-    }
 }
+
 
 @media (max-width: 360px){
     .legal{
@@ -186,10 +191,5 @@
     .legal-wrapper{
         gap: 8px;
     }
-
-    h1{
-        font-size: 28px;
-    }
-    
 }
 

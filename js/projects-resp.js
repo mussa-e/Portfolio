@@ -15,7 +15,6 @@ const originalTexts = [
 
 
 function changeTabsContent() {
-
     if (window.innerWidth <= 1280) {
 
         tabs.forEach((tab, index) => {
@@ -27,12 +26,10 @@ function changeTabsContent() {
         tabs.forEach((tab, index) => {
             tab.innerHTML = originalTexts[index];
         });
-
     }
 }
 
 
 changeTabsContent();
-
 
 window.addEventListener("resize", changeTabsContent);

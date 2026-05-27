@@ -25,7 +25,7 @@
 }
 
 .scroll-stepper{
-    display: flex;
+    display: none;
     justify-content: center;
     gap: 16px;
     margin-top: 30px;
@@ -38,6 +38,7 @@
     border-radius: 50px;
     cursor: pointer;
 }
+
 .stepper-2{
     background-color: #2D3840;
     width: 16px;
@@ -45,6 +46,7 @@
     border-radius: 50px;
     cursor: pointer;
 }
+
 .stepper-3{
     background-color: #2D3840;
     width: 16px;
@@ -57,12 +59,6 @@
     background: #89BCD9;
     transform: scale(1.1);
 }
-
-
-
-
-
-
 
 
 @media(max-width: 1280px){
@@ -83,19 +79,14 @@
         height: 450px;
         overflow-x: auto;
         overflow-y: hidden;
-
         display: flex;
         align-items: center;
         justify-content: flex-start;
-
         flex-wrap: nowrap;
         gap: 24px;
-
         margin: 0 auto;
-
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
-
         scrollbar-width: none; 
         -ms-overflow-style: none; 
     }
@@ -108,6 +99,7 @@
 
     .scroll-stepper{
         margin-top: unset;
+        display: flex;
     }
 }
 
@@ -116,13 +108,16 @@
     display: none;
 }
 
+
 @media(max-width: 430px){
     .quotes-p1{
         font-size: 20px;
     }
+
     .quotes-p2{
         font-size: 16px;
     }
+
     .quotes-p3{
         font-size: 16px;
         width: 180px;
@@ -142,8 +137,4 @@
         transform: none;
         filter: none;
     }
-    
 }
-
-
-

@@ -8,11 +8,13 @@ document.getElementById("name")
         checkSendBtn();
     });
 
+
 document.getElementById("email")
     .addEventListener("blur", () => {
         validateEmail();
         checkSendBtn();
     });
+
 
 document.getElementById("message")
     .addEventListener("blur", () => {
@@ -26,6 +28,7 @@ function toggleError(id, valid) {
     error.classList.toggle("d-none", valid);
 }
 
+
 function validateName() {
     const value = document
         .getElementById("name")
@@ -36,6 +39,7 @@ function validateName() {
     
     return valid;
 }
+
 
 function validateEmail() {
     const value = document
@@ -49,6 +53,7 @@ function validateEmail() {
     return valid;
 }
 
+
 function validateMessage() {
     const value = document.getElementById("message").value.trim();
     const valid = value.length >= 5;
@@ -57,10 +62,12 @@ function validateMessage() {
     return valid;
 }
 
+
 function validateTerms() {
     toggleError("val-terms", agreedTerms);
     return agreedTerms;
 }
+
 
 function toggleAgree() {
 
@@ -79,50 +86,80 @@ function toggleAgree() {
 }
 
 
-form.addEventListener("submit", async (e) => {
+form.addEventListener("submit", handleSubmit);
+
+async function handleSubmit(e) {
     e.preventDefault();
 
-    const valid =
+    if (!isFormValid()) return;
+
+    try {
+        const result = await sendFormData(getFormData());
+        handleSubmitResult(result);
+    } catch (error) {
+        handleSubmitError(error);
+    }
+}
+
+
+function isFormValid() {
+    return (
         validateName() &&
         validateEmail() &&
         validateMessage() &&
-        validateTerms();
+        validateTerms()
+    );
+}
 
-    if (!valid) return;
 
-
-    const data = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        message: document.getElementById("message").value
+function getFormData() {
+    return {
+        name: getValue("name"),
+        email: getValue("email"),
+        message: getValue("message")
     };
+}
 
-    try {
-        const response = await fetch("contact.php", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(data)
-        });
 
-        const result = await response.json();
+function getValue(id) {
+    return document.getElementById(id).value;
+}
 
-        if (result.success) {
-            // alert("Nachricht erfolgreich gesendet!");
-            messageSendFeedback("succeeded");
-            form.reset();
-            agreedTerms = false;
-        } else {
-            alert("Fehler: " + result.error);
-        }
 
-    } catch (error) {
-        // alert("Serverfehler");
-        messageSendFeedback("failed");
-        console.error(error);
+async function sendFormData(data) {
+    const response = await fetch("/contact.php", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+    });
+
+    return response.json();
+}
+
+
+function handleSubmitResult(result) {
+    if (result.success) {
+        resetFormState();
+        messageSendFeedback("succeeded");
+        return;
     }
-});
+
+    alert("Fehler: " + result.error);
+}
+
+
+function resetFormState() {
+    form.reset();
+    agreedTerms = false;
+}
+
+
+function handleSubmitError(error) {
+    messageSendFeedback("failed");
+    console.error(error);
+}
 
 
 function checkSendBtn() {
@@ -135,14 +172,22 @@ function checkSendBtn() {
         agreedTerms;
 
     if (formValid) {
-        btn.classList.remove("not-active");
-        btn.classList.add("formular-send");
-        btn.disabled = false;
+        buttonActive(btn);
     } else {
-        btn.classList.add("not-active");
-        btn.classList.remove("formular-send");
-        btn.disabled = true;
+        buttonNotActive(btn);
     }
+}
+
+function buttonActive(btn){
+    btn.classList.remove("not-active");
+    btn.classList.add("formular-send");
+    btn.disabled = false;
+}
+
+function buttonNotActive(btn){
+    btn.classList.add("not-active");
+    btn.classList.remove("formular-send");
+    btn.disabled = true;
 }
 
 
@@ -151,14 +196,10 @@ function messageSendFeedback(value) {
     feedback.innerHTML = "";
 
     if(value === "succeeded"){
-        feedback.innerHTML = "Message sent succesfully";
-        feedback.classList.remove("hidden");
-        feedback.classList.add("show-success");
+        messageSuccesful(feedback);
     }
     if(value === "failed"){
-        feedback.innerHTML = "Message could not be sent";
-        feedback.classList.remove("hidden");
-        feedback.classList.add("show-failed");
+        messageFailed(feedback);
     }
 
     setTimeout(() => {
@@ -166,4 +207,18 @@ function messageSendFeedback(value) {
         feedback.classList.remove("show-failed");
         feedback.classList.add("hidden");
     }, 2500);
+}
+
+
+function messageSuccesful(feedback){
+        feedback.innerHTML = "Message sent succesfully";
+        feedback.classList.remove("hidden");
+        feedback.classList.add("show-success");
+}
+
+
+function messageFailed(feedback){
+        feedback.innerHTML = "Message could not be sent";
+        feedback.classList.remove("hidden");
+        feedback.classList.add("show-failed");
 }
