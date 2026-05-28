@@ -29,6 +29,8 @@ body{
 
 .w-100{
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .w-100-index-header{
@@ -86,8 +88,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
     width: 50%;
+    margin-top: 85px;
 }
 
 .top-right-logo-wrapper{
@@ -284,20 +286,29 @@ body{
     filter: blur(0);
 }
 
+.w-100-bar{
+    display: flex;
+    background-color: #89BCD9;
+    position: sticky;
+    top: 150px;
+    z-index: 1000;
+}
+
 .bar{
-    max-width: 1440px;
+    width: 100vw;
+    /* max-width: 1440px; */
     height: 104px;
-    top: 746px;
+    /* top: 746px; */
     gap: 40px;
     opacity: 1;
     padding-top: 16px;
     padding-bottom: 16px;
     background-color: #89BCD9;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    position: sticky;
-    top: 0;
+    position: absolute;
+    top: -150px;
     z-index: 1000;
 }
 
@@ -650,7 +661,6 @@ body{
     flex-direction: column;
     justify-content: center;
     max-width: 1440px;
-    margin-top: 32px;
 }
 
 .projects h1{

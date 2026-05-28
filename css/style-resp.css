@@ -4,6 +4,17 @@
 }
 
 
+@media (max-width: 1179px){
+    .top-right-middle-name{
+        font-size: 70px;
+    }
+
+    .top-right-middle-property{
+        font-size: 30px;
+    }
+}
+
+
 @media (max-width: 1140px){
     .top-left{
         padding-left: 80px;
@@ -154,6 +165,10 @@
     .bg-shape:hover {
         transform: none;
         filter: none;
+    }
+
+    .why-me-section{
+        margin-top: 310px;
     }
 }
 
@@ -343,7 +358,7 @@
 
 @media (max-width: 380px){
     .why-me-section{
-        margin-top: 80px;
+        margin-top: 140px;
     }
 }
 
