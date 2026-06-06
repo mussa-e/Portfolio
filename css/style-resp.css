@@ -40,23 +40,11 @@
     }
 
     .potrait-img{
-        width: 300px;
         top: -610px;
-        left: 55px;
     }
-}
 
-
-@media (max-width: 1140px){
     .top-links{
         margin-right: 170px;
-    }
-}
-
-
-@media (max-width: 950px){
-    .potrait-img{
-        top: -640px;
     }
 }
 
@@ -120,11 +108,17 @@
 
 
 @media (max-width: 950px){
+    .potrait-img{
+        top: -640px;
+        width: 300px;
+        left: 50px;
+    }
+
     .top-right{
         margin-left: unset;
         width: unset;
         position: relative;
-        top: -1070px;
+        top: -1020px;
     }
 
     .w-100-bar{
@@ -242,7 +236,7 @@
     }
 
     .top-right{
-        top: -1030px;
+        top: -1010px;
     }
 }
 
