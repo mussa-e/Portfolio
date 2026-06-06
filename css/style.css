@@ -291,15 +291,13 @@ body{
     display: flex;
     background-color: #89BCD9;
     position: sticky;
-    top: 150px;
+    top: 135px;
     z-index: 1000;
 }
 
 .bar{
     width: 100%;
-    /* max-width: 1440px; */
     height: 104px;
-    /* top: 746px; */
     gap: 40px;
     opacity: 1;
     padding-top: 16px;
@@ -1299,6 +1297,7 @@ footer{
     justify-content: space-between;
     background-color: #89BCD9;
     align-items: center;
+    gap: 16px;
 }
 
 .legal-wrapper{
