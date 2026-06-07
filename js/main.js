@@ -32,6 +32,12 @@ let languages = [
 ];
 
 
+/**
+ * Selects a tab, updates its visual state, and displays the corresponding content section.
+ * @function
+ * @param {string} id - The ID of the tab to select.
+ * @returns {void}
+ */
 function chooseTab(id){
 
     tabIds.forEach(element => {
@@ -45,6 +51,12 @@ function chooseTab(id){
 }
 
 
+/**
+ * Displays the content section associated with the selected tab and hides all others.
+ * @function
+ * @param {string} id - The ID of the selected tab.
+ * @returns {void}
+ */
 function handleTab(id){
 
     tabBodies.forEach(element => {
@@ -69,6 +81,12 @@ function handleTab(id){
 }
 
 
+/**
+ * Selects a navigation bar item and updates its visual state.
+ * @function
+ * @param {string} id - The ID of the navigation bar item to select.
+ * @returns {void}
+ */
 function chooseBar(id){
 
     barChoice.forEach(element => {
@@ -80,6 +98,12 @@ function chooseBar(id){
 }
 
 
+/**
+ * Switches the website language and updates the desktop language selector styles.
+ * @function
+ * @param {string} id - The ID of the selected language element.
+ * @returns {void}
+ */
 function chooseLanguage(id) {
     resetLanguageStyles();
 
@@ -97,6 +121,11 @@ function chooseLanguage(id) {
 }
 
 
+/**
+ * Resets all desktop language selector styles to their default state.
+ * @function
+ * @returns {void}
+ */
 function resetLanguageStyles() {
     ["de", "en"].forEach(lang => {
         document
@@ -110,6 +139,12 @@ function resetLanguageStyles() {
 }
 
 
+/**
+ * Switches the website language and updates the mobile language selector styles.
+ * @function
+ * @param {string} id - The ID of the selected mobile language element.
+ * @returns {void}
+ */
 function chooseLanguageMobile(id) {
     resetLanguageMobileStyles();
 
@@ -127,6 +162,11 @@ function chooseLanguageMobile(id) {
 }
 
 
+/**
+ * Resets all mobile language selector styles to their default state.
+ * @function
+ * @returns {void}
+ */
 function resetLanguageMobileStyles() {
     ["de", "en"].forEach(lang => {
         document

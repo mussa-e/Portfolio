@@ -1,6 +1,11 @@
 let menuOpenPrivacy;
 
 
+/**
+ * Toggles the privacy menu visibility and updates the menu icon.
+ * @function
+ * @returns {void}
+ */
 function openMenuPrivacy(){
     menuOpenPrivacy = !menuOpenPrivacy;
 
@@ -14,6 +19,12 @@ function openMenuPrivacy(){
 }
 
 
+/**
+ * Selects a language option in the privacy menu and updates the UI styles.
+ * @function
+ * @param {string} id - The ID of the selected language element
+ * @returns {void}
+ */
 function chooseLanguagePrivacy(id) {
     resetLanguagePrivacyStyles();
 
@@ -31,6 +42,11 @@ function chooseLanguagePrivacy(id) {
 }
 
 
+/**
+ * Removes all active language selection styles from the privacy menu.
+ * @function
+ * @returns {void}
+ */
 function resetLanguagePrivacyStyles() {
     ["de", "en"].forEach(lang => {
         document

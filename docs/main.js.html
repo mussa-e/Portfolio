@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: main.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: main.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>let tabIds = [
+    "tab-1",
+    "tab-2",
+    "tab-3",
+    "tab-4",
+];
+
+
+let tabBodies = [
+    "da-bubble",
+    "el-pollo-loco",
+    "join",
+    "ongoing-project",
+];
+
+
+let barChoice = [
+    "bar-why-me",
+    "bar-skills",
+    "bar-projects",
+    "bar-contact-me",
+    "bar-why-me-mobile",
+    "bar-skills-mobile",
+    "bar-projects-mobile",
+    "bar-contact-me-mobile",
+];
+
+
+let languages = [
+    "lang-de",
+    "lang-en",
+];
+
+
+/**
+ * Selects a tab, updates its visual state, and displays the corresponding content section.
+ * @function
+ * @param {string} id - The ID of the tab to select.
+ * @returns {void}
+ */
+function chooseTab(id){
+
+    tabIds.forEach(element => {
+        document.getElementById(element).classList.remove("chosen");
+    });
+
+    let chosenTab = document.getElementById(id);
+    chosenTab.classList.add("chosen");
+
+    handleTab(id);
+}
+
+
+/**
+ * Displays the content section associated with the selected tab and hides all others.
+ * @function
+ * @param {string} id - The ID of the selected tab.
+ * @returns {void}
+ */
+function handleTab(id){
+
+    tabBodies.forEach(element => {
+        document.getElementById(element).classList.add("d-none");
+    });
+
+    if(id == "tab-1"){
+        document.getElementById("da-bubble").classList.remove("d-none");
+    } else 
+    
+    if(id == "tab-2"){
+        document.getElementById("el-pollo-loco").classList.remove("d-none");
+    } else 
+
+    if(id == "tab-3"){
+        document.getElementById("join").classList.remove("d-none");
+    } else 
+
+    if(id == "tab-4"){
+        document.getElementById("ongoing-project").classList.remove("d-none");
+    }
+}
+
+
+/**
+ * Selects a navigation bar item and updates its visual state.
+ * @function
+ * @param {string} id - The ID of the navigation bar item to select.
+ * @returns {void}
+ */
+function chooseBar(id){
+
+    barChoice.forEach(element => {
+        document.getElementById(element).classList.remove("bar-chosen");
+    });
+
+    let chosenBar = document.getElementById(id);
+    chosenBar.classList.add("bar-chosen");
+}
+
+
+/**
+ * Switches the website language and updates the desktop language selector styles.
+ * @function
+ * @param {string} id - The ID of the selected language element.
+ * @returns {void}
+ */
+function chooseLanguage(id) {
+    resetLanguageStyles();
+
+    const lang = id.includes("-de") ? "de" : "en";
+
+    document
+        .getElementById(`lang-${lang}`)
+        .classList.add(`chosen-${lang}`);
+
+    document
+        .getElementById(`lang-${lang}-parent`)
+        .classList.add("chosen-parent");
+
+    setLanguage(lang);
+}
+
+
+/**
+ * Resets all desktop language selector styles to their default state.
+ * @function
+ * @returns {void}
+ */
+function resetLanguageStyles() {
+    ["de", "en"].forEach(lang => {
+        document
+            .getElementById(`lang-${lang}-parent`)
+            .classList.remove("chosen-parent");
+
+        document
+            .getElementById(`lang-${lang}`)
+            .classList.remove(`chosen-${lang}`);
+    });
+}
+
+
+/**
+ * Switches the website language and updates the mobile language selector styles.
+ * @function
+ * @param {string} id - The ID of the selected mobile language element.
+ * @returns {void}
+ */
+function chooseLanguageMobile(id) {
+    resetLanguageMobileStyles();
+
+    const lang = id.includes("-de-") ? "de" : "en";
+
+    document
+        .getElementById(`lang-${lang}-mobile`)
+        .classList.add(`chosen-${lang}`);
+
+    document
+        .getElementById(`lang-${lang}-parent-mobile`)
+        .classList.add("chosen-parent-mobile");
+
+    setLanguage(lang);
+}
+
+
+/**
+ * Resets all mobile language selector styles to their default state.
+ * @function
+ * @returns {void}
+ */
+function resetLanguageMobileStyles() {
+    ["de", "en"].forEach(lang => {
+        document
+            .getElementById(`lang-${lang}-parent-mobile`)
+            .classList.remove("chosen-parent-mobile");
+
+        document
+            .getElementById(`lang-${lang}-mobile`)
+            .classList.remove(`chosen-${lang}`);
+    });
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#applyTranslation">applyTranslation</a></li><li><a href="global.html#buttonActive">buttonActive</a></li><li><a href="global.html#buttonNotActive">buttonNotActive</a></li><li><a href="global.html#changeTabsContent">changeTabsContent</a></li><li><a href="global.html#checkSendBtn">checkSendBtn</a></li><li><a href="global.html#chooseBar">chooseBar</a></li><li><a href="global.html#chooseLanguage">chooseLanguage</a></li><li><a href="global.html#chooseLanguageLegal">chooseLanguageLegal</a></li><li><a href="global.html#chooseLanguageMobile">chooseLanguageMobile</a></li><li><a href="global.html#chooseLanguagePrivacy">chooseLanguagePrivacy</a></li><li><a href="global.html#chooseTab">chooseTab</a></li><li><a href="global.html#createObserver">createObserver</a></li><li><a href="global.html#enableHorizontalScroll">enableHorizontalScroll</a></li><li><a href="global.html#getFormData">getFormData</a></li><li><a href="global.html#getSteppers">getSteppers</a></li><li><a href="global.html#getValue">getValue</a></li><li><a href="global.html#handleIntersections">handleIntersections</a></li><li><a href="global.html#handleSubmit">handleSubmit</a></li><li><a href="global.html#handleSubmitError">handleSubmitError</a></li><li><a href="global.html#handleSubmitResult">handleSubmitResult</a></li><li><a href="global.html#handleTab">handleTab</a></li><li><a href="global.html#handleWheelScroll">handleWheelScroll</a></li><li><a href="global.html#initQuotesSlider">initQuotesSlider</a></li><li><a href="global.html#isFormValid">isFormValid</a></li><li><a href="global.html#isHtmlContent">isHtmlContent</a></li><li><a href="global.html#messageFailed">messageFailed</a></li><li><a href="global.html#messageSendFeedback">messageSendFeedback</a></li><li><a href="global.html#messageSuccesful">messageSuccesful</a></li><li><a href="global.html#observeQuotes">observeQuotes</a></li><li><a href="global.html#openMenu">openMenu</a></li><li><a href="global.html#openMenuLegal">openMenuLegal</a></li><li><a href="global.html#openMenuPrivacy">openMenuPrivacy</a></li><li><a href="global.html#quoteChoice">quoteChoice</a></li><li><a href="global.html#resetFormState">resetFormState</a></li><li><a href="global.html#resetLanguageLegalStyles">resetLanguageLegalStyles</a></li><li><a href="global.html#resetLanguageMobileStyles">resetLanguageMobileStyles</a></li><li><a href="global.html#resetLanguagePrivacyStyles">resetLanguagePrivacyStyles</a></li><li><a href="global.html#resetLanguageStyles">resetLanguageStyles</a></li><li><a href="global.html#sendFormData">sendFormData</a></li><li><a href="global.html#setLanguage">setLanguage</a></li><li><a href="global.html#toggleAgree">toggleAgree</a></li><li><a href="global.html#toggleError">toggleError</a></li><li><a href="global.html#translateElement">translateElement</a></li><li><a href="global.html#updateActiveStepper">updateActiveStepper</a></li><li><a href="global.html#validateEmail">validateEmail</a></li><li><a href="global.html#validateMessage">validateMessage</a></li><li><a href="global.html#validateName">validateName</a></li><li><a href="global.html#validateTerms">validateTerms</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.5</a> on Sun Jun 07 2026 17:31:43 GMT+0200 (Mitteleuropäische Sommerzeit)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

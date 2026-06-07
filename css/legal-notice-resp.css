@@ -54,6 +54,10 @@
         margin-left: 50px;
     }
 
+    .legal-content{
+        width: unset;
+    }
+
     .bar-middle-legal-resp{
         display: flex;
         flex-direction: column;

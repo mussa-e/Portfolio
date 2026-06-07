@@ -1,6 +1,14 @@
 let menuOpen;
 
 
+/**
+ * Toggles the mobile menu state and updates the related UI elements.
+ * Shows or hides menu components and switches the menu icon
+ * between the open and close state.
+ *
+ * @function
+ * @returns {void}
+ */
 function openMenu(){
     menuOpen = !menuOpen;
 

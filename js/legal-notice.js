@@ -1,5 +1,11 @@
 let menuOpenLegal;
 
+
+/**
+ * Toggles the legal page navigation menu and updates the menu icon.
+ * @function
+ * @returns {void}
+ */
 function openMenuLegal(){
     
     menuOpenLegal = !menuOpenLegal;
@@ -14,6 +20,13 @@ function openMenuLegal(){
 }
 
 
+/**
+ * Selects a language option, updates the corresponding styles,
+ * and sets the application language.
+ * @function
+ * @param {string} id - The ID of the clicked language element.
+ * @returns {void}
+ */
 function chooseLanguageLegal(id) {
     resetLanguageLegalStyles();
 
@@ -30,6 +43,12 @@ function chooseLanguageLegal(id) {
     setLanguage(lang);
 }
 
+
+/**
+ * Removes all active language selection styles from the legal page.
+ * @function
+ * @returns {void}
+ */
 function resetLanguageLegalStyles() {
     ["de", "en"].forEach(lang => {
         document

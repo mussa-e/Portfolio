@@ -39,10 +39,6 @@
         width: 720px;
     }
 
-    .potrait-img{
-        top: -610px;
-    }
-
     .top-links{
         margin-right: 170px;
     }
@@ -109,16 +105,14 @@
 
 @media (max-width: 950px){
     .potrait-img{
-        top: -640px;
-        width: 300px;
-        left: 50px;
+        left: 52%;
+        width: 330px;
     }
 
     .top-right{
         margin-left: unset;
         width: unset;
-        position: relative;
-        top: -1020px;
+        margin-top: -100px;
     }
 
     .w-100-bar{
@@ -228,13 +222,6 @@
         width: 700px;
     }
 
-    .potrait-img{
-        height: 400px;
-        width: 300px;
-        top: -630px;
-        left: 55px;
-    }
-
     .top-right{
         top: -1010px;
     }
@@ -261,15 +248,11 @@
 
 
 @media (max-width: 530px){
+    .potrait-img{
+        width: 260px;
+    }
     .bg-shape{
         width: 550px;
-    }
-
-    .potrait-img{
-        height: 280px;
-        width: 200px;
-        top: -570px;
-        left: 100px;
     }
 
     .top-right{
@@ -303,15 +286,12 @@
 
 
 @media (max-width: 420px){
+    .potrait-img{
+        width: 195px;
+    }
+    
     .bg-shape{
         width: 415px;
-    }
-
-    .potrait-img{
-        height: 230px;
-        width: 175px;
-        top: -530px;
-        left: 115px;
     }
     
     .top-right-middle-name{

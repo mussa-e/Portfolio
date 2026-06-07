@@ -14,6 +14,14 @@ const originalTexts = [
 ];
 
 
+/**
+ * Updates the tab labels based on the current viewport width.
+ * Displays shortened labels on screens with a width of 1280px or less
+ * and restores the original tab texts on larger screens.
+ *
+ * @function
+ * @returns {void}
+ */
 function changeTabsContent() {
     if (window.innerWidth <= 1280) {
 

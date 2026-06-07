@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: privacy-policy.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: privacy-policy.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>let menuOpenPrivacy;
+
+
+/**
+ * Toggles the privacy menu visibility and updates the menu icon.
+ * @function
+ * @returns {void}
+ */
+function openMenuPrivacy(){
+    menuOpenPrivacy = !menuOpenPrivacy;
+
+    document.getElementById("privacy-menu-wrapper").classList.toggle("active");
+
+    if(menuOpenPrivacy){
+        document.getElementById("menu-privacy-img").src = "img/close.svg";
+    } else {
+        document.getElementById("menu-privacy-img").src = "img/menu-2.svg";
+    }
+}
+
+
+/**
+ * Selects a language option in the privacy menu and updates the UI styles.
+ * @function
+ * @param {string} id - The ID of the selected language element
+ * @returns {void}
+ */
+function chooseLanguagePrivacy(id) {
+    resetLanguagePrivacyStyles();
+
+    const lang = id.includes("-de-") ? "de" : "en";
+
+    document
+        .getElementById(`lang-${lang}-privacy`)
+        .classList.add(`chosen-${lang}`);
+
+    document
+        .getElementById(`lang-${lang}-parent-privacy`)
+        .classList.add("chosen-parent");
+
+    setLanguage(lang);
+}
+
+
+/**
+ * Removes all active language selection styles from the privacy menu.
+ * @function
+ * @returns {void}
+ */
+function resetLanguagePrivacyStyles() {
+    ["de", "en"].forEach(lang => {
+        document
+            .getElementById(`lang-${lang}-parent-privacy`)
+            .classList.remove("chosen-parent");
+
+        document
+            .getElementById(`lang-${lang}-privacy`)
+            .classList.remove(`chosen-${lang}`);
+    });
+}</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#applyTranslation">applyTranslation</a></li><li><a href="global.html#buttonActive">buttonActive</a></li><li><a href="global.html#buttonNotActive">buttonNotActive</a></li><li><a href="global.html#changeTabsContent">changeTabsContent</a></li><li><a href="global.html#checkSendBtn">checkSendBtn</a></li><li><a href="global.html#chooseBar">chooseBar</a></li><li><a href="global.html#chooseLanguage">chooseLanguage</a></li><li><a href="global.html#chooseLanguageLegal">chooseLanguageLegal</a></li><li><a href="global.html#chooseLanguageMobile">chooseLanguageMobile</a></li><li><a href="global.html#chooseLanguagePrivacy">chooseLanguagePrivacy</a></li><li><a href="global.html#chooseTab">chooseTab</a></li><li><a href="global.html#createObserver">createObserver</a></li><li><a href="global.html#enableHorizontalScroll">enableHorizontalScroll</a></li><li><a href="global.html#getFormData">getFormData</a></li><li><a href="global.html#getSteppers">getSteppers</a></li><li><a href="global.html#getValue">getValue</a></li><li><a href="global.html#handleIntersections">handleIntersections</a></li><li><a href="global.html#handleSubmit">handleSubmit</a></li><li><a href="global.html#handleSubmitError">handleSubmitError</a></li><li><a href="global.html#handleSubmitResult">handleSubmitResult</a></li><li><a href="global.html#handleTab">handleTab</a></li><li><a href="global.html#handleWheelScroll">handleWheelScroll</a></li><li><a href="global.html#initQuotesSlider">initQuotesSlider</a></li><li><a href="global.html#isFormValid">isFormValid</a></li><li><a href="global.html#isHtmlContent">isHtmlContent</a></li><li><a href="global.html#messageFailed">messageFailed</a></li><li><a href="global.html#messageSendFeedback">messageSendFeedback</a></li><li><a href="global.html#messageSuccesful">messageSuccesful</a></li><li><a href="global.html#observeQuotes">observeQuotes</a></li><li><a href="global.html#openMenu">openMenu</a></li><li><a href="global.html#openMenuLegal">openMenuLegal</a></li><li><a href="global.html#openMenuPrivacy">openMenuPrivacy</a></li><li><a href="global.html#quoteChoice">quoteChoice</a></li><li><a href="global.html#resetFormState">resetFormState</a></li><li><a href="global.html#resetLanguageLegalStyles">resetLanguageLegalStyles</a></li><li><a href="global.html#resetLanguageMobileStyles">resetLanguageMobileStyles</a></li><li><a href="global.html#resetLanguagePrivacyStyles">resetLanguagePrivacyStyles</a></li><li><a href="global.html#resetLanguageStyles">resetLanguageStyles</a></li><li><a href="global.html#sendFormData">sendFormData</a></li><li><a href="global.html#setLanguage">setLanguage</a></li><li><a href="global.html#toggleAgree">toggleAgree</a></li><li><a href="global.html#toggleError">toggleError</a></li><li><a href="global.html#translateElement">translateElement</a></li><li><a href="global.html#updateActiveStepper">updateActiveStepper</a></li><li><a href="global.html#validateEmail">validateEmail</a></li><li><a href="global.html#validateMessage">validateMessage</a></li><li><a href="global.html#validateName">validateName</a></li><li><a href="global.html#validateTerms">validateTerms</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.5</a> on Sun Jun 07 2026 17:31:43 GMT+0200 (Mitteleuropäische Sommerzeit)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

@@ -54,6 +54,10 @@
         margin-left: 50px;
     }
 
+    .privacy-content{
+        width: unset;
+    }
+
     .bar-middle-privacy-resp{
         display: flex;
         flex-direction: column;
