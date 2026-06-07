@@ -129,10 +129,6 @@
         justify-content: flex-start;
     }
 
-    .quote-section{
-        padding: 0 8px;
-    }
-
     .quotes:hover::before {
         transform: none;
         filter: none;

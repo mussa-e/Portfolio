@@ -61,6 +61,12 @@
 }
 
 
+@media(max-width: 680px){
+    .formular{
+        margin: 100px 0 100px 0;
+    }
+}
+
 @media(max-width: 580px){
     .contact-me-prosa-wrapper{
         padding: 0 100px;

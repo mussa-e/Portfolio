@@ -16,9 +16,6 @@
 
 
 @media (max-width: 1140px){
-    .top-left{
-        padding-left: 80px;
-    }
 
     .top-right-middle-name{
         font-size: 60px;
@@ -73,6 +70,8 @@
         grid-column: 3;
     }
 
+     
+
     .skills-body-right-p1-resp-wrapper{
         display: flex;
     }
@@ -83,7 +82,7 @@
 
     .skills-body-right{
         left: 330px;
-        width: 120px;
+        width: 116px;
         height: 120px;
     }
 
@@ -96,6 +95,10 @@
     .lets-talk-resp{
         display: flex;
     }
+
+    .bg-shape{
+        width: 600px;
+    }
 }
 
 
@@ -104,15 +107,37 @@
 
 
 @media (max-width: 950px){
+    .potrait{
+        margin-top: -120px;
+    }
+
     .potrait-img{
         left: 52%;
-        width: 330px;
+        top: 32%;
+        width: 275px;
+    }
+
+    .bg-shape{
+        height: 550px;
     }
 
     .top-right{
         margin-left: unset;
         width: unset;
-        margin-top: -100px;
+        margin-top: -420px;
+    }
+
+    .top-right-middle-name{
+        font-size: 40px;
+    }
+
+    .top-right-middle-property{
+        font-size: 20px;
+    }
+
+    .arrow-down img{
+        margin-top: -16px;
+        width: 30px;
     }
 
     .w-100-bar{
@@ -169,10 +194,6 @@
         transform: none;
         filter: none;
     }
-
-    .why-me-section{
-        margin-top: 310px;
-    }
 }
 
 
@@ -217,16 +238,29 @@
 }
 
 
-@media (max-width: 600px){
+@media (max-width: 620px){
     .bg-shape{
-        width: 700px;
+        width: 540px;
     }
+}
+
+@media (max-width: 600px){
 
     .top-right{
         top: -1010px;
     }
 }
 
+
+@media(max-width: 560px){
+    .bg-shape{
+        width: 500px;
+    }
+
+    .potrait-img{
+        width: 250px;
+    }
+}
 
 @media(max-width: 550px){
     .skills-body-right-p2{
@@ -240,9 +274,8 @@
         left: 155px;
     }
 
-    .skills-body-left img{
+    .skill-icon img{
         width: 56px;
-        height: 70px;
     }
 }
 
@@ -251,24 +284,13 @@
     .potrait-img{
         width: 260px;
     }
-    .bg-shape{
-        width: 550px;
-    }
 
     .top-right{
         top: -840px;
     }
 
-    .top-right-middle-name{
-        font-size: 60px;
-    }
-
-    .top-right-middle-property{
-        font-size: 24px;
-    }
-
     .bar-mobile-wrapper {
-        top: -560px;
+        top: -430px;
     }
 
     .bar-mobile{
@@ -284,22 +306,62 @@
     }
 }
 
+@media (max-width: 530px){
+    .bg-shape{
+        width: 460px;
+    }
+
+    .potrait-img{
+        width: 235px;
+    }
+}
+
+
+@media (max-width: 475px){
+    .bg-shape{
+        width: 440px;
+    }
+
+    .potrait-img{
+        width: 220px;
+    }
+}
+
+
+@media (max-width: 455px){
+    .bg-shape{
+        width: 420px;
+    }
+
+    .potrait-img{
+        width: 210px;
+    }
+}
+
+
+@media (max-width: 435px){
+    .bg-shape{
+        width: 400px;
+    }
+
+    .potrait-img{
+        width: 200px;
+    }
+}
+
+
+@media (max-width: 430px){
+    .bg-shape{
+        width: 400px;
+    }
+
+    .potrait-img{
+        width: 200px;
+    }
+}
+
 
 @media (max-width: 420px){
-    .potrait-img{
-        width: 195px;
-    }
-    
-    .bg-shape{
-        width: 415px;
-    }
-    
-    .top-right-middle-name{
-        font-size: 46px;
-    }
-    .top-right-middle-property{
-        font-size: 22px;
-    }
 
     .bar-mobile{
         margin-top: 10px;
@@ -341,6 +403,24 @@
 
     .skills-body-right-p1-resp-wrapper{
         font-size: 16px;
+    }
+}
+
+
+@media (max-width: 400px){
+    .skill-icon img{
+        width: 40px;
+    }
+
+    .skill-icon p{
+        font-size: 16px;
+    }
+
+    .skills-body-left{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
     }
 }
 

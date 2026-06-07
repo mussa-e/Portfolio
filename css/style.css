@@ -21,7 +21,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: #262E34;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .d-none{
@@ -211,7 +211,7 @@ body{
 
 .bar-mobile-wrapper{
     position: relative;
-    top: -615px;
+    top: -500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -570,7 +570,20 @@ body{
 .skills-body-left {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
-    gap: 16px; 
+    gap: 40px; 
+}
+
+.skill-icon{
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-icon p{
+    color: #89BCD9;
+    font-size: 18px;
 }
 
 .skills-body-right-p1-resp-wrapper{

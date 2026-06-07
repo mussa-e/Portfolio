@@ -188,7 +188,7 @@ const translations = {
                             <h2>Imprint</h2>
                             <ul>
                                 <li>Mussa Faragi</li>
-                                <li>Musterstraße</li>
+                                <li>Moltkestraße 68</li>
                                 <li>50859 Köln</li>
                             </ul>
 
@@ -415,7 +415,7 @@ const translations = {
                             <h2>Angaben gemäß § 5 TMG</h2>
                             <ul>
                                 <li>Mussa Faragi</li>
-                                <li>Musterstraße</li>
+                                <li>Moltkestraße 68</li>
                                 <li>50859 Köln</li>
                             </ul>
 
