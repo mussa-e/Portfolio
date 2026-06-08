@@ -72,6 +72,7 @@ body{
     transition: transform 0.5s ease;
     width: 800px;
     height: 800px;
+    clip-path: circle(40%);
 }
 
 .bg-shape:hover {
@@ -90,6 +91,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    pointer-events: none;
 }
 
 .top-right{
@@ -198,6 +200,7 @@ body{
 
 .arrow-down{
     border-radius: 50px;
+    z-index: 100;
 }
 
 .arrow-down:hover{
@@ -215,6 +218,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    pointer-events: none;
 }
 
 .bar-mobile{
