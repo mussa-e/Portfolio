@@ -110,6 +110,10 @@
 
 
 @media(max-width: 430px){
+    .quotes-wrapper{
+        width: 290px;
+    }
+    
     .quotes-p1{
         font-size: 20px;
     }
@@ -124,7 +128,7 @@
     }
 
     .quotes{
-        width: 310px;
+        width: 280px;
         height: 310px;
         justify-content: flex-start;
     }
@@ -132,5 +136,11 @@
     .quotes:hover::before {
         transform: none;
         filter: none;
+    }
+}
+
+@media(max-width: 430px){
+    .skills-body-right-p2{
+        left: -145px;
     }
 }
