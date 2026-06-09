@@ -214,7 +214,7 @@ body{
 
 .bar-mobile-wrapper{
     position: relative;
-    top: -500px;
+    top: -610px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -251,6 +251,7 @@ body{
     align-items: center;
     display: flex;
     justify-content: center;
+    width: auto;
 }
 
 .lang-mobile{
@@ -263,16 +264,16 @@ body{
 .lang-de-parent-mobile{
     top: -673px;
     display: flex;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 32px;
     justify-content: center;
 }
 
 .lang-en-parent-mobile{
     top: -673px;
     display: flex;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 32px;
     justify-content: center;
 }
 
@@ -587,7 +588,7 @@ body{
 
 .skill-icon p{
     color: #89BCD9;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .skills-body-right-p1-resp-wrapper{

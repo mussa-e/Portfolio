@@ -4,6 +4,13 @@
 }
 
 
+@media (hover: none) {
+    .bar-language-mobile:hover {
+        cursor: auto;
+    }
+}
+
+
 @media (max-width: 1240px){
     .top-right-middle-name{
         font-size: 70px;
@@ -170,6 +177,14 @@
         margin-left: 40px;
     }
 
+    .bar-mobile-wrapper{
+        top: -430px;
+    }
+
+    .bar-mobile{
+        height: 250px;
+    }
+
     .footer-logo-wrapper{
         margin-left: unset;
     }
@@ -289,8 +304,12 @@
         left: 155px;
     }
 
+    .skill-icon{
+        width: 48px;
+    }
+
     .skill-icon img{
-        width: 56px;
+        width: 40px;
     }
 }
 
@@ -339,6 +358,10 @@
 
     .potrait-img{
         width: 220px;
+    }
+
+    .bar-mobile{
+        font-size: 22px;
     }
 }
 
@@ -458,7 +481,6 @@
     }
 
     .bar-language-mobile{
-        width: 240px;
         font-size: 16px;
         height: 40px;
         margin-top: unset;
@@ -479,7 +501,14 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 1rem;
+        gap: 38px;
+    }
+}
+
+
+@media (max-width: 355px){
+    .skills-body-left{
+        gap: 30px;
     }
 }
 
