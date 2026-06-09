@@ -181,7 +181,7 @@ const translations = {
         "form-read": "and agree to the processing of my data as outlined.",
         "form-send": "Send",
         "legal": "Legal notice",
-        "legalContent": `<a class="arrow-back" href="index.html"><img src="img/arrow_back.svg"></a>
+        "legalContent": `
 
                             <h1>Legal Notice</h1>
 
@@ -251,14 +251,14 @@ const translations = {
 
                             <p class="date">Date: Mai 02, 2026</p>`,
 
-        "privacyContent": `<a class="arrow-back" href="index.html"><img src="img/arrow_back.svg"></a>
+        "privacyContent": `
 
                                 <h1>Privacy Policy</h1>
 
                                 <h2>1. Data Controller</h2>
                                 <p>
                                 Mussa Faragi<br>
-                                Musterstraße<br>
+                                Moltkestraße 68<br>
                                 Email: mussa.faragi@gmx.de
                                 </p>
 
@@ -408,7 +408,7 @@ const translations = {
         "form-read": "gelesen und stimme der Verarbeitung meiner Daten, wie dargelegt, zu.",
         "form-send": "senden",
         "legal": "Rechtliche Hinweise",
-        "legalContent": `<a class="arrow-back" href="index.html"><img src="img/arrow_back.svg"></a>
+        "legalContent": `
 
                             <h1>Impressum</h1>
 
@@ -482,14 +482,14 @@ const translations = {
 
                             <p class="date">Datum: 02. Mai 2026</p>`,
 
-        "privacyContent": `<a class="arrow-back" href="index.html"><img src="img/arrow_back.svg"></a>
+        "privacyContent": `
 
                                 <h1>Datenschutzerklärung</h1>
 
                                 <h2>1. Verantwortliche Stelle</h2>
                                 <p>
                                     Mussa Faragi<br>
-                                    Musterstraße<br>
+                                    Moltkestraße 68<br>
                                     E-Mail: mussa.faragi@gmx.de
                                 </p>
 

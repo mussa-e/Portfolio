@@ -15,6 +15,8 @@
 @media(max-width: 1280px){
     .contact-me-prosa-wrapper{
         flex-direction: column;
+        margin-right: unset;
+        width: unset;
     }
 
     .contact-me-prosa{
@@ -70,6 +72,17 @@
 @media(max-width: 580px){
     .contact-me-prosa-wrapper{
         padding: 0 32px;
+    }
+}
+
+
+@media(max-width: 538px){
+    .contact-me-prosa-wrapper{
+        width: 420px;
+    }
+
+    .contact-me-prosa{
+        width: unset;
     }
 }
 

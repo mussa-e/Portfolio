@@ -51,6 +51,7 @@ body{
     background-size: 80px;
     background-repeat: no-repeat;
     background-position: center;
+    height: 52px !important;
 }
 
 .top{
@@ -714,13 +715,13 @@ body{
     letter-spacing: 0%;
     color: #89BCD9;
     padding-left: 32px;
-    gap: 48px;
     justify-content: center;
 }
 
 .tab-1, .tab-2, .tab-3, .tab-4{
     padding: 32px;
     min-width: 200px;
+    text-align: center;
 }
 
 .tab-1:hover, .tab-2:hover, .tab-3:hover, .tab-4:hover{
@@ -1011,6 +1012,14 @@ body{
 .contact-me-prosa-wrapper{
     display: flex;
     gap: 48px;
+    margin-right: -60px;
+    justify-content: space-between;
+    gap: 24px;
+    width: 970px;
+}
+
+.contact-me-prosa{
+    width: 450px;
 }
 
 .contact-me-prosa p{
@@ -1036,6 +1045,7 @@ body{
     display: flex;
     gap: 16px;
     flex-direction: column;
+    width: 450px;
 }
 
 .contact-me-mail{
@@ -1044,15 +1054,33 @@ body{
     gap: 16px;
 }
 
+.contact-me-mail:hover{
+    color: #89BCD9;
+}
+
+.contact-me-mail:hover img {
+    filter: brightness(0) saturate(100%) invert(79%) sepia(16%)
+            saturate(685%) hue-rotate(162deg) brightness(92%) contrast(89%);
+}
+
 .contact-me-phone{
     display: flex;
     align-items: center;
     gap: 16px;
 }
 
+.contact-me-phone:hover{
+    color: #89BCD9;
+}
+
+.contact-me-phone:hover img {
+    filter: brightness(0) saturate(100%) invert(79%) sepia(16%)
+            saturate(685%) hue-rotate(162deg) brightness(92%) contrast(89%);
+}
+
 .arrow-up-wrapper{
     position: relative;
-    left: 160px;
+    left: 150px;
 }
 
 .arrow-up-wrapper img{
@@ -1080,7 +1108,7 @@ body{
 
 .formular{
     display: flex;
-    margin: 100px;
+    margin-top: 100px;
     flex-direction: column;
     align-items: center;
     gap: 24px;
@@ -1103,7 +1131,7 @@ body{
 
 .formular-data{
     display: flex;
-    width: 950px;
+    width: 970px;
     justify-content: space-between;
 }
 
@@ -1132,7 +1160,7 @@ body{
     color: #F8F5EC;
     font-size: 18px;
     font-family: Josefin Sans;
-    padding: 4px 0 0 10px;
+    padding: 4px 0 0 24px;
 }
 
 .formular-mail{
@@ -1154,11 +1182,11 @@ body{
     color: #F8F5EC;
     font-size: 18px;
     font-family: Josefin Sans;
-    padding: 4px 0 0 10px;
+    padding: 4px 0 0 24px;
 }
 
 .formular-msg-wrapper{
-    width: 950px;
+    width: 970px;
     height: 200px;
 }
 
@@ -1183,7 +1211,7 @@ body{
     font-family: Josefin Sans;
     resize: none;
     background-color: #262E34;
-    padding: 4px 10px;
+    padding: 4px 0 0 24px;
     box-sizing: border-box;
     cursor: pointer;
 }
