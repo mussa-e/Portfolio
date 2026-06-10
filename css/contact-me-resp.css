@@ -76,7 +76,7 @@
 }
 
 
-@media(max-width: 538px){
+@media(max-width: 530px){
     .contact-me-prosa-wrapper{
         width: 420px;
     }
@@ -87,7 +87,32 @@
 }
 
 
-@media(max-width: 500px){
+@media(max-width: 530px){
+    .formular-type-name, .formular-type-mail{
+        width: 345px;
+    }
+
+    .formular-msg-wrapper{
+        width: unset;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formular-type-msg{
+        width: 370px;
+    }
+
+    .terms-wrapper, #val-terms{
+        padding: 0 50px;
+    }
+
+    .formular-send-wrapper{
+        width: 360px;
+    }
+}
+
+
+/* @media(max-width: 500px){
     .formular{
         margin-right: unset;
         margin-left: unset;
@@ -106,14 +131,6 @@
         width: 100%;
     }
 
-    .formular-type-name{
-        width: unset;
-    }
-
-    .formular-type-mail{
-        width: unset;
-    }
-
     .formular-msg-wrapper{
         width: 90%;
     }
@@ -129,12 +146,50 @@
     .arrow-up-wrapper-resp{
         margin-top: 100px;
     }
+} */
+
+
+@media(max-width: 530px){
+    .contact-me-prosa, .contact-me-mail, .contact-me-phone{
+        padding: 0 32px;
+    }
+}
+
+
+@media(max-width: 420px){
+    .contact-me-prosa, .contact-me-mail, .contact-me-phone{
+        padding: 0 54px;
+    }
+}
+
+
+@media(max-width: 420px){
+    .formular-type-name, .formular-type-mail{
+        width: 270px;
+    }
+
+    .formular-type-msg{
+        width: 295px;
+    }
+
+    .terms-wrapper, #val-terms{
+        padding: 0 90px;
+    }
+
+    .formular-send-wrapper{
+        width: 285px;
+    }
 }
 
 
 @media(max-width: 380px){
+    .contact-me-prosa, .contact-me-mail, .contact-me-phone{
+        padding: 0 80px;
+    }
+
+
     .contact-me-up-left h1{
-        font-size: 50px;
+        font-size: 48px;
     }
 
     .contact-me-prosa p{
@@ -147,5 +202,24 @@
 
     .contact-me-prosa-wrapper{
         padding: 0 16px;
+    }
+}
+
+
+@media(max-width: 350px){
+    .formular-type-name, .formular-type-mail{
+        width: 230px;
+    }
+
+    .formular-type-msg{
+        width: 255px;
+    }
+
+    .terms-wrapper, #val-terms{
+        padding: 0 110px;
+    }
+
+    .formular-send-wrapper{
+        width: 245px;
     }
 }
