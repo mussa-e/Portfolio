@@ -73,6 +73,7 @@
 
     .da-bubble-description{
         order: 1;
+        width: unset;
     }
 
     .link-buttons{

@@ -741,6 +741,7 @@ body{
     font-family: Josefin Sans;
     display: flex;
     justify-content: center;
+    height: 630px;
 }
 
 .da-bubble{
@@ -751,6 +752,7 @@ body{
 
 .da-bubble-description{
     color: #F8F5EC;
+    width: 670px;
 }
 
 .da-bubble-dot{
@@ -824,6 +826,11 @@ body{
     display: flex;
     gap: 32px;
 }
+
+.link-buttons-pseudo{
+    opacity: 0;
+}
+
 .link-buttons-resp{
     display: none;
     gap: 32px;

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/projects-resp.css">
     <link rel="stylesheet" href="css/quote-resp.css">
     <link rel="stylesheet" href="css/contact-me-resp.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
 
     <title>Portfolio</title>
 
@@ -155,13 +156,14 @@
             <h1 data-i18n="bar-why-me">Why me</h1>
 
             <div class="why-me-body">
-                <div class="location">
+                <div class="location" data-aos="fade-right">
                     <img src="img/location.svg">
                     <p data-i18n="why-me-location-p1" class="location-p1">I am</p>
                     <p data-i18n="why-me-location-p2" class="location-p2">located in Cologne..|</p>
                 </div>
 
-                <div class="why-me-description">
+                <div class="why-me-description" data-aos="fade-left"
+                        data-aos-delay="200">
                     <div class="why-me-description-text">
                         <p data-i18n="why-me-desc">I'm passionate about coding because it<br>
                             combines analytical thinking, creativity,<br>
@@ -172,7 +174,8 @@
                         </p>
                     </div>
 
-                    <a class="why-me-description-talk" href="#contact-me">
+                    <a class="why-me-description-talk" href="#contact-me" data-aos="zoom-in"
+                            data-aos-delay="400">
                         <p data-i18n="why-me-talk">Let`s talk</p>
                     </a>
                 </div>
@@ -183,27 +186,27 @@
 
     <div class="w-100">
         <section class="skills-section" id="skills-section">
-            <h1 data-i18n="bar-skills">Skills</h1>
+            <h1 data-i18n="bar-skills" data-aos="fade-up">Skills</h1>
 
             <div class="skills-body">
                 <div class="skills-body-left">
-                    <div class="skill-icon"><img src="img/angular-solo.svg"><p>Angular</p></div>
-                    <div class="skill-icon"><img src="img/ts-solo.svg"><p>TypeScript</p></div>
-                    <div class="skill-icon"><img src="img/js-solo.svg"><p>JavaScript</p></div>
-                    <div class="skill-icon"><img src="img/html-solo.svg"><p>HTML</p></div>
-                    <div class="skill-icon"><img src="img/css-solo.svg"><p>CSS</p></div>
-                    <div class="skill-icon"><img src="img/restapi-solo.svg"><p>REST-API</p></div>
-                    <div class="skill-icon"><img src="img/supabase-solo.svg"><p>Supabase</p></div>
-                    <div class="skill-icon"><img src="img/git-solo.svg"><p>Git</p></div>
-                    <div class="skill-icon"><img src="img/md-solo.svg"><p>Material Design</p></div>
-                    <div class="skill-icon"><img src="img/scrum-solo.svg"><p>Scrum</p></div>
+                    <div class="skill-icon" data-aos="zoom-in-up"data-aos-delay="100"><img src="img/angular-solo.svg"><p>Angular</p></div>
+                    <div class="skill-icon" data-aos="zoom-in-up"data-aos-delay="200"><img src="img/ts-solo.svg"><p>TypeScript</p></div>
+                    <div class="skill-icon" data-aos="zoom-in-up"data-aos-delay="300"><img src="img/js-solo.svg"><p>JavaScript</p></div>
+                    <div class="skill-icon" data-aos="zoom-in-up"data-aos-delay="400"><img src="img/html-solo.svg"><p>HTML</p></div>
+                    <div class="skill-icon" data-aos="zoom-in-up"data-aos-delay="500"><img src="img/css-solo.svg"><p>CSS</p></div>
+                    <div class="skill-icon" data-aos="zoom-in-up"data-aos-delay="600"><img src="img/restapi-solo.svg"><p>REST-API</p></div>
+                    <div class="skill-icon" data-aos="zoom-in-up"data-aos-delay="700"><img src="img/supabase-solo.svg"><p>Supabase</p></div>
+                    <div class="skill-icon" data-aos="zoom-in-up"data-aos-delay="800"><img src="img/git-solo.svg"><p>Git</p></div>
+                    <div class="skill-icon" data-aos="zoom-in-up"data-aos-delay="900"><img src="img/md-solo.svg"><p>Material Design</p></div>
+                    <div class="skill-icon" data-aos="zoom-in-up"data-aos-delay="1000"><img src="img/scrum-solo.svg"><p>Scrum</p></div>
                 </div>
 
                 <div class="skills-body-right-p1-resp-wrapper">
                     <p data-i18n="skills-learning-1-resp" class="skills-body-right-p1-resp">What I am currently learning</p>
                 </div>
 
-                <div class="skills-body-right">
+                <div class="skills-body-right" data-aos="fade-left" data-aos-delay="300">
                     <p data-i18n="skills-learning-1" class="skills-body-right-p1">
                         I am currently learning
                     </p>
@@ -235,9 +238,9 @@
 
     <div class="w-100">
         <section class="projects" id="projects">
-            <h1 data-i18n="projects-h1">My Projects</h1>
+            <h1 data-i18n="projects-h1"data-aos="fade-up">My Projects</h1>
 
-            <div class="tabs">
+            <div class="tabs" data-aos="fade-up" data-aos-delay="200">
                 <div class="tab-1 chosen" id="tab-1" onclick="chooseTab('tab-1')">1. Pokedex</div>
                 <div class="tab-2" id="tab-2" onclick="chooseTab('tab-2')">2. El Pollo Loco</div>
                 <div class="tab-3" id="tab-3" onclick="chooseTab('tab-3')">3. Join</div>
@@ -246,7 +249,7 @@
 
             <div class="projects-body">
 
-                <div id="da-bubble" class="da-bubble">
+                <div id="da-bubble" class="da-bubble" data-aos="zoom-in" data-aos-duration="800">
 
                     <div class="projects-header-resp">
                         <h1>Pokedex</h1>
@@ -307,11 +310,11 @@
                             <img src="img/git.svg">
                         </div>
 
-                        <div class="technologies-screenshot">
+                        <div class="technologies-screenshot" data-aos="flip-left" data-aos-delay="300">
                             <img src="img/pokedex2.png">
                         </div>
 
-                        <div class="link-buttons">
+                        <div class="link-buttons" data-aos="fade-up" data-aos-delay="500">
                             <a href="https://pokedex.mussa-faragi.de/" target="_blank" class="test-btn">Live Test</a>
                             <a href="https://github.com/mussa-e/Pokedex" target="_blank" class="github-btn">GitHub</a>
                         </div>
@@ -326,7 +329,7 @@
 
                 <!--  -->
 
-                <div id="el-pollo-loco" class="da-bubble d-none">
+                <div id="el-pollo-loco" class="da-bubble d-none" data-aos="zoom-in">
 
                     <div class="projects-header-resp">
                         <h1>El Pollo Loco</h1>
@@ -390,11 +393,11 @@
                             <img src="img/css-small.svg">
                         </div>
 
-                        <div class="technologies-screenshot">
+                        <div class="technologies-screenshot" data-aos="flip-left" data-aos-delay="300">
                             <img src="img/startscreen_epl.png">
                         </div>
 
-                        <div class="link-buttons">
+                        <div class="link-buttons" data-aos="fade-up" data-aos-delay="500">
                             <a href="https://el-pollo-loco.mussa-faragi.de/" target="_blank" class="test-btn">Live Test</a>
                             <a href="https://github.com/mussa-e/El-Pollo-Loco" target="_blank" class="github-btn" rel="noopener noreferrer">
                                 GitHub</a>
@@ -411,7 +414,7 @@
 
                 <!--  -->
 
-                <div id="join" class="da-bubble d-none">
+                <div id="join" class="da-bubble d-none" data-aos="zoom-in">
 
                     <div class="projects-header-resp">
                         <h1>Join</h1>
@@ -472,11 +475,11 @@
                             <img src="img/css-small.svg">
                         </div>
 
-                        <div class="technologies-screenshot">
+                        <div class="technologies-screenshot" data-aos="flip-left" data-aos-delay="300">
                             <img src="img/screenshot-join.png">
                         </div>
 
-                        <div class="link-buttons">
+                        <div class="link-buttons" data-aos="fade-up" data-aos-delay="500">
                             <a class="test-btn" href="https://join.mussa-faragi.de/login-signup/" target="_blank">Live Test</a>
                             <a class="github-btn" href="https://github.com/mussa-e/join" target="_blank">GitHub</a>
                         </div>
@@ -492,7 +495,7 @@
 
                 <!--  -->
 
-                <div id="ongoing-project" class="da-bubble d-none">
+                <div id="ongoing-project" class="da-bubble d-none" data-aos="zoom-in">
                     <div class="da-bubble-description">
                         <div>
                             <div class="da-bubble-dot">
@@ -525,14 +528,14 @@
                             <img src="img/firebase-small.svg">
                         </div>
 
-                        <div class="technologies-screenshot">
+                        <div class="technologies-screenshot" data-aos="flip-left" data-aos-delay="300">
                             <img src="img/da-bubble.png">
                         </div>
 
-                        <!-- <div class="link-buttons">
+                        <div class="link-buttons link-buttons-pseudo">
                             <a class="test-btn">Live Test</a>
                             <a class="github-btn">GitHub</a>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
 
@@ -546,7 +549,7 @@
     <div class="w-100 w-100-quote">
         <section class="quote-section" id="quote-section">
 
-            <h2 data-i18n="quote-h2" class="quote-h2">Need a teamplayer? Here`s what my colleagues say about me</h2>
+            <h2 data-i18n="quote-h2" class="quote-h2" data-aos="fade-up">Need a teamplayer? Here`s what my colleagues say about me</h2>
 
             <div class="quote-h2-resp">
                 <h2 data-i18n="quote-h2-resp">Need a teamplayer?</h2>
@@ -555,7 +558,7 @@
 
             <div class="quotes-wrapper">
 
-                <div class="quotes">
+                <div class="quotes" data-aos="fade-up" data-aos-delay="100">
                     <p class="quotes-p1">Arnesto</p>
                     <p data-i18n="quote-project" class="quotes-p2">Project <span>Join</span></p>
                     <p data-i18n="quote-1" class="quotes-p3">"Mussa impressed in the group project
@@ -564,7 +567,7 @@
                     <!-- <a data-i18n="quote-profile" class="quotes-link">Linked In Profile</a> -->
                 </div>
 
-                <div class="quotes">
+                <div class="quotes" data-aos="fade-up" data-aos-delay="300">
                     <p class="quotes-p1">Fred</p>
                     <p data-i18n="quote-project" class="quotes-p2">Project <span>Join</span></p>
                     <p data-i18n="quote-2" class="quotes-p3">"Mussa is a reliable team player with 
@@ -572,7 +575,7 @@
                     <!-- <a data-i18n="quote-profile" class="quotes-link">Linked In Profile</a> -->
                 </div>
 
-                <div class="quotes">
+                <div class="quotes" data-aos="fade-up" data-aos-delay="500">
                     <p class="quotes-p1">Rico</p>
                     <p data-i18n="quote-project" class="quotes-p2">Project <span>Kochwelt</span></p>
                     <p data-i18n="quote-3" class="quotes-p3">"Impeccable code quality, quick to grasp 
@@ -596,7 +599,7 @@
         <section class="contact-me" id="contact-me">
 
             <div class="contact-me-up-wrapper">
-                <div class="contact-me-up-left">
+                <div class="contact-me-up-left" data-aos="fade-right">
                     <h1 data-i18n="contact-h1">Contact me</h1>
                     <div class="contact-me-prosa-wrapper">
                         <div class="contact-me-prosa">
@@ -620,10 +623,10 @@
 
             </div>
 
-            <div data-i18n="work-together" class="work-together">Let us work together!</div>
+            <div data-i18n="work-together" class="work-together" data-aos="zoom-in" data-aos-delay="400">Let us work together!</div>
             
 
-            <form class="formular">
+            <form class="formular" data-aos="fade-left" data-aos-delay="200">
 
                 <div class="formular-data">
                     <div class="formular-name-wrapper">
@@ -700,5 +703,15 @@
         
     </div>
 
+
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    easing: 'ease-out-cubic',
+    offset: 100
+});
+</script>
 </body>
 </html>
