@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="img/logo-icon.svg">
     <link rel="stylesheet" href="css/style-resp.css">
     <link rel="stylesheet" href="css/projects-resp.css">
     <link rel="stylesheet" href="css/quote-resp.css">
     <link rel="stylesheet" href="css/contact-me-resp.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    
 
     <title>Portfolio</title>
 
@@ -599,7 +602,7 @@
         <section class="contact-me" id="contact-me">
 
             <div class="contact-me-up-wrapper">
-                <div class="contact-me-up-left" data-aos="fade-right">
+                <div class="contact-me-up-left" data-aos="fade-up">
                     <h1 data-i18n="contact-h1">Contact me</h1>
                     <div class="contact-me-prosa-wrapper">
                         <div class="contact-me-prosa">
@@ -626,7 +629,7 @@
             <div data-i18n="work-together" class="work-together" data-aos="zoom-in" data-aos-delay="400">Let us work together!</div>
             
 
-            <form class="formular" data-aos="fade-left" data-aos-delay="200">
+            <form class="formular" data-aos="fade-up" data-aos-delay="200">
 
                 <div class="formular-data">
                     <div class="formular-name-wrapper">
@@ -710,7 +713,12 @@
   AOS.init({
     duration: 1000,
     easing: 'ease-out-cubic',
-    offset: 100
+    offset: 100,
+    once: true
+});
+
+window.addEventListener('resize', () => {
+    AOS.refresh();
 });
 </script>
 </body>

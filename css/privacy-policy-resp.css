@@ -210,24 +210,6 @@
 }
 
 
-/* @media (max-width: 390px){
-    
-    .bar-middle-privacy-resp{
-        gap: unset;
-        font-size: 20px;
-        margin-top: -80px;
-    }
-
-    #lang-de-privacy, #lang-en-privacy{
-        width: 20px;
-    }
-
-    h1{
-        font-size: 32px;
-    }
-} */
-
-
 @media (max-width: 360px){
     .legal{
         font-size: 16px;

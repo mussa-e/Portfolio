@@ -42,7 +42,7 @@
     }
 
     .formular-agree{
-        width: 462px;
+        width: 430px;
     }
 
     .terms-wrapper{
@@ -69,18 +69,8 @@
     }
 }
 
-@media(max-width: 580px){
-    .contact-me-prosa-wrapper{
-        padding: 0 32px;
-    }
-}
-
 
 @media(max-width: 530px){
-    .contact-me-prosa-wrapper{
-        width: 420px;
-    }
-
     .contact-me-prosa{
         width: unset;
     }
@@ -102,51 +92,14 @@
         width: 370px;
     }
 
-    .terms-wrapper, #val-terms{
-        padding: 0 50px;
+     .formular-agree{
+        width: 370px;
     }
 
     .formular-send-wrapper{
         width: 360px;
     }
 }
-
-
-/* @media(max-width: 500px){
-    .formular{
-        margin-right: unset;
-        margin-left: unset;
-        margin-bottom: unset;
-    }
-
-    .formular-data{
-        width: 90%;
-    }
-
-    .formular-name-wrapper{
-        width: 100%;
-    }
-
-    .formular-mail-wrapper{
-        width: 100%;
-    }
-
-    .formular-msg-wrapper{
-        width: 90%;
-    }
-
-    .formular-send-wrapper{
-        width: 90%;
-    }
-
-    .formular-agree{
-        width: 90%;
-    }
-
-    .arrow-up-wrapper-resp{
-        margin-top: 100px;
-    }
-} */
 
 
 @media(max-width: 530px){
@@ -156,14 +109,18 @@
 }
 
 
-@media(max-width: 420px){
-    .contact-me-prosa, .contact-me-mail, .contact-me-phone{
-        padding: 0 54px;
+@media(max-width: 465px){
+    .contact-me-contact{
+        width: unset;
     }
 }
 
 
 @media(max-width: 420px){
+    .contact-me-prosa, .contact-me-mail, .contact-me-phone{
+        padding: 0 54px;
+    }
+
     .formular-type-name, .formular-type-mail{
         width: 270px;
     }
@@ -172,9 +129,10 @@
         width: 295px;
     }
 
-    .terms-wrapper, #val-terms{
-        padding: 0 90px;
-    }
+     .formular-agree{
+        width: 295px;
+     }
+    
 
     .formular-send-wrapper{
         width: 285px;
@@ -183,11 +141,6 @@
 
 
 @media(max-width: 380px){
-    .contact-me-prosa, .contact-me-mail, .contact-me-phone{
-        padding: 0 80px;
-    }
-
-
     .contact-me-up-left h1{
         font-size: 48px;
     }
@@ -206,6 +159,12 @@
 }
 
 
+@media(max-width: 355px){
+    .contact-me-prosa, .contact-me-mail, .contact-me-phone{
+        padding: unset;
+    }
+}
+
 @media(max-width: 350px){
     .formular-type-name, .formular-type-mail{
         width: 230px;
@@ -215,9 +174,9 @@
         width: 255px;
     }
 
-    .terms-wrapper, #val-terms{
-        padding: 0 110px;
-    }
+     .formular-agree{
+        width: 255px;
+     }
 
     .formular-send-wrapper{
         width: 245px;
