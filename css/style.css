@@ -28,6 +28,10 @@ body{
     display: none !important;
 }
 
+.no-height{
+    height:unset !important;
+}
+
 .w-100{
     width: 100%;
     display: flex;

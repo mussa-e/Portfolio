@@ -32,6 +32,9 @@ let languages = [
 ];
 
 
+ongoingTab = false;
+
+
 /**
  * Selects a tab, updates its visual state, and displays the corresponding content section.
  * @function
@@ -48,6 +51,7 @@ function chooseTab(id){
     chosenTab.classList.add("chosen");
 
     handleTab(id);
+    prepareHandleHeight(id);
 }
 
 
@@ -177,4 +181,35 @@ function resetLanguageMobileStyles() {
             .getElementById(`lang-${lang}-mobile`)
             .classList.remove(`chosen-${lang}`);
     });
+}
+
+
+/**
+ * Checks if the id is "tab-4".
+ * @function
+ * @param {string} id - The ID of the tab to select.
+ * @returns {void}
+ */
+function prepareHandleHeight(id){
+    if (id === "tab-4"){
+        ongoingTab = true;
+    } else 
+        ongoingTab = false;
+
+    handleHeight()
+}
+
+
+/**
+ * Dynamically assigns a height to the reference element from the DOM or removes it again.
+ * @function
+ * @returns {void}
+ */
+function handleHeight(){
+     let projectBody = document.getElementById("project-body");
+
+    if (ongoingTab == true){
+        projectBody.classList.add("no-height");
+    } else 
+        projectBody.classList.remove("no-height");
 }
