@@ -745,13 +745,11 @@ body{
     font-family: Josefin Sans;
     display: flex;
     justify-content: center;
-    height: 630px;
 }
 
 .da-bubble{
     display: flex;
     gap: 32px;
-    height: 540px;
 }
 
 .da-bubble-description{
